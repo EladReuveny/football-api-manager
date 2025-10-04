@@ -1,0 +1,7 @@
+export enum CompetitionType {
+  LEAGUE = 'LEAGUE',
+  CUP = 'CUP',
+  SUPER_CUP = 'SUPER_CUP',
+  INTERNATIONAL = 'INTERNATIONAL',
+  FRIENDLY = 'FRIENDLY',
+}
