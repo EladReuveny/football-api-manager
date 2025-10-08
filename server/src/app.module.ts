@@ -5,6 +5,8 @@ import { AppController } from './app.controller';
 import { AppService } from './app.service';
 import { AuthModule } from './auth/auth.module';
 import { ClubsModule } from './clubs/clubs.module';
+import { JwtAuthGuard } from './common/guards/jwt-auth.guard';
+import { RolesGuard } from './common/guards/roles.guard';
 import { CompetitionsModule } from './competitions/competitions.module';
 import { CountriesModule } from './countries/countries.module';
 import { PlayersModule } from './players/players.module';
@@ -21,9 +23,8 @@ import { UsersModule } from './users/users.module';
         type: 'postgres',
         url: configService.get<string>('DB_URL'),
         autoLoadEntities: true,
-        synchronize: true,
+        synchronize: configService.get<string>('NODE_ENV') !== 'production',
         dropSchema: true,
-        
       }),
       inject: [ConfigService],
     }),
@@ -35,6 +36,16 @@ import { UsersModule } from './users/users.module';
     PlayersModule,
   ],
   controllers: [AppController],
-  providers: [AppService],
+  providers: [
+    {
+      provide: 'APP_GUARD',
+      useClass: JwtAuthGuard,
+    },
+    {
+      provide: 'APP_GUARD',
+      useClass: RolesGuard,
+    },
+    AppService,
+  ],
 })
 export class AppModule {}

@@ -8,8 +8,19 @@ import {
 import { Request, Response } from 'express';
 import { QueryFailedError } from 'typeorm';
 
+/**
+ * Global exception filter
+ *
+ * This filter catches all exceptions thrown by the application and returns a JSON response with detailed information.
+ */
 @Catch()
 export class GlobalExceptionFilter implements ExceptionFilter {
+  /**
+   * Catch an exception and return a JSON response
+   *
+   * @param exception The exception to catch
+   * @param host The host of the exception
+   */
   catch(exception: unknown, host: ArgumentsHost) {
     const context = host.switchToHttp();
     const req = context.getRequest<Request>();
@@ -41,7 +52,7 @@ export class GlobalExceptionFilter implements ExceptionFilter {
       }
     } else if (exception instanceof Error) {
       message = exception.message;
-      console.error('💥 Unexpected Error:', exception.stack);
+      console.error('Unexpected Error:', exception.stack);
     }
 
     res.status(status).json({

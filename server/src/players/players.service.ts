@@ -13,8 +13,18 @@ import { CreatePlayerDto } from './dto/create-player.dto';
 import { UpdatePlayerDto } from './dto/update-player.dto';
 import { Player } from './entities/player.entity';
 
+/**
+ * Service for players
+ */
 @Injectable()
 export class PlayersService {
+  /**
+   * Constructor
+   *
+   * @param playersRepository - player repository
+   * @param clubsService - club service
+   * @param countriesService - country service
+   */
   constructor(
     @InjectRepository(Player) private playersRepository: Repository<Player>,
     @Inject(forwardRef(() => ClubsService))
@@ -22,6 +32,11 @@ export class PlayersService {
     private readonly countriesService: CountriesService,
   ) {}
 
+  /**
+   * Create a player
+   * @param createPlayerDto - create player dto
+   * @returns created player
+   */
   async create(createPlayerDto: CreatePlayerDto) {
     let club: Club | undefined;
     if (createPlayerDto.clubId) {
@@ -40,10 +55,20 @@ export class PlayersService {
     return await this.playersRepository.save(player);
   }
 
+  /**
+   * Get all players
+   * @returns all players
+   */
   async findAll() {
     return await this.playersRepository.find();
   }
 
+  /**
+   * Get a player by id
+   * @param id - player id
+   * @returns player
+   * @throws NotFoundException if player not found
+   */
   async findOne(id: number) {
     const player = await this.playersRepository.findOneBy({ id });
     if (!player) {
@@ -52,24 +77,39 @@ export class PlayersService {
     return player;
   }
 
+  /**
+   * Update a player
+   * @param id - player id
+   * @param updatePlayerDto - update player dto
+   * @returns updated player
+   */
   async update(id: number, updatePlayerDto: UpdatePlayerDto) {
     const player = await this.findOne(id);
     const updatedPlayer = this.playersRepository.merge(player, updatePlayerDto);
     return await this.playersRepository.save(updatedPlayer);
   }
 
+  /**
+   * Remove a player
+   * @param id - player id
+   */
   async remove(id: number) {
     const player = await this.findOne(id);
     await this.playersRepository.remove(player);
   }
 
+  /**
+   * Create many players
+   * @param createPlayerDtos - create player dtos
+   * @returns created players
+   */
   async createMany(createPlayerDtos: CreatePlayerDto[]) {
     // const players = this.playersRepository.create(createPlayerDtos);
     // return await this.playersRepository.save(players);
     const players = await Promise.all(
       createPlayerDtos.map((createPlayerDto) => this.create(createPlayerDto)),
     );
-    
+
     return players;
   }
 }

@@ -7,6 +7,10 @@ import {
   Patch,
   Post,
 } from '@nestjs/common';
+import { ApiBearerAuth, ApiOperation } from '@nestjs/swagger';
+import { Public } from 'src/common/decorators/public.decorator';
+import { Roles } from 'src/common/decorators/roles.decorator';
+import { Role } from 'src/users/enums/role.enum';
 import { CompetitionsService } from './competitions.service';
 import { CreateCompetitionDto } from './dto/create-competition.dto';
 import { UpdateCompetitionDto } from './dto/update-competition.dto';
@@ -16,21 +20,31 @@ export class CompetitionsController {
   constructor(private readonly competitionsService: CompetitionsService) {}
 
   @Post()
+  @ApiOperation({ summary: 'Create a competition' })
+  @ApiBearerAuth('jwtAccessToken')
+  @Roles(Role.ADMIN)
   async create(@Body() createCompetitionDto: CreateCompetitionDto) {
     return await this.competitionsService.create(createCompetitionDto);
   }
 
   @Get()
+  @ApiOperation({ summary: 'Get all competitions' })
+  @Public()
   async findAll() {
     return await this.competitionsService.findAll();
   }
 
   @Get(':id')
+  @ApiOperation({ summary: 'Get a specific competition by ID' })
+  @Public()
   async findOne(@Param('id') id: number) {
     return await this.competitionsService.findOne(id);
   }
 
   @Patch(':id')
+  @ApiOperation({ summary: 'Update a specific competition by ID' })
+  @ApiBearerAuth('jwtAccessToken')
+  @Roles(Role.ADMIN)
   async update(
     @Param('id') id: number,
     @Body() updateCompetitionDto: UpdateCompetitionDto,
@@ -39,16 +53,25 @@ export class CompetitionsController {
   }
 
   @Delete(':id')
+  @ApiOperation({ summary: 'Delete a specific competition by ID' })
+  @ApiBearerAuth('jwtAccessToken')
+  @Roles(Role.ADMIN)
   async remove(@Param('id') id: number) {
     await this.competitionsService.remove(id);
   }
 
   @Post('create-many')
+  @ApiOperation({ summary: 'Create multiple competitions' })
+  @ApiBearerAuth('jwtAccessToken')
+  @Roles(Role.ADMIN)
   async createMany(@Body() createCompetitionDtos: CreateCompetitionDto[]) {
     return await this.competitionsService.createMany(createCompetitionDtos);
   }
 
   @Post(':competitionId/clubs/:clubId')
+  @ApiOperation({ summary: 'Add a club to a specific competition' })
+  @ApiBearerAuth('jwtAccessToken')
+  @Roles(Role.ADMIN)
   async addClubToCompetition(
     @Param('competitionId') competitionId: number,
     @Param('clubId') clubId: number,
@@ -60,6 +83,9 @@ export class CompetitionsController {
   }
 
   @Delete(':competitionId/clubs/:clubId')
+  @ApiOperation({ summary: 'Remove a club from a specific competition' })
+  @ApiBearerAuth('jwtAccessToken')
+  @Roles(Role.ADMIN)
   async removeClubFromCompetition(
     @Param('competitionId') competitionId: number,
     @Param('clubId') clubId: number,
