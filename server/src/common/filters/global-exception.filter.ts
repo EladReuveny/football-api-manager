@@ -10,14 +10,12 @@ import { QueryFailedError } from 'typeorm';
 
 /**
  * Global exception filter
- *
  * This filter catches all exceptions thrown by the application and returns a JSON response with detailed information.
  */
 @Catch()
 export class GlobalExceptionFilter implements ExceptionFilter {
   /**
    * Catch an exception and return a JSON response
-   *
    * @param exception The exception to catch
    * @param host The host of the exception
    */

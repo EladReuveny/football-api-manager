@@ -11,15 +11,13 @@ import { Country } from './entities/country.entity';
 
 /**
  * CountriesService
- *
  * This service provides functionality for managing countries.
  */
 @Injectable()
 export class CountriesService {
   /**
    * Constructor
-   *
-   * @param countriesRepository - country repository
+   * @param countriesRepository Country repository
    */
   constructor(
     @InjectRepository(Country)
@@ -28,12 +26,12 @@ export class CountriesService {
 
   /**
    * Creates a new country
-   *
-   * @param createCountryDto - country to create
-   * @returns created country
+   * @param createCountryDto Country to create
+   * @returns Created country
    */
   async create(createCountryDto: CreateCountryDto) {
-    await this.validateUniqueness(createCountryDto);
+    await this.validateName(createCountryDto.name);
+    await this.validateIsoCode(createCountryDto.isoCode);
 
     const country = this.countriesRepository.create(createCountryDto);
     return await this.countriesRepository.save(country);
@@ -41,8 +39,7 @@ export class CountriesService {
 
   /**
    * Finds all countries
-   *
-   * @returns all countries
+   * @returns All countries
    */
   async findAll() {
     return await this.countriesRepository.find();
@@ -50,41 +47,53 @@ export class CountriesService {
 
   /**
    * Finds a country by id
-   *
-   * @param id - country id
-   * @returns found country
+   * @param id Country id
+   * @returns Found country
    * @throws NotFoundException - if country with id does not exist
    */
   async findOne(id: number) {
-    const country = await this.countriesRepository.findOneBy({ id });
+    const country = await this.countriesRepository.findOne({
+      where: { id },
+      relations: ['players', 'clubs', 'competitions'],
+    });
     if (!country) {
       throw new NotFoundException(`Country with id ${id} does not exist`);
     }
+
     return country;
   }
 
   /**
    * Updates a country
-   *
-   * @param id - country id
-   * @param updateCountryDto - country to update
-   * @returns updated country
+   * @param id Country id
+   * @param updateCountryDto Country to update
+   * @returns Updated country
    */
   async update(id: number, updateCountryDto: UpdateCountryDto) {
     const country = await this.findOne(id);
-    await this.validateUniqueness(updateCountryDto);
-    const updatedCountry = this.countriesRepository.merge(
-      country,
-      updateCountryDto,
-    );
 
-    return await this.countriesRepository.save(updatedCountry);
+    const isNameChanged = updateCountryDto.name !== country.name;
+    if (isNameChanged && updateCountryDto.name) {
+      await this.validateName(updateCountryDto.name);
+      country.name = updateCountryDto.name;
+    }
+
+    const isIsoCodeChanged = updateCountryDto.isoCode !== country.isoCode;
+    if (isIsoCodeChanged && updateCountryDto.isoCode) {
+      await this.validateIsoCode(updateCountryDto.isoCode);
+      country.isoCode = updateCountryDto.isoCode;
+    }
+
+    if (updateCountryDto.flagUrl) {
+      country.flagUrl = updateCountryDto.flagUrl;
+    }
+
+    return await this.countriesRepository.save(country);
   }
 
   /**
    * Removes a country
-   *
-   * @param id - country id
+   * @param id Country id
    */
   async remove(id: number) {
     const country = await this.findOne(id);
@@ -93,13 +102,10 @@ export class CountriesService {
 
   /**
    * Creates many countries
-   *
-   * @param createCountriesDtos - countries to create
-   * @returns created countries
+   * @param createCountriesDtos Countries to create
+   * @returns Created countries
    */
-  async createMany(createCountriesDtos: CreateCountryDto[]) {
-    // const countries = this.countriesRepository.create(createCountriesDtos);
-    // return await this.countriesRepository.save(countries);
+  async createBulk(createCountriesDtos: CreateCountryDto[]) {
     const countries = await Promise.all(
       createCountriesDtos.map((createCountryDto) =>
         this.create(createCountryDto),
@@ -110,14 +116,11 @@ export class CountriesService {
   }
 
   /**
-   * Validates uniqueness of country
-   *
-   * @param dto - country to validate
-   * @throws ConflictException - if country with name or ISO code already exists
+   * Validates uniqueness of country name
+   * @param name Country name
+   * @throws ConflictException - if country with name already exists
    */
-  private async validateUniqueness(dto: CreateCountryDto | UpdateCountryDto) {
-    const { name, isoCode } = dto;
-
+  private async validateName(name: string) {
     const isNameExists = await this.countriesRepository.existsBy({
       name,
     });
@@ -125,7 +128,14 @@ export class CountriesService {
     if (isNameExists) {
       throw new ConflictException(`Country with name ${name} already exists`);
     }
+  }
 
+  /**
+   * Validates uniqueness of country ISO code
+   * @param isoCode Country ISO code
+   * @throws ConflictException - if country with ISO code already exists
+   */
+  private async validateIsoCode(isoCode: string) {
     const isIsoCodeExists = await this.countriesRepository.existsBy({
       isoCode,
     });

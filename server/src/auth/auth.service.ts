@@ -16,7 +16,6 @@ import { JwtPayload } from './types/jwt-payload.type';
 
 /**
  * AuthService
- *
  * This service provides authentication functionality.
  */
 @Injectable()
@@ -25,7 +24,6 @@ export class AuthService {
 
   /**
    * Constructor
-   *
    * @param configService The config service.
    * @param jwtService The JWT service.
    * @param usersService The users service.
@@ -40,17 +38,17 @@ export class AuthService {
 
   /**
    * Registers a new user.
-   *
    * @param createUserDto The create user DTO.
    * @returns The user object with the JWT access token.
    */
   async register(createUserDto: CreateUserDto) {
-    await this.usersService.validateUniqueness(createUserDto);
-
     const { email, password } = createUserDto;
 
-    const salt = await bcrypt.genSalt();
-    const hashedPassword = await bcrypt.hash(password, salt);
+    await this.usersService.validateEmail(email);
+
+    const hashedPassword =
+      await this.usersService.generateHashedPassword(password);
+
     const role = email === this.adminSecret ? Role.ADMIN : Role.USER;
     const user = {
       email,
@@ -65,7 +63,6 @@ export class AuthService {
 
   /**
    * Logs in a user.
-   *
    * @param loginUserDto The login user DTO.
    * @returns The user object with the JWT access token.
    */
@@ -77,7 +74,6 @@ export class AuthService {
 
   /**
    * Validates user credentials.
-   *
    * @param loginUserDto The login user DTO.
    * @returns The user object if the credentials are valid, otherwise throws an UnauthorizedException.
    * @throws UnauthorizedException if the credentials are invalid.
@@ -110,7 +106,6 @@ export class AuthService {
 
   /**
    * Generates an access token for the given payload.
-   *
    * @param payload The payload to sign.
    * @returns The signed access token.
    */
@@ -123,7 +118,6 @@ export class AuthService {
 
   /**
    * Generates an authentication response for the given user.
-   *
    * @param user The user object.
    * @returns The authentication response with the JWT access token.
    */

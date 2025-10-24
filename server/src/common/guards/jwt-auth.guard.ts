@@ -13,7 +13,6 @@ import { IS_PUBLIC_KEY } from '../decorators/public.decorator';
 
 /**
  * JwtAuthGuard
- *
  * This guard checks if the request has a valid JWT token.
  * Skips the guard if the request has the @Public() decorator.
  * If the request has a valid JWT token, it will set the user object in the request.
@@ -23,7 +22,6 @@ import { IS_PUBLIC_KEY } from '../decorators/public.decorator';
 export class JwtAuthGuard implements CanActivate {
   /**
    * Constructor
-   *
    * @param jwtService The JWT service to verify the token
    * @param configService The config service to get the JWT secret key
    * @param reflector The reflector service to get the required roles from the request handler or class
@@ -36,7 +34,6 @@ export class JwtAuthGuard implements CanActivate {
 
   /**
    * Check if the request has a valid JWT token.
-   *
    * @param context The execution context.
    * @returns True if the request has a valid JWT token, false otherwise.
    * @throws UnauthorizedException if the request does not have a valid JWT token.
@@ -74,7 +71,6 @@ export class JwtAuthGuard implements CanActivate {
 
   /**
    * Extract the JWT token from the Authorization header.
-   *
    * @param req The request object.
    * @returns The JWT token if it exists, otherwise undefined.
    */

@@ -3,14 +3,12 @@ import { NextFunction, Request, Response } from 'express';
 
 /**
  * Logger middleware
- *
  * This middleware logs every incoming request with information about the request, response and execution time.
  */
 @Injectable()
 export class LoggerMiddleware implements NestMiddleware {
   /**
    * Use the middleware
-   *
    * @param req The express request object
    * @param res The express response object
    * @param next The next function to be called in the middleware chain

@@ -1,3 +1,4 @@
+import { Type } from 'class-transformer';
 import {
   IsDate,
   IsNotEmpty,
@@ -26,5 +27,6 @@ export class CreateClubDto {
   @IsOptional({ message: 'Established date is optional' })
   @IsDate({ message: 'Date must be valid' })
   @MaxDate(new Date(), { message: 'Date cannot be in the future' })
+  @Type(() => Date)
   establishedAt?: Date;
 }

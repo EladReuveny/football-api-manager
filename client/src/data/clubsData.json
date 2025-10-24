@@ -1,0 +1,944 @@
+[
+    {
+        "name": "Barcelona",
+        "logoUrl": "https://github.com/luukhopman/football-logos/blob/master/logos/Spain%20-%20LaLiga/FC%20Barcelona.png?raw=true",
+        "countryId": 183,
+        "establishedAt": "1899-01-01T00:00:00"
+    },
+    {
+        "name": "Real Madrid",
+        "logoUrl": "https://github.com/luukhopman/football-logos/blob/master/logos/Spain%20-%20LaLiga/Real%20Madrid.png?raw=true",
+        "countryId": 183,
+        "establishedAt": "1902-01-01T00:00:00"
+    },
+    {
+        "name": "Atlético Madrid",
+        "logoUrl": "https://github.com/luukhopman/football-logos/blob/master/logos/Spain%20-%20LaLiga/Atl%C3%A9tico%20de%20Madrid.png?raw=true",
+        "countryId": 183,
+        "establishedAt": "1903-01-01T00:00:00"
+    },
+    {
+        "name": "Sevilla",
+        "logoUrl": "https://github.com/luukhopman/football-logos/blob/master/logos/Spain%20-%20LaLiga/Sevilla%20FC.png?raw=true",
+        "countryId": 183,
+        "establishedAt": "1890-01-01T00:00:00"
+    },
+    {
+        "name": "Valencia",
+        "logoUrl": "https://github.com/luukhopman/football-logos/blob/master/logos/Spain%20-%20LaLiga/Valencia%20CF.png?raw=true",
+        "countryId": 183,
+        "establishedAt": "1919-01-01T00:00:00"
+    },
+    {
+        "name": "Athletic Bilbao",
+        "logoUrl": "https://github.com/luukhopman/football-logos/blob/master/logos/Spain%20-%20LaLiga/Athletic%20Bilbao.png?raw=true",
+        "countryId": 183,
+        "establishedAt": "1909-01-01T00:00:00"
+    },
+    {
+        "name": "Real Sociedad",
+        "logoUrl": "https://github.com/luukhopman/football-logos/blob/master/logos/Spain%20-%20LaLiga/Real%20Sociedad.png?raw=true",
+        "countryId": 183,
+        "establishedAt": "1909-01-01T00:00:00"
+    },
+    {
+        "name": "Villarreal",
+        "logoUrl": "https://github.com/luukhopman/football-logos/blob/master/logos/Spain%20-%20LaLiga/Villarreal%20CF.png?raw=true",
+        "countryId": 183,
+        "establishedAt": "1923-01-01T00:00:00"
+    },
+    {
+        "name": "Real Betis",
+        "logoUrl": "https://github.com/luukhopman/football-logos/blob/master/logos/Spain%20-%20LaLiga/Real%20Betis%20Balompi%C3%A9.png?raw=true",
+        "countryId": 183,
+        "establishedAt": "1907-01-01T00:00:00"
+    },
+    {
+        "name": "Osasuna",
+        "logoUrl": "https://github.com/luukhopman/football-logos/blob/master/logos/Spain%20-%20LaLiga/CA%20Osasuna.png?raw=true",
+        "countryId": 183,
+        "establishedAt": "1920-01-01T00:00:00"
+    },
+    {
+        "name": "Espanyol",
+        "logoUrl": "https://github.com/luukhopman/football-logos/blob/master/logos/Spain%20-%20LaLiga/RCD%20Espanyol%20Barcelona.png?raw=true",
+        "countryId": 183,
+        "establishedAt": "1900-01-01T00:00:00"
+    },
+    {
+        "name": "Celta Vigo",
+        "logoUrl": "https://github.com/luukhopman/football-logos/blob/master/logos/Spain%20-%20LaLiga/Celta%20de%20Vigo.png?raw=true",
+        "countryId": 183,
+        "establishedAt": "1929-01-01T00:00:00"
+    },
+    {
+        "name": "Girona FC",
+        "logoUrl": "https://github.com/luukhopman/football-logos/blob/master/logos/Spain%20-%20LaLiga/Girona%20FC.png?raw=true",
+        "countryId": 183,
+        "establishedAt": "1905-01-01T00:00:00"
+    },
+    {
+        "name": "RCD Mallorca",
+        "logoUrl": "https://github.com/luukhopman/football-logos/blob/master/logos/Spain%20-%20LaLiga/RCD%20Mallorca.png?raw=true",
+        "countryId": 183,
+        "establishedAt": "1905-01-01T00:00:00"
+    },
+    {
+        "name": "Deportivo Alavés",
+        "logoUrl": "https://github.com/luukhopman/football-logos/blob/master/logos/Spain%20-%20LaLiga/Deportivo%20Alav%C3%A9s.png?raw=true",
+        "countryId": 183,
+        "establishedAt": "1905-01-01T00:00:00"
+    },
+    {
+        "name": "Elche CF",
+        "logoUrl": "https://github.com/luukhopman/football-logos/blob/master/logos/Spain%20-%20LaLiga/Elche%20CF.png?raw=true",
+        "countryId": 183,
+        "establishedAt": "1920-01-01T00:00:00"
+    },
+    {
+        "name": "Granada CF",
+        "logoUrl": "https://github.com/luukhopman/football-logos/blob/master/history/2023-24/Spain%20-%20LaLiga/Granada%20CF.png?raw=true",
+        "countryId": 183,
+        "establishedAt": "1931-01-01T00:00:00"
+    },
+    {
+        "name": "Real Valladolid",
+        "logoUrl": "https://github.com/luukhopman/football-logos/blob/master/history/2022-23/Spain%20-%20LaLiga/Real%20Valladolid%20CF.png?raw=true",
+        "countryId": 183,
+        "establishedAt": "1928-01-01T00:00:00"
+    },
+    {
+        "name": "Getafe CF",
+        "logoUrl": "https://github.com/luukhopman/football-logos/blob/master/logos/Spain%20-%20LaLiga/Getafe%20CF.png?raw=true",
+        "countryId": 183,
+        "establishedAt": "1983-01-01T00:00:00"
+    },
+    {
+        "name": "Almería",
+        "logoUrl": "https://github.com/luukhopman/football-logos/blob/master/history/2022-23/Spain%20-%20LaLiga/UD%20Almer%C3%ADa.png?raw=true",
+        "countryId": 183,
+        "establishedAt": "1989-01-01T00:00:00"
+    },
+    {
+        "name": "Cádiz CF",
+        "logoUrl": "https://github.com/luukhopman/football-logos/blob/master/history/2022-23/Spain%20-%20LaLiga/C%C3%A1diz%20CF.png?raw=true",
+        "countryId": 183,
+        "establishedAt": "1910-01-01T00:00:00"
+    },
+    {
+        "name": "Levante UD",
+        "logoUrl": "https://github.com/luukhopman/football-logos/blob/master/logos/Spain%20-%20LaLiga/Levante%20UD.png?raw=true",
+        "countryId": 183,
+        "establishedAt": "1909-01-01T00:00:00"
+    },
+    {
+        "name": "Rayo Vallecano",
+        "logoUrl": "https://github.com/luukhopman/football-logos/blob/master/logos/Spain%20-%20LaLiga/Rayo%20Vallecano.png?raw=true",
+        "countryId": 183,
+        "establishedAt": "1924-01-01T00:00:00"
+    },
+    {
+        "name": "Real Oviedo",
+        "logoUrl": "https://github.com/luukhopman/football-logos/blob/master/logos/Spain%20-%20LaLiga/Real%20Oviedo.png?raw=true",
+        "countryId": 183,
+        "establishedAt": "1929-01-01T00:00:00"
+    },
+    {
+        "name": "Manchester United",
+        "logoUrl": "https://github.com/luukhopman/football-logos/blob/master/logos/England%20-%20Premier%20League/Manchester%20United.png?raw=true",
+        "countryId": 62,
+        "establishedAt": "1878-01-01T00:00:00"
+    },
+    {
+        "name": "Liverpool",
+        "logoUrl": "https://github.com/luukhopman/football-logos/blob/master/logos/England%20-%20Premier%20League/Liverpool%20FC.png?raw=true",
+        "countryId": 62,
+        "establishedAt": "1892-01-01T00:00:00"
+    },
+    {
+        "name": "Chelsea",
+        "logoUrl": "https://github.com/luukhopman/football-logos/blob/master/logos/England%20-%20Premier%20League/Chelsea%20FC.png?raw=true",
+        "countryId": 62,
+        "establishedAt": "1905-01-01T00:00:00"
+    },
+    {
+        "name": "Arsenal",
+        "logoUrl": "https://github.com/luukhopman/football-logos/blob/master/logos/England%20-%20Premier%20League/Arsenal%20FC.png?raw=true",
+        "countryId": 62,
+        "establishedAt": "1886-01-01T00:00:00"
+    },
+    {
+        "name": "Manchester City",
+        "logoUrl": "https://github.com/luukhopman/football-logos/blob/master/logos/England%20-%20Premier%20League/Manchester%20City.png?raw=true",
+        "countryId": 62,
+        "establishedAt": "1880-01-01T00:00:00"
+    },
+    {
+        "name": "Tottenham Hotspur",
+        "logoUrl": "https://github.com/luukhopman/football-logos/blob/master/logos/England%20-%20Premier%20League/Tottenham%20Hotspur.png?raw=true",
+        "countryId": 62,
+        "establishedAt": "1882-01-01T00:00:00"
+    },
+    {
+        "name": "Everton",
+        "logoUrl": "https://github.com/luukhopman/football-logos/blob/master/logos/England%20-%20Premier%20League/Everton%20FC.png?raw=true",
+        "countryId": 62,
+        "establishedAt": "1878-01-01T00:00:00"
+    },
+    {
+        "name": "Leicester City",
+        "logoUrl": "https://github.com/luukhopman/football-logos/blob/master/history/2024-25/England%20-%20Premier%20League/Leicester%20City.png?raw=true",
+        "countryId": 62,
+        "establishedAt": "1884-01-01T00:00:00"
+    },
+    {
+        "name": "West Ham United",
+        "logoUrl": "https://github.com/luukhopman/football-logos/blob/master/logos/England%20-%20Premier%20League/West%20Ham%20United.png?raw=true",
+        "countryId": 62,
+        "establishedAt": "1895-01-01T00:00:00"
+    },
+    {
+        "name": "AFC Bournemouth",
+        "logoUrl": "https://github.com/luukhopman/football-logos/blob/master/logos/England%20-%20Premier%20League/AFC%20Bournemouth.png?raw=true",
+        "countryId": 62,
+        "establishedAt": "1904-01-01T00:00:00"
+    },
+    {
+        "name": "Brentford FC",
+        "logoUrl": "https://github.com/luukhopman/football-logos/blob/master/logos/England%20-%20Premier%20League/Brentford%20FC.png?raw=true",
+        "countryId": 62,
+        "establishedAt": "2022-01-01T00:00:00"
+    },
+    {
+        "name": "Brighton & Hove Albion",
+        "logoUrl": "https://github.com/luukhopman/football-logos/blob/master/logos/England%20-%20Premier%20League/Brighton%20%26%20Hove%20Albion.png?raw=true",
+        "countryId": 62,
+        "establishedAt": "1901-01-01T00:00:00"
+    },
+    {
+        "name": "Southampton FC",
+        "logoUrl": "https://github.com/luukhopman/football-logos/blob/master/history/2024-25/England%20-%20Premier%20League/Southampton%20FC.png?raw=true",
+        "countryId": 62,
+        "establishedAt": "1885-01-01T00:00:00"
+    },
+    {
+        "name": "Crystal Palace",
+        "logoUrl": "https://github.com/luukhopman/football-logos/blob/master/logos/England%20-%20Premier%20League/Crystal%20Palace.png?raw=true",
+        "countryId": 62,
+        "establishedAt": "1905-01-01T00:00:00"
+    },
+    {
+        "name": "Leeds United",
+        "logoUrl": "https://github.com/luukhopman/football-logos/blob/master/logos/England%20-%20Premier%20League/Leeds%20United.png?raw=true",
+        "countryId": 62,
+        "establishedAt": "1919-01-01T00:00:00"
+    },
+    {
+        "name": "Aston Villa",
+        "logoUrl": "https://github.com/luukhopman/football-logos/blob/master/logos/England%20-%20Premier%20League/Aston%20Villa.png?raw=true",
+        "countryId": 62,
+        "establishedAt": "1874-01-01T00:00:00"
+    },
+    {
+        "name": "Burnley FC",
+        "logoUrl": "https://github.com/luukhopman/football-logos/blob/master/logos/England%20-%20Premier%20League/Burnley%20FC.png?raw=true",
+        "countryId": 62,
+        "establishedAt": "1882-01-01T00:00:00"
+    },
+    {
+        "name": "Fulham FC",
+        "logoUrl": "https://github.com/luukhopman/football-logos/blob/master/logos/England%20-%20Premier%20League/Fulham%20FC.png?raw=true",
+        "countryId": 62,
+        "establishedAt": "1879-01-01T00:00:00"
+    },
+    {
+        "name": "Newcastle United",
+        "logoUrl": "https://github.com/luukhopman/football-logos/blob/master/logos/England%20-%20Premier%20League/Newcastle%20United.png?raw=true",
+        "countryId": 62,
+        "establishedAt": "1882-01-01T00:00:00"
+    },
+    {
+        "name": "Nottingham Forest",
+        "logoUrl": "https://github.com/luukhopman/football-logos/blob/master/logos/England%20-%20Premier%20League/Nottingham%20Forest.png?raw=true",
+        "countryId": 62,
+        "establishedAt": "1883-01-01T00:00:00"
+    },
+    {
+        "name": "Sheffield United",
+        "logoUrl": "https://github.com/luukhopman/football-logos/blob/master/history/2023-24/England%20-%20Premier%20League/Sheffield%20United.png?raw=true",
+        "countryId": 62,
+        "establishedAt": "1889-01-01T00:00:00"
+    },
+    {
+        "name": "Sunderland AFC",
+        "logoUrl": "https://github.com/luukhopman/football-logos/blob/master/logos/England%20-%20Premier%20League/Sunderland%20AFC.png?raw=true",
+        "countryId": 62,
+        "establishedAt": "1888-01-01T00:00:00"
+    },
+    {
+        "name": "Wolverhampton Wanderers",
+        "logoUrl": "https://github.com/luukhopman/football-logos/blob/master/logos/England%20-%20Premier%20League/Wolverhampton%20Wanderers.png?raw=true",
+        "countryId": 62,
+        "establishedAt": "1877-01-01T00:00:00"
+    },
+    {
+        "name": "Juventus",
+        "logoUrl": "https://github.com/luukhopman/football-logos/blob/master/logos/Italy%20-%20Serie%20A/Juventus%20FC.png?raw=true",
+        "countryId": 99,
+        "establishedAt": "1897-01-01T00:00:00"
+    },
+    {
+        "name": "AC Milan",
+        "logoUrl": "https://github.com/luukhopman/football-logos/blob/master/logos/Italy%20-%20Serie%20A/AC%20Milan.png?raw=true",
+        "countryId": 99,
+        "establishedAt": "1899-01-01T00:00:00"
+    },
+    {
+        "name": "Inter Milan",
+        "logoUrl": "https://github.com/luukhopman/football-logos/blob/master/logos/Italy%20-%20Serie%20A/Inter%20Milan.png?raw=true",
+        "countryId": 99,
+        "establishedAt": "1908-01-01T00:00:00"
+    },
+    {
+        "name": "Napoli",
+        "logoUrl": "https://github.com/luukhopman/football-logos/blob/master/logos/Italy%20-%20Serie%20A/SSC%20Napoli.png?raw=true",
+        "countryId": 99,
+        "establishedAt": "1926-01-01T00:00:00"
+    },
+    {
+        "name": "Atalanta",
+        "logoUrl": "https://github.com/luukhopman/football-logos/blob/master/logos/Italy%20-%20Serie%20A/Atalanta%20BC.png?raw=true",
+        "countryId": 99,
+        "establishedAt": "1929-01-01T00:00:00"
+    },
+    {
+        "name": "Roma",
+        "logoUrl": "https://github.com/luukhopman/football-logos/blob/master/logos/Italy%20-%20Serie%20A/AS%20Roma.png?raw=true",
+        "countryId": 99,
+        "establishedAt": "1927-01-01T00:00:00"
+    },
+    {
+        "name": "Lazio",
+        "logoUrl": "https://github.com/luukhopman/football-logos/blob/master/logos/Italy%20-%20Serie%20A/SS%20Lazio.png?raw=true",
+        "countryId": 99,
+        "establishedAt": "1900-01-01T00:00:00"
+    },
+    {
+        "name": "Fiorentina",
+        "logoUrl": "https://github.com/luukhopman/football-logos/blob/master/logos/Italy%20-%20Serie%20A/ACF%20Fiorentina.png?raw=true",
+        "countryId": 99,
+        "establishedAt": "1920-01-01T00:00:00"
+    },
+    {
+        "name": "Torino",
+        "logoUrl": "https://github.com/luukhopman/football-logos/blob/master/logos/Italy%20-%20Serie%20A/Torino%20FC.png?raw=true",
+        "countryId": 99,
+        "establishedAt": "1920-01-01T00:00:00"
+    },
+    {
+        "name": "Sassuolo",
+        "logoUrl": "https://github.com/luukhopman/football-logos/blob/master/logos/Italy%20-%20Serie%20A/US%20Sassuolo.png?raw=true",
+        "countryId": 99,
+        "establishedAt": "1920-01-01T00:00:00"
+    },
+    {
+        "name": "Cagliari",
+        "logoUrl": "https://github.com/luukhopman/football-logos/blob/master/logos/Italy%20-%20Serie%20A/Cagliari%20Calcio.png?raw=true",
+        "countryId": 99,
+        "establishedAt": "1920-01-01T00:00:00"
+    },
+    {
+        "name": "Bologna",
+        "logoUrl": "https://github.com/luukhopman/football-logos/blob/master/logos/Italy%20-%20Serie%20A/Bologna%20FC%201909.png?raw=true",
+        "countryId": 99,
+        "establishedAt": "1909-01-01T00:00:00"
+    },
+    {
+        "name": "Parma",
+        "logoUrl": "https://github.com/luukhopman/football-logos/blob/master/logos/Italy%20-%20Serie%20A/Parma%20Calcio%201913.png?raw=true",
+        "countryId": 99,
+        "establishedAt": "1913-01-01T00:00:00"
+    },
+    {
+        "name": "Udinese",
+        "logoUrl": "https://github.com/luukhopman/football-logos/blob/master/logos/Italy%20-%20Serie%20A/Udinese%20Calcio.png?raw=true",
+        "countryId": 99,
+        "establishedAt": "1896-01-01T00:00:00"
+    },
+    {
+        "name": "Spezia",
+        "logoUrl": "https://github.com/luukhopman/football-logos/blob/master/history/2021-22/Italy%20-%20Serie%20A/Spezia%20Calcio.png?raw=true",
+        "countryId": 99,
+        "establishedAt": "1906-01-01T00:00:00"
+    },
+    {
+        "name": "Genoa CFC",
+        "logoUrl": "https://github.com/luukhopman/football-logos/blob/master/logos/Italy%20-%20Serie%20A/Genoa%20CFC.png?raw=true",
+        "countryId": 99,
+        "establishedAt": "1893-01-01T00:00:00"
+    },
+    {
+        "name": "Empoli",
+        "logoUrl": "https://github.com/luukhopman/football-logos/blob/master/history/2021-22/Italy%20-%20Serie%20A/FC%20Empoli.png?raw=true",
+        "countryId": 99,
+        "establishedAt": "1920-01-01T00:00:00"
+    },
+    {
+        "name": "Lecce",
+        "logoUrl": "https://github.com/luukhopman/football-logos/blob/master/logos/Italy%20-%20Serie%20A/US%20Lecce.png?raw=true",
+        "countryId": 99,
+        "establishedAt": "1908-01-01T00:00:00"
+    },
+    {
+        "name": "Monza",
+        "logoUrl": "https://github.com/luukhopman/football-logos/blob/master/history/2022-23/Italy%20-%20Serie%20A/AC%20Monza.png?raw=true",
+        "countryId": 99,
+        "establishedAt": "1912-01-01T00:00:00"
+    },
+    {
+        "name": "Bayern Munich",
+        "logoUrl": "https://github.com/luukhopman/football-logos/blob/master/logos/Germany%20-%20Bundesliga/Bayern%20Munich.png?raw=true",
+        "countryId": 76,
+        "establishedAt": "1900-01-01T00:00:00"
+    },
+    {
+        "name": "Borussia Dortmund",
+        "logoUrl": "https://github.com/luukhopman/football-logos/blob/master/logos/Germany%20-%20Bundesliga/Borussia%20Dortmund.png?raw=true",
+        "countryId": 76,
+        "establishedAt": "1909-01-01T00:00:00"
+    },
+    {
+        "name": "RB Leipzig",
+        "logoUrl": "https://github.com/luukhopman/football-logos/blob/master/logos/Germany%20-%20Bundesliga/RB%20Leipzig.png?raw=true",
+        "countryId": 76,
+        "establishedAt": "2009-01-01T00:00:00"
+    },
+    {
+        "name": "Bayer Leverkusen",
+        "logoUrl": "https://github.com/luukhopman/football-logos/blob/master/logos/Germany%20-%20Bundesliga/Bayer%2004%20Leverkusen.png?raw=true",
+        "countryId": 76,
+        "establishedAt": "1904-01-01T00:00:00"
+    },
+    {
+        "name": "VfL Wolfsburg",
+        "logoUrl": "https://github.com/luukhopman/football-logos/blob/master/logos/Germany%20-%20Bundesliga/VfL%20Wolfsburg.png?raw=true",
+        "countryId": 76,
+        "establishedAt": "1908-01-01T00:00:00"
+    },
+    {
+        "name": "Schalke 04",
+        "logoUrl": "https://github.com/luukhopman/football-logos/blob/master/history/2022-23/Germany%20-%20Bundesliga/FC%20Schalke%2004.png?raw=true",
+        "countryId": 76,
+        "establishedAt": "1904-01-01T00:00:00"
+    },
+    {
+        "name": "Borussia Mönchengladbach",
+        "logoUrl": "https://github.com/luukhopman/football-logos/blob/master/logos/Germany%20-%20Bundesliga/Borussia%20M%C3%B6nchengladbach.png?raw=true",
+        "countryId": 76,
+        "establishedAt": "1908-01-01T00:00:00"
+    },
+    {
+        "name": "Eintracht Frankfurt",
+        "logoUrl": "https://github.com/luukhopman/football-logos/blob/master/logos/Germany%20-%20Bundesliga/Eintracht%20Frankfurt.png?raw=true",
+        "countryId": 76,
+        "establishedAt": "1905-01-01T00:00:00"
+    },
+    {
+        "name": "FC Augsburg",
+        "logoUrl": "https://github.com/luukhopman/football-logos/blob/master/logos/Germany%20-%20Bundesliga/FC%20Augsburg.png?raw=true",
+        "countryId": 76,
+        "establishedAt": "1907-01-01T00:00:00"
+    },
+    {
+        "name": "FC St. Pauli",
+        "logoUrl": "https://github.com/luukhopman/football-logos/blob/master/logos/Germany%20-%20Bundesliga/FC%20St.%20Pauli.png?raw=true",
+        "countryId": 76,
+        "establishedAt": "1908-01-01T00:00:00"
+    },
+    {
+        "name": "SC Freiburg",
+        "logoUrl": "https://github.com/luukhopman/football-logos/blob/master/logos/Germany%20-%20Bundesliga/SC%20Freiburg.png?raw=true",
+        "countryId": 76,
+        "establishedAt": "1908-01-01T00:00:00"
+    },
+    {
+        "name": "Hamburger SV",
+        "logoUrl": "https://github.com/luukhopman/football-logos/blob/master/logos/Germany%20-%20Bundesliga/Hamburger%20SV.png?raw=true",
+        "countryId": 76,
+        "establishedAt": "1887-01-01T00:00:00"
+    },
+    {
+        "name": "Werder Bremen",
+        "logoUrl": "https://github.com/luukhopman/football-logos/blob/master/logos/Germany%20-%20Bundesliga/SV%20Werder%20Bremen.png?raw=true",
+        "countryId": 76,
+        "establishedAt": "1899-01-01T00:00:00"
+    },
+    {
+        "name": " VfB Stuttgart",
+        "logoUrl": "https://github.com/luukhopman/football-logos/blob/master/logos/Germany%20-%20Bundesliga/VfB%20Stuttgart.png?raw=true",
+        "countryId": 76,
+        "establishedAt": "1908-01-01T00:00:00"
+    },
+    {
+        "name": "VfL Bochum",
+        "logoUrl": "https://github.com/luukhopman/football-logos/blob/master/history/2021-22/Germany%20-%20Bundesliga/VfL%20Bochum.png?raw=true",
+        "countryId": 76,
+        "establishedAt": "1848-01-01T00:00:00"
+    },
+    {
+        "name": "1. FC Heidenheim",
+        "logoUrl": "https://github.com/luukhopman/football-logos/blob/master/logos/Germany%20-%20Bundesliga/1.FC%20Heidenheim%201846.png?raw=true",
+        "countryId": 76,
+        "establishedAt": "1846-01-01T00:00:00"
+    },
+    {
+        "name": "Hoffenheim",
+        "logoUrl": "https://github.com/luukhopman/football-logos/blob/master/logos/Germany%20-%20Bundesliga/TSG%201899%20Hoffenheim.png?raw=true",
+        "countryId": 76,
+        "establishedAt": "1899-01-01T00:00:00"
+    },
+    {
+        "name": "FC Köln",
+        "logoUrl": "https://github.com/luukhopman/football-logos/blob/master/logos/Germany%20-%20Bundesliga/1.FC%20K%C3%B6ln.png?raw=true",
+        "countryId": 76,
+        "establishedAt": "1948-01-01T00:00:00"
+    },
+    {
+        "name": "FC Union Berlin",
+        "logoUrl": "https://github.com/luukhopman/football-logos/blob/master/logos/Germany%20-%20Bundesliga/1.FC%20Union%20Berlin.png?raw=true",
+        "countryId": 76,
+        "establishedAt": "1966-01-01T00:00:00"
+    },
+    {
+        "name": "FSV Mainz 05",
+        "logoUrl": "https://github.com/luukhopman/football-logos/blob/master/logos/Germany%20-%20Bundesliga/1.FSV%20Mainz%2005.png?raw=true",
+        "countryId": 76,
+        "establishedAt": "1905-01-01T00:00:00"
+    },
+    {
+        "name": "Paris Saint-Germain",
+        "logoUrl": "https://github.com/luukhopman/football-logos/blob/master/logos/France%20-%20Ligue%201/Paris%20Saint-Germain.png?raw=true",
+        "countryId": 71,
+        "establishedAt": "1970-01-01T00:00:00"
+    },
+    {
+        "name": "Olympique Lyonnais",
+        "logoUrl": "https://github.com/luukhopman/football-logos/blob/master/history/2023-24/France%20-%20Ligue%201/Olympique%20Lyon.png?raw=true",
+        "countryId": 71,
+        "establishedAt": "1950-01-01T00:00:00"
+    },
+    {
+        "name": "Olympique de Marseille",
+        "logoUrl": "https://github.com/luukhopman/football-logos/blob/master/history/2023-24/France%20-%20Ligue%201/Olympique%20Marseille.png?raw=true",
+        "countryId": 71,
+        "establishedAt": "1899-01-01T00:00:00"
+    },
+    {
+        "name": "AS Monaco",
+        "logoUrl": "https://github.com/luukhopman/football-logos/blob/master/logos/France%20-%20Ligue%201/AS%20Monaco.png?raw=true",
+        "countryId": 71,
+        "establishedAt": "1924-01-01T00:00:00"
+    },
+    {
+        "name": "Lille OSC",
+        "logoUrl": "https://github.com/luukhopman/football-logos/blob/master/history/2023-24/France%20-%20Ligue%201/LOSC%20Lille.png?raw=true",
+        "countryId": 71,
+        "establishedAt": "1944-01-01T00:00:00"
+    },
+    {
+        "name": "Lens",
+        "logoUrl": "https://github.com/luukhopman/football-logos/blob/master/history/2022-23/France%20-%20Ligue%201/RC%20Lens.png?raw=true",
+        "countryId": 71,
+        "establishedAt": "1906-01-01T00:00:00"
+    },
+    {
+        "name": "OGC Nice",
+        "logoUrl": "https://github.com/luukhopman/football-logos/blob/master/logos/France%20-%20Ligue%201/OGC%20Nice.png?raw=true",
+        "countryId": 71,
+        "establishedAt": "1906-01-01T00:00:00"
+    },
+    {
+        "name": "RC Strasbourg Alsace",
+        "logoUrl": "https://github.com/luukhopman/football-logos/blob/master/logos/France%20-%20Ligue%201/RC%20Strasbourg%20Alsace.png?raw=true",
+        "countryId": 71,
+        "establishedAt": "1906-01-01T00:00:00"
+    },
+    {
+        "name": "Angers SCO",
+        "logoUrl": "https://github.com/luukhopman/football-logos/blob/master/logos/France%20-%20Ligue%201/Angers%20SCO.png?raw=true",
+        "countryId": 71,
+        "establishedAt": "1919-01-01T00:00:00"
+    },
+    {
+        "name": "Toulouse FC",
+        "logoUrl": "https://github.com/luukhopman/football-logos/blob/master/history/2023-24/France%20-%20Ligue%201/FC%20Toulouse.png?raw=true",
+        "countryId": 71,
+        "establishedAt": "1970-01-01T00:00:00"
+    },
+    {
+        "name": "FC Lorient",
+        "logoUrl": "https://github.com/luukhopman/football-logos/blob/master/logos/France%20-%20Ligue%201/FC%20Lorient.png?raw=true",
+        "countryId": 71,
+        "establishedAt": "1926-01-01T00:00:00"
+    },
+    {
+        "name": "FC Metz",
+        "logoUrl": "https://github.com/luukhopman/football-logos/blob/master/logos/France%20-%20Ligue%201/FC%20Metz.png?raw=true",
+        "countryId": 71,
+        "establishedAt": "1932-01-01T00:00:00"
+    },
+    {
+        "name": "Clermont Foot",
+        "logoUrl": "https://github.com/luukhopman/football-logos/blob/master/history/2023-24/France%20-%20Ligue%201/Clermont%20Foot%2063.png?raw=true",
+        "countryId": 71,
+        "establishedAt": "1990-01-01T00:00:00"
+    },
+    {
+        "name": "Stade de Reims",
+        "logoUrl": "https://github.com/luukhopman/football-logos/blob/master/history/2022-23/France%20-%20Ligue%201/Stade%20Reims.png?raw=true",
+        "countryId": 71,
+        "establishedAt": "1931-01-01T00:00:00"
+    },
+    {
+        "name": "FC Nantes",
+        "logoUrl": "https://github.com/luukhopman/football-logos/blob/master/logos/France%20-%20Ligue%201/FC%20Nantes.png?raw=true",
+        "countryId": 71,
+        "establishedAt": "1943-01-01T00:00:00"
+    },
+    {
+        "name": "Troyes AC",
+        "logoUrl": "https://github.com/luukhopman/football-logos/blob/master/history/2022-23/France%20-%20Ligue%201/ESTAC%20Troyes.png?raw=true",
+        "countryId": 71,
+        "establishedAt": "1986-01-01T00:00:00"
+    },
+    {
+        "name": "Saint-Étienne",
+        "logoUrl": "https://github.com/luukhopman/football-logos/blob/master/history/2024-25/France%20-%20Ligue%201/AS%20Saint-%C3%89tienne.png?raw=true",
+        "countryId": 71,
+        "establishedAt": "1919-01-01T00:00:00"
+    },
+    {
+        "name": "Brest",
+        "logoUrl": "https://github.com/luukhopman/football-logos/blob/master/logos/France%20-%20Ligue%201/Stade%20Brestois%2029.png?raw=true",
+        "countryId": 71,
+        "establishedAt": "1950-01-01T00:00:00"
+    },
+    {
+        "name": "Benfica",
+        "logoUrl": "https://github.com/luukhopman/football-logos/blob/master/logos/Portugal%20-%20Liga%20Portugal/SL%20Benfica.png?raw=true",
+        "countryId": 157,
+        "establishedAt": "1904-01-01T00:00:00"
+    },
+    {
+        "name": "Porto",
+        "logoUrl": "https://github.com/luukhopman/football-logos/blob/master/logos/Portugal%20-%20Liga%20Portugal/FC%20Porto.png?raw=true",
+        "countryId": 157,
+        "establishedAt": "1893-01-01T00:00:00"
+    },
+    {
+        "name": "Sporting CP",
+        "logoUrl": "https://github.com/luukhopman/football-logos/blob/master/logos/Portugal%20-%20Liga%20Portugal/Sporting%20CP.png?raw=true",
+        "countryId": 157,
+        "establishedAt": "1906-01-01T00:00:00"
+    },
+    {
+        "name": "SC Braga",
+        "logoUrl": "https://github.com/luukhopman/football-logos/blob/master/logos/Portugal%20-%20Liga%20Portugal/SC%20Braga.png?raw=true",
+        "countryId": 157,
+        "establishedAt": "1921-01-01T00:00:00"
+    },
+    {
+        "name": "Vitória Guimarães SC",
+        "logoUrl": "https://github.com/luukhopman/football-logos/blob/master/logos/Portugal%20-%20Liga%20Portugal/Vit%C3%B3ria%20Guimar%C3%A3es%20SC.png?raw=true",
+        "countryId": 157,
+        "establishedAt": "1922-01-01T00:00:00"
+    },
+    {
+        "name": "GD Estoril Praia",
+        "logoUrl": "https://github.com/luukhopman/football-logos/blob/master/logos/Portugal%20-%20Liga%20Portugal/GD%20Estoril%20Praia.png?raw=true",
+        "countryId": 157,
+        "establishedAt": "1939-01-01T00:00:00"
+    },
+    {
+        "name": "Casa Pia AC",
+        "logoUrl": "https://github.com/luukhopman/football-logos/blob/master/logos/Portugal%20-%20Liga%20Portugal/Casa%20Pia%20AC.png?raw=true",
+        "countryId": 157,
+        "establishedAt": "1920-01-01T00:00:00"
+    },
+    {
+        "name": "FC Famalicão",
+        "logoUrl": "https://github.com/luukhopman/football-logos/blob/master/logos/Portugal%20-%20Liga%20Portugal/FC%20Famalic%C3%A3o.png?raw=true",
+        "countryId": 157,
+        "establishedAt": "1931-01-01T00:00:00"
+    },
+    {
+        "name": "Gil Vicente",
+        "logoUrl": "https://github.com/luukhopman/football-logos/blob/master/logos/Portugal%20-%20Liga%20Portugal/Gil%20Vicente%20FC.png?raw=true",
+        "countryId": 157,
+        "establishedAt": "1924-01-01T00:00:00"
+    },
+    {
+        "name": "Rio Ave",
+        "logoUrl": "https://github.com/luukhopman/football-logos/blob/master/logos/Portugal%20-%20Liga%20Portugal/Rio%20Ave%20FC.png?raw=true",
+        "countryId": 157,
+        "establishedAt": "1939-01-01T00:00:00"
+    },
+    {
+        "name": "FC Arouca",
+        "logoUrl": "https://github.com/luukhopman/football-logos/blob/master/logos/Portugal%20-%20Liga%20Portugal/FC%20Arouca.png?raw=true",
+        "countryId": 157,
+        "establishedAt": "1951-01-01T00:00:00"
+    },
+    {
+        "name": "Moreirense",
+        "logoUrl": "https://github.com/luukhopman/football-logos/blob/master/logos/Portugal%20-%20Liga%20Portugal/Moreirense%20FC.png?raw=true",
+        "countryId": 157,
+        "establishedAt": "1938-01-01T00:00:00"
+    },
+    {
+        "name": "AVS Futebol",
+        "logoUrl": "https://github.com/luukhopman/football-logos/blob/master/logos/Portugal%20-%20Liga%20Portugal/Avs%20Futebol.png?raw=true",
+        "countryId": 157,
+        "establishedAt": "2023-01-01T00:00:00"
+    },
+    {
+        "name": "CD Santa Clara",
+        "logoUrl": "https://github.com/luukhopman/football-logos/blob/master/logos/Portugal%20-%20Liga%20Portugal/CD%20Santa%20Clara.png?raw=true",
+        "countryId": 157,
+        "establishedAt": "1927-01-01T00:00:00"
+    },
+    {
+        "name": "CD National",
+        "logoUrl": "https://github.com/luukhopman/football-logos/blob/master/logos/Portugal%20-%20Liga%20Portugal/CD%20Nacional.png?raw=true",
+        "countryId": 157,
+        "establishedAt": "1910-01-01T00:00:00"
+    },
+    {
+        "name": "CD Tondela",
+        "logoUrl": "https://github.com/luukhopman/football-logos/blob/master/logos/Portugal%20-%20Liga%20Portugal/CD%20Tondela.png?raw=true",
+        "countryId": 157,
+        "establishedAt": "1933-01-01T00:00:00"
+    },
+    {
+        "name": "CF Estrela Amadora",
+        "logoUrl": "https://github.com/luukhopman/football-logos/blob/master/logos/Portugal%20-%20Liga%20Portugal/CF%20Estrela%20Amadora.png?raw=true",
+        "countryId": 157,
+        "establishedAt": "1932-01-01T00:00:00"
+    },
+    {
+        "name": "FC Alverca",
+        "logoUrl": "https://github.com/luukhopman/football-logos/blob/master/logos/Portugal%20-%20Liga%20Portugal/FC%20Alverca.png?raw=true",
+        "countryId": 157,
+        "establishedAt": "1939-01-01T00:00:00"
+    },
+    {
+        "name": "Ajax",
+        "logoUrl": "https://github.com/luukhopman/football-logos/blob/master/logos/Netherlands%20-%20Eredivisie/Ajax%20Amsterdam.png?raw=true",
+        "countryId": 141,
+        "establishedAt": "1900-01-01T00:00:00"
+    },
+    {
+        "name": "PSV Eindhoven",
+        "logoUrl": "https://github.com/luukhopman/football-logos/blob/master/logos/Netherlands%20-%20Eredivisie/PSV%20Eindhoven.png?raw=true",
+        "countryId": 141,
+        "establishedAt": "1913-01-01T00:00:00"
+    },
+    {
+        "name": "Feyenoord",
+        "logoUrl": "https://github.com/luukhopman/football-logos/blob/master/logos/Netherlands%20-%20Eredivisie/Feyenoord%20Rotterdam.png?raw=true",
+        "countryId": 141,
+        "establishedAt": "1908-01-01T00:00:00"
+    },
+    {
+        "name": "AZ Alkmaar",
+        "logoUrl": "https://github.com/luukhopman/football-logos/blob/master/logos/Netherlands%20-%20Eredivisie/AZ%20Alkmaar.png?raw=true",
+        "countryId": 141,
+        "establishedAt": "1967-01-01T00:00:00"
+    },
+    {
+        "name": "FC Twente",
+        "logoUrl": "https://github.com/luukhopman/football-logos/blob/master/logos/Netherlands%20-%20Eredivisie/Twente%20Enschede%20FC.png?raw=true",
+        "countryId": 141,
+        "establishedAt": "1965-01-01T00:00:00"
+    },
+    {
+        "name": "Sparta Rotterdam",
+        "logoUrl": "https://github.com/luukhopman/football-logos/blob/master/logos/Netherlands%20-%20Eredivisie/Sparta%20Rotterdam.png?raw=true",
+        "countryId": 141,
+        "establishedAt": "1888-01-01T00:00:00"
+    },
+    {
+        "name": "FC Utrecht",
+        "logoUrl": "https://github.com/luukhopman/football-logos/blob/master/logos/Netherlands%20-%20Eredivisie/FC%20Utrecht.png?raw=true",
+        "countryId": 141,
+        "establishedAt": "1970-01-01T00:00:00"
+    },
+    {
+        "name": "SC Heerenveen",
+        "logoUrl": "https://github.com/luukhopman/football-logos/blob/master/logos/Netherlands%20-%20Eredivisie/SC%20Heerenveen.png?raw=true",
+        "countryId": 141,
+        "establishedAt": "1920-01-01T00:00:00"
+    },
+    {
+        "name": "Fortuna Sittard",
+        "logoUrl": "https://github.com/luukhopman/football-logos/blob/master/logos/Netherlands%20-%20Eredivisie/Fortuna%20Sittard.png?raw=true",
+        "countryId": 141,
+        "establishedAt": "1968-01-01T00:00:00"
+    },
+    {
+        "name": "PEC Zwolle",
+        "logoUrl": "https://github.com/luukhopman/football-logos/blob/master/logos/Netherlands%20-%20Eredivisie/PEC%20Zwolle.png?raw=true",
+        "countryId": 141,
+        "establishedAt": "1910-01-01T00:00:00"
+    },
+    {
+        "name": "Go Ahead Eagles",
+        "logoUrl": "https://github.com/luukhopman/football-logos/blob/master/logos/Netherlands%20-%20Eredivisie/Go%20Ahead%20Eagles.png?raw=true",
+        "countryId": 141,
+        "establishedAt": "1902-01-01T00:00:00"
+    },
+    {
+        "name": "NEC Nijmegen",
+        "logoUrl": "https://github.com/luukhopman/football-logos/blob/master/logos/Netherlands%20-%20Eredivisie/NEC%20Nijmegen.png?raw=true",
+        "countryId": 141,
+        "establishedAt": "1900-01-01T00:00:00"
+    },
+    {
+        "name": "Excelsior",
+        "logoUrl": "https://github.com/luukhopman/football-logos/blob/master/logos/Netherlands%20-%20Eredivisie/Excelsior%20Rotterdam.png?raw=true",
+        "countryId": 141,
+        "establishedAt": "1902-01-01T00:00:00"
+    },
+    {
+        "name": "FC Groningen",
+        "logoUrl": "https://github.com/luukhopman/football-logos/blob/master/logos/Netherlands%20-%20Eredivisie/FC%20Groningen.png?raw=true",
+        "countryId": 141,
+        "establishedAt": "1971-01-01T00:00:00"
+    },
+    {
+        "name": "FC Volendam",
+        "logoUrl": "https://github.com/luukhopman/football-logos/blob/master/logos/Netherlands%20-%20Eredivisie/FC%20Volendam.png?raw=true",
+        "countryId": 141,
+        "establishedAt": "1920-01-01T00:00:00"
+    },
+    {
+        "name": "Heracles Almelo",
+        "logoUrl": "https://github.com/luukhopman/football-logos/blob/master/logos/Netherlands%20-%20Eredivisie/Heracles%20Almelo.png?raw=true",
+        "countryId": 141,
+        "establishedAt": "1903-01-01T00:00:00"
+    },
+    {
+        "name": "NAC Breda",
+        "logoUrl": "https://github.com/luukhopman/football-logos/blob/master/logos/Netherlands%20-%20Eredivisie/NAC%20Breda.png?raw=true",
+        "countryId": 141,
+        "establishedAt": "1912-01-01T00:00:00"
+    },
+    {
+        "name": "SC Telstar",
+        "logoUrl": "https://github.com/luukhopman/football-logos/blob/master/logos/Netherlands%20-%20Eredivisie/SC%20Telstar.png?raw=true",
+        "countryId": 141,
+        "establishedAt": "1963-01-01T00:00:00"
+    },
+    {
+        "name": "Twente Enchede FC",
+        "logoUrl": "https://github.com/luukhopman/football-logos/blob/master/logos/Netherlands%20-%20Eredivisie/Twente%20Enschede%20FC.png?raw=true",
+        "countryId": 141,
+        "establishedAt": "1965-01-01T00:00:00"
+    },
+    {
+        "name": "Maccabi Tel Aviv",
+        "logoUrl": "https://github.com/luukhopman/football-logos/blob/master/logos/Israel%20-%20Ligat%20ha'Al/Maccabi%20Tel%20Aviv.png?raw=true",
+        "countryId": 98,
+        "establishedAt": "1906-01-01T00:00:00"
+    },
+    {
+        "name": "Maccabi Haifa",
+        "logoUrl": "https://github.com/luukhopman/football-logos/blob/master/logos/Israel%20-%20Ligat%20ha'Al/Maccabi%20Haifa.png?raw=true",
+        "countryId": 98,
+        "establishedAt": "1913-01-01T00:00:00"
+    },
+    {
+        "name": "Hapoel Be'er Sheva",
+        "logoUrl": "https://github.com/luukhopman/football-logos/blob/master/logos/Israel%20-%20Ligat%20ha'Al/Hapoel%20Beer%20Sheva.png?raw=true",
+        "countryId": 98,
+        "establishedAt": "1949-01-01T00:00:00"
+    },
+    {
+        "name": "Beitar Jerusalem",
+        "logoUrl": "https://github.com/luukhopman/football-logos/blob/master/logos/Israel%20-%20Ligat%20ha'Al/Beitar%20Jerusalem.png?raw=true",
+        "countryId": 98,
+        "establishedAt": "1936-01-01T00:00:00"
+    },
+    {
+        "name": "Hapoel Tel Aviv",
+        "logoUrl": "https://github.com/luukhopman/football-logos/blob/master/logos/Israel%20-%20Ligat%20ha'Al/Hapoel%20Tel%20Aviv.png?raw=true",
+        "countryId": 98,
+        "establishedAt": "1923-01-01T00:00:00"
+    },
+    {
+        "name": "Maccabi Netanya",
+        "logoUrl": "https://github.com/luukhopman/football-logos/blob/master/logos/Israel%20-%20Ligat%20ha'Al/Maccabi%20Netanya.png?raw=true",
+        "countryId": 98,
+        "establishedAt": "1927-01-01T00:00:00"
+    },
+    {
+        "name": "Hapoel Haifa",
+        "logoUrl": "https://github.com/luukhopman/football-logos/blob/master/logos/Israel%20-%20Ligat%20ha'Al/Hapoel%20Haifa.png?raw=true",
+        "countryId": 98,
+        "establishedAt": "1924-01-01T00:00:00"
+    },
+    {
+        "name": "Bnei Sakhnin",
+        "logoUrl": "https://github.com/luukhopman/football-logos/blob/master/logos/Israel%20-%20Ligat%20ha'Al/Ihud%20Bnei%20Sakhnin.png?raw=true",
+        "countryId": 98,
+        "establishedAt": "1991-01-01T00:00:00"
+    },
+    {
+        "name": "Hapoel Jerusalem",
+        "logoUrl": "https://github.com/luukhopman/football-logos/blob/master/logos/Israel%20-%20Ligat%20ha'Al/Hapoel%20Jerusalem.png?raw=true",
+        "countryId": 98,
+        "establishedAt": "1926-01-01T00:00:00"
+    },
+    {
+        "name": "Ashdod SC",
+        "logoUrl": "https://github.com/luukhopman/football-logos/blob/master/logos/Israel%20-%20Ligat%20ha'Al/FC%20Ashdod.png?raw=true",
+        "countryId": 98,
+        "establishedAt": "1999-01-01T00:00:00"
+    },
+    {
+        "name": "Hapoel Hadera",
+        "logoUrl": "https://upload.wikimedia.org/wikipedia/en/thumb/3/3b/Hapoel_hadera.svg/345px-Hapoel_hadera.svg.png",
+        "countryId": 98,
+        "establishedAt": "1928-01-01T00:00:00"
+    },
+    {
+        "name": "Ironi Kiryat Shmona",
+        "logoUrl": "https://github.com/luukhopman/football-logos/blob/master/logos/Israel%20-%20Ligat%20ha'Al/Ironi%20Kiryat%20Shmona.png?raw=true",
+        "countryId": 98,
+        "establishedAt": "2000-01-01T00:00:00"
+    },
+    {
+        "name": "Ironi Tiberias",
+        "logoUrl": "https://github.com/luukhopman/football-logos/blob/master/logos/Israel%20-%20Ligat%20ha'Al/Ironi%20Tiberias.png?raw=true",
+        "countryId": 98,
+        "establishedAt": "2006-01-01T00:00:00"
+    },
+    {
+        "name": "Maccabi Petah Tikva",
+        "logoUrl": "https://images.seeklogo.com/logo-png/29/1/maccabi-petah-tikva-logo-png_seeklogo-292421.png",
+        "countryId": 98,
+        "establishedAt": "1926-01-01T00:00:00"
+    },
+    {
+        "name": "Hapoel Petah Tikva",
+        "logoUrl": "https://github.com/luukhopman/football-logos/blob/master/logos/Israel%20-%20Ligat%20ha'Al/Hapoel%20Petah%20Tikva.png?raw=true",
+        "countryId": 98,
+        "establishedAt": "1926-01-01T00:00:00"
+    },
+    {
+        "name": "Maccabi Bnei Reineh",
+        "logoUrl": "https://github.com/luukhopman/football-logos/blob/master/logos/Israel%20-%20Ligat%20ha'Al/Maccabi%20Bnei%20Reineh.png?raw=true",
+        "countryId": 98,
+        "establishedAt": "2016-01-01T00:00:00"
+    }
+]

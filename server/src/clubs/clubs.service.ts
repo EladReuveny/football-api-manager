@@ -1,4 +1,5 @@
 import {
+  BadRequestException,
   ConflictException,
   forwardRef,
   Inject,
@@ -20,10 +21,9 @@ import { Club } from './entities/club.entity';
 export class ClubsService {
   /**
    * Constructor
-   * 
-   * @param clubsRepository - club repository
-   * @param playersService - players service
-   * @param countryService - country service
+   * @param clubsRepository Club repository
+   * @param playersService Players service
+   * @param countryService Country service
    */
   constructor(
     @InjectRepository(Club) private readonly clubsRepository: Repository<Club>,
@@ -34,40 +34,44 @@ export class ClubsService {
 
   /**
    * Create a club
-   * @param createClubDto - create club dto
-   * @returns created club
+   * @param createClubDto Create club dto
+   * @returns Created club
    */
   async create(createClubDto: CreateClubDto) {
-    await this.validateUniqueness(createClubDto);
+    await this.validateName(createClubDto.name);
 
     const country = await this.countryService.findOne(createClubDto.countryId);
+    const establishedAt = createClubDto.establishedAt || new Date();
 
     const club = this.clubsRepository.create({
       ...createClubDto,
       country,
-      establishedAt: createClubDto.establishedAt
-        ? createClubDto.establishedAt
-        : new Date(),
+      establishedAt,
     });
     return await this.clubsRepository.save(club);
   }
 
   /**
    * Find all clubs
-   * @returns all clubs
+   * @returns All clubs
    */
   async findAll() {
-    return await this.clubsRepository.find();
+    return await this.clubsRepository.find({
+      relations: ['country', 'players', 'players.nationality', 'competitions'],
+    });
   }
 
   /**
    * Find a club by id
-   * @param id - club id
-   * @returns found club
+   * @param id Club id
+   * @returns Found club
    * @throws NotFoundException if club not found
    */
   async findOne(id: number) {
-    const club = await this.clubsRepository.findOneBy({ id });
+    const club = await this.clubsRepository.findOne({
+      where: { id },
+      relations: ['country', 'players', 'players.nationality', 'competitions'],
+    });
     if (!club) {
       throw new NotFoundException(`Club with id ${id} does not exist`);
     }
@@ -76,20 +80,36 @@ export class ClubsService {
 
   /**
    * Update a club
-   * @param id - club id
-   * @param updateClubDto - update club dto
-   * @returns updated club
+   * @param id Club id
+   * @param updateClubDto Update club dto
+   * @returns Updated club
    */
   async update(id: number, updateClubDto: UpdateClubDto) {
     const club = await this.findOne(id);
-    await this.validateUniqueness(updateClubDto);
-    const updatedClub = this.clubsRepository.merge(club, updateClubDto);
-    return await this.clubsRepository.save(updatedClub);
+
+    const isNameChanged = updateClubDto.name !== club.name;
+    if (isNameChanged && updateClubDto.name) {
+      await this.validateName(updateClubDto.name);
+      club.name = updateClubDto.name;
+    }
+
+    if (updateClubDto.logoUrl) {
+      club.logoUrl = updateClubDto.logoUrl;
+    }
+
+    if (updateClubDto.countryId) {
+      const country = await this.countryService.findOne(
+        updateClubDto.countryId,
+      );
+      club.country = country;
+    }
+
+    return await this.clubsRepository.save(club);
   }
 
   /**
    * Remove a club
-   * @param id - club id
+   * @param id Club id
    */
   async remove(id: number) {
     const club = await this.findOne(id);
@@ -98,12 +118,10 @@ export class ClubsService {
 
   /**
    * Create many clubs
-   * @param createClubDtos - create club dtos
-   * @returns created clubs
+   * @param createClubDtos Create club dtos
+   * @returns Created clubs
    */
-  async createMany(createClubDtos: CreateClubDto[]) {
-    // const clubs = this.clubsRepository.create(createClubDtos);
-    // return await this.clubsRepository.save(clubs);
+  async createBulk(createClubDtos: CreateClubDto[]) {
     const clubs = await Promise.all(
       createClubDtos.map((createClubDto) => this.create(createClubDto)),
     );
@@ -113,8 +131,8 @@ export class ClubsService {
 
   /**
    * Find many clubs by ids
-   * @param createCompetitionDtoIds - club ids
-   * @returns found clubs
+   * @param createCompetitionDtoIds Club ids
+   * @returns Found clubs
    */
   async findMany(createCompetitionDtoIds: number[]) {
     return await Promise.all(
@@ -124,39 +142,53 @@ export class ClubsService {
 
   /**
    * Add a player to a club
-   * @param clubId - club id
-   * @param playerId - player id
+   * @param clubId Club id
+   * @param playerId Player id
    */
   async addPlayerToClub(clubId: number, playerId: number) {
     const club = await this.findOne(clubId);
     const player = await this.playersService.findOne(playerId);
-    player.club = club;
-    await this.playersService.update(playerId, player);
+
+    if (player.club?.id === clubId) {
+      throw new ConflictException(
+        `Player with ID ${playerId} already exists in the club with ID ${clubId}`,
+      );
+    }
+
+    club.players = [...(club.players || []), player];
+
     return await this.clubsRepository.save(club);
   }
 
   /**
    * Remove a player from a club
-   * @param clubId - club id
-   * @param playerId - player id
+   * @param clubId Club id
+   * @param playerId Player id
    */
   async removePlayerFromClub(clubId: number, playerId: number) {
     const club = await this.findOne(clubId);
     const player = await this.playersService.findOne(playerId);
-    player.club = undefined;
-    await this.playersService.update(playerId, player);
+
+    if (player.club?.id !== clubId) {
+      throw new BadRequestException(
+        `Player with ID ${playerId} does not exist in the club with ID ${clubId}`,
+      );
+    }
+
+    club.players = club.players?.filter((p) => p.id !== playerId);
+
     return await this.clubsRepository.save(club);
   }
 
   /**
-   * Validates uniqueness of club
-   * @param dto - create club dto or update club dto
-   * @throws ConflictException if club with name already exists
+   * Validates uniqueness of club name
+   * @param name Club name
+   * @throws ConflictException - if club with name already exists
    */
-  private async validateUniqueness(dto: CreateClubDto | UpdateClubDto) {
-    const { name } = dto;
-
-    const isNameExists = await this.clubsRepository.existsBy({ name });
+  private async validateName(name: string) {
+    const isNameExists = await this.clubsRepository.existsBy({
+      name,
+    });
 
     if (isNameExists) {
       throw new ConflictException(`Club with name ${name} already exists`);

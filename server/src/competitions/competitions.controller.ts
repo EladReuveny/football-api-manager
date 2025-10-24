@@ -60,12 +60,12 @@ export class CompetitionsController {
     await this.competitionsService.remove(id);
   }
 
-  @Post('create-many')
+  @Post('create-bulk')
   @ApiOperation({ summary: 'Create multiple competitions' })
   @ApiBearerAuth('jwtAccessToken')
   @Roles(Role.ADMIN)
-  async createMany(@Body() createCompetitionDtos: CreateCompetitionDto[]) {
-    return await this.competitionsService.createMany(createCompetitionDtos);
+  async createBulk(@Body() createCompetitionDtos: CreateCompetitionDto[]) {
+    return await this.competitionsService.createBulk(createCompetitionDtos);
   }
 
   @Post(':competitionId/clubs/:clubId')

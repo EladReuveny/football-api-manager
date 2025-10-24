@@ -22,21 +22,20 @@ export class Club {
   @Column({ type: 'text' })
   logoUrl: string;
 
+  @Column({ type: 'date', update: false })
+  establishedAt: Date;
+
   @ManyToOne(() => Country, (country) => country.clubs, { eager: true })
   @JoinColumn({ name: 'country_id' })
   country: Country;
 
-  @Column({ type: 'date', update: false })
-  establishedAt: Date;
-
   @OneToMany(() => Player, (player) => player.club, {
     nullable: true,
-    cascade: true,
   })
-  players?: Player[];
+  players?: Player[] | null;
 
   @ManyToMany(() => Competition, (competition) => competition.clubs, {
     nullable: true,
   })
-  competitions?: Competition[];
+  competitions?: Competition[] | null;
 }

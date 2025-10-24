@@ -33,16 +33,15 @@ export class Competition {
     eager: true,
   })
   @JoinColumn({ name: 'country_id' })
-  country?: Country;
+  country?: Country | null;
 
   @ManyToMany(() => Club, (club) => club.competitions, {
     nullable: true,
-    eager: true,
   })
   @JoinTable({
     name: 'competitions_clubs',
     joinColumn: { name: 'competition_id' },
     inverseJoinColumn: { name: 'club_id' },
   })
-  clubs?: Club[];
+  clubs?: Club[] | null;
 }

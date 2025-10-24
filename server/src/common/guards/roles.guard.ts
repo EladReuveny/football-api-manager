@@ -11,7 +11,6 @@ import { ROLES_KEY } from '../decorators/roles.decorator';
 
 /**
  * RolesGuard
- *
  * This guard checks if the user has the required roles to access a resource.
  * Skips the guard if the request has no required roles defined by the @Roles() decorator.
  * If the user does not have the required roles, it will throw a ForbiddenException.
@@ -20,7 +19,6 @@ import { ROLES_KEY } from '../decorators/roles.decorator';
 export class RolesGuard implements CanActivate {
   /**
    * Constructor
-   *
    * @param reflector The reflector service to get the required roles from the request handler or class
    */
   constructor(private readonly reflector: Reflector) {}

@@ -24,7 +24,6 @@ import { UsersModule } from './users/users.module';
         url: configService.get<string>('DB_URL'),
         autoLoadEntities: true,
         synchronize: configService.get<string>('NODE_ENV') !== 'production',
-        dropSchema: true,
       }),
       inject: [ConfigService],
     }),

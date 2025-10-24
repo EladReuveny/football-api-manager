@@ -20,10 +20,9 @@ import { Competition } from './entities/competition.entity';
 export class CompetitionsService {
   /**
    * Constructor
-   *
-   * @param competitionsRepository - Competition repository
-   * @param clubsService - Clubs service
-   * @param countriesService - Countries service
+   * @param competitionsRepository Competition repository
+   * @param clubsService Clubs service
+   * @param countriesService Countries service
    */
   constructor(
     @InjectRepository(Competition)
@@ -34,11 +33,11 @@ export class CompetitionsService {
 
   /**
    * Create a competition
-   * @param createCompetitionDto - create competition dto
-   * @returns created competition
+   * @param createCompetitionDto Create competition dto
+   * @returns Created competition
    */
   async create(createCompetitionDto: CreateCompetitionDto) {
-    await this.validateUniqueness(createCompetitionDto);
+    await this.validateName(createCompetitionDto.name);
 
     let country: Country | undefined = undefined;
     if (createCompetitionDto.countryId) {
@@ -48,15 +47,15 @@ export class CompetitionsService {
     }
 
     let clubs: Club[] = [];
-    if (createCompetitionDto.clubIds) {
-      clubs = await this.clubsService.findMany(createCompetitionDto.clubIds);
+    if (createCompetitionDto.clubsIds) {
+      clubs = await this.clubsService.findMany(createCompetitionDto.clubsIds);
     }
+
+    const establishedAt = createCompetitionDto.establishedAt || new Date();
 
     const competition = this.competitionsRepository.create({
       ...createCompetitionDto,
-      establishedAt: createCompetitionDto.establishedAt
-        ? createCompetitionDto.establishedAt
-        : new Date(),
+      establishedAt,
       country,
       clubs,
     });
@@ -65,20 +64,25 @@ export class CompetitionsService {
 
   /**
    * Get all competitions
-   * @returns all competitions
+   * @returns All competitions
    */
   async findAll() {
-    return this.competitionsRepository.find();
+    return this.competitionsRepository.find({
+      relations: ['country', 'clubs'],
+    });
   }
 
   /**
    * Get a competition by id
-   * @param id - competition id
-   * @returns competition
-   * @throws NotFoundException if competition not found
+   * @param id Competition id
+   * @returns Competition
+   * @throws NotFoundException - if competition not found
    */
   async findOne(id: number) {
-    const competition = await this.competitionsRepository.findOneBy({ id });
+    const competition = await this.competitionsRepository.findOne({
+      where: { id },
+      relations: ['country', 'clubs'],
+    });
 
     if (!competition) {
       throw new NotFoundException(`Competition with id ${id} does not exist`);
@@ -89,24 +93,51 @@ export class CompetitionsService {
 
   /**
    * Update a competition
-   * @param id - competition id
-   * @param updateCompetitionDto - update competition dto
-   * @returns updated competition
+   * @param id Competition id
+   * @param updateCompetitionDto Update competition dto
+   * @returns Updated competition
    */
   async update(id: number, updateCompetitionDto: UpdateCompetitionDto) {
     const competition = await this.findOne(id);
-    await this.validateUniqueness(updateCompetitionDto);
-    const updatedCompetition = this.competitionsRepository.merge(
-      competition,
-      updateCompetitionDto,
-    );
 
-    return await this.competitionsRepository.save(updatedCompetition);
+    const isNameChanged = updateCompetitionDto.name !== competition.name;
+    if (isNameChanged && updateCompetitionDto.name) {
+      await this.validateName(updateCompetitionDto.name);
+      competition.name = updateCompetitionDto.name;
+    }
+
+    if (updateCompetitionDto.logoUrl) {
+      competition.logoUrl = updateCompetitionDto.logoUrl;
+    }
+
+    if (updateCompetitionDto.competitionType) {
+      competition.competitionType = updateCompetitionDto.competitionType;
+    }
+
+    if (updateCompetitionDto.countryId) {
+      const country = await this.countriesService.findOne(
+        updateCompetitionDto.countryId,
+      );
+      competition.country = country;
+    } else {
+      competition.country = null;
+    }
+
+    if (updateCompetitionDto.clubsIds) {
+      const clubs = await this.clubsService.findMany(
+        updateCompetitionDto.clubsIds,
+      );
+      competition.clubs = clubs;
+    } else {
+      competition.clubs = null;
+    }
+
+    return await this.competitionsRepository.save(competition);
   }
 
   /**
    * Remove a competition
-   * @param id - competition id
+   * @param id Competition id
    */
   async remove(id: number) {
     const competition = await this.findOne(id);
@@ -114,16 +145,14 @@ export class CompetitionsService {
   }
 
   /**
-   * Validate uniqueness of competition name
-   * @param dto - create competition dto or update competition dto
-   * @throws ConflictException if competition with name already exists
+   * Validates uniqueness of competition name
+   * @param name Competition name
+   * @throws ConflictException - if competition with name already exists
    */
-  private async validateUniqueness(
-    dto: CreateCompetitionDto | UpdateCompetitionDto,
-  ) {
-    const { name } = dto;
-
-    const isNameExists = await this.competitionsRepository.existsBy({ name });
+  private async validateName(name: string) {
+    const isNameExists = await this.competitionsRepository.existsBy({
+      name,
+    });
 
     if (isNameExists) {
       throw new ConflictException(
@@ -134,14 +163,10 @@ export class CompetitionsService {
 
   /**
    * Create many competitions
-   * @param createCompetitionDtos - create competition dtos
-   * @returns created competitions
+   * @param createCompetitionDtos Create competition dtos
+   * @returns Created competitions
    */
-  async createMany(createCompetitionDtos: CreateCompetitionDto[]) {
-    // const competitions = this.competitionsRepository.create(
-    //   createCompetitionDtos,
-    // );
-    // return await this.competitionsRepository.save(competitions);
+  async createBulk(createCompetitionDtos: CreateCompetitionDto[]) {
     const competitions = await Promise.all(
       createCompetitionDtos.map((createCompetitionDto) =>
         this.create(createCompetitionDto),
@@ -153,10 +178,10 @@ export class CompetitionsService {
 
   /**
    * Add a club to a competition
-   * @param competitionId - competition id
-   * @param clubId - club id
-   * @returns updated competition
-   * @throws ConflictException if club already exists in competition
+   * @param competitionId Competition id
+   * @param clubId Club id
+   * @returns Updated competition
+   * @throws ConflictException - if club already exists in competition
    */
   async addClubToCompetition(competitionId: number, clubId: number) {
     const competition = await this.findOne(competitionId);
@@ -179,8 +204,8 @@ export class CompetitionsService {
 
   /**
    * Remove a club from a competition
-   * @param competitionId - competition id
-   * @param clubId - club id
+   * @param competitionId Competition id
+   * @param clubId Club id
    */
   async removeClubFromCompetition(competitionId: number, clubId: number) {
     const competition = await this.findOne(competitionId);

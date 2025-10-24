@@ -2,13 +2,9 @@ import { DocumentBuilder } from '@nestjs/swagger';
 
 /**
  * Configuration for Swagger API documentation
- *
  * @param version The version of the API
- *
  * @returns A DocumentBuilder object with the Swagger configuration
- *
- * @example
- * const swaggerConfig = SwaggerConfig('1.0.0');
+ * @example const swaggerConfig = SwaggerConfig('1.0.0');
  */
 export const SwaggerConfig = (version: string) => {
   return new DocumentBuilder()

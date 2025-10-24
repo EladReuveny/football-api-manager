@@ -57,12 +57,12 @@ export class ClubsController {
     await this.clubsService.remove(id);
   }
 
-  @Post('create-many')
+  @Post('create-bulk')
   @ApiOperation({ summary: 'Create many clubs' })
   @ApiBearerAuth('jwtAccessToken')
   @Roles(Role.ADMIN)
-  async createMany(@Body() createClubDtos: CreateClubDto[]) {
-    const clubs = await this.clubsService.createMany(createClubDtos);
+  async createBulk(@Body() createClubDtos: CreateClubDto[]) {
+    const clubs = await this.clubsService.createBulk(createClubDtos);
     return clubs;
   }
 

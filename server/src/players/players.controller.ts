@@ -60,11 +60,11 @@ export class PlayersController {
     return await this.playersService.remove(id);
   }
 
-  @Post('create-many')
+  @Post('create-bulk')
   @ApiOperation({ summary: 'Create many players' })
   @ApiBearerAuth('jwtAccessToken')
   @Roles(Role.ADMIN)
-  async createMany(@Body() createPlayerDtos: CreatePlayerDto[]) {
-    return await this.playersService.createMany(createPlayerDtos);
+  async createBulk(@Body() createPlayerDtos: CreatePlayerDto[]) {
+    return await this.playersService.createBulk(createPlayerDtos);
   }
 }

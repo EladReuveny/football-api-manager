@@ -1,0 +1,5232 @@
+[
+  {
+    "name": "Marc-André ter Stegen",
+    "age": 33,
+    "position": "GK",
+    "rating": 90,
+    "marketValue": 12.0,
+    "imageUrl": "https://img.a.transfermarkt.technology/portrait/header/74857-1674465246.jpg?lm=1",
+    "nationalityId": 76,
+    "clubId": 1
+  },
+  {
+    "name": "Alejandro Balde",
+    "age": 21,
+    "position": "LB",
+    "rating": 87,
+    "marketValue": 60.0,
+    "imageUrl": "https://img.a.transfermarkt.technology/portrait/header/636688-1662836200.jpg?lm=1",
+    "nationalityId": 183,
+    "clubId": 1
+  },
+  {
+    "name": "Ronald Araújo",
+    "age": 26,
+    "position": "CB",
+    "rating": 89,
+    "marketValue": 35.0,
+    "imageUrl": "https://img.a.transfermarkt.technology/portrait/header/480267-1736431980.jpg?lm=1",
+    "nationalityId": 206,
+    "clubId": 1
+  },
+  {
+    "name": "Pau Cubarsí",
+    "age": 18,
+    "position": "CB",
+    "rating": 80,
+    "marketValue": 80.0,
+    "imageUrl": "https://img.a.transfermarkt.technology/portrait/header/962110-1712779232.jpg?lm=1",
+    "nationalityId": 183,
+    "clubId": 1
+  },
+  {
+    "name": "Gavi",
+    "age": 21,
+    "position": "CM",
+    "rating": 88,
+    "marketValue": 100.0,
+    "imageUrl": "https://img.a.transfermarkt.technology/portrait/header/646740-1682685701.jpg?lm=1",
+    "nationalityId": 183,
+    "clubId": 1
+  },
+  {
+    "name": "Ferran Torres",
+    "age": 26,
+    "position": "LW",
+    "rating": 86,
+    "marketValue": 50.0,
+    "imageUrl": "https://img.a.transfermarkt.technology/portrait/header/398184-1699383547.jpg?lm=1",
+    "nationalityId": 183,
+    "clubId": 1
+  },
+  {
+    "name": "Pedri",
+    "age": 22,
+    "position": "CM",
+    "rating": 87,
+    "marketValue": 140.0,
+    "imageUrl": "https://img.a.transfermarkt.technology/portrait/header/683840-1744278342.jpg?lm=1",
+    "nationalityId": 183,
+    "clubId": 1
+  },
+  {
+    "name": "Robert Lewandowski",
+    "age": 36,
+    "position": "ST",
+    "rating": 92,
+    "marketValue": 25.0,
+    "imageUrl": "https://img.a.transfermarkt.technology/portrait/header/38253-1701118759.jpg?lm=1",
+    "nationalityId": 156,
+    "clubId": 1
+  },
+  {
+    "name": "Lamine Yamal",
+    "age": 17,
+    "position": "RW",
+    "rating": 86,
+    "marketValue": 200.0,
+    "imageUrl": "https://img.a.transfermarkt.technology/portrait/header/937958-1746563945.jpg?lm=1",
+    "nationalityId": 183,
+    "clubId": 1
+  },
+  {
+    "name": "Raphinha",
+    "age": 29,
+    "position": "LW",
+    "rating": 85,
+    "marketValue": 50.0,
+    "imageUrl": "https://img.a.transfermarkt.technology/portrait/header/411295-1729754479.png?lm=1",
+    "nationalityId": 28,
+    "clubId": 1
+  },
+  {
+    "name": "Joan García",
+    "age": 24,
+    "position": "GK",
+    "rating": 78,
+    "marketValue": 25.0,
+    "imageUrl": "https://img.a.transfermarkt.technology/portrait/header/561613-1747386081.jpg?lm=1",
+    "nationalityId": 183,
+    "clubId": 1
+  },
+  {
+    "name": "Marcus Rashford",
+    "age": 27,
+    "position": "ST",
+    "rating": 88,
+    "marketValue": 60.0,
+    "imageUrl": "https://img.a.transfermarkt.technology/portrait/header/258923-1674473054.jpg?lm=1",
+    "nationalityId": 62,
+    "clubId": 1
+  },
+  {
+    "name": "Andreas Christensen",
+    "age": 29,
+    "position": "CB",
+    "rating": 85,
+    "marketValue": 12.0,
+    "imageUrl": "https://img.a.transfermarkt.technology/portrait/header/196948-1668183241.jpg?lm=1",
+    "nationalityId": 55,
+    "clubId": 1
+  },
+  {
+    "name": "Fermín López",
+    "age": 22,
+    "position": "CM",
+    "rating": 85,
+    "marketValue": 45.0,
+    "imageUrl": "https://img.a.transfermarkt.technology/portrait/header/636703-1698086824.jpg?lm=1",
+    "nationalityId": 183,
+    "clubId": 1
+  },
+  {
+    "name": "Marc Casadó",
+    "age": 18,
+    "position": "CM",
+    "rating": 80,
+    "marketValue": 25.0,
+    "imageUrl": "https://img.a.transfermarkt.technology/portrait/header/636695-1729771427.jpg?lm=1",
+    "nationalityId": 183,
+    "clubId": 1
+  },
+  {
+    "name": "Gerard Martín",
+    "age": 23,
+    "position": "CB",
+    "rating": 80,
+    "marketValue": 12.0,
+    "imageUrl": "https://img.a.transfermarkt.technology/portrait/header/705395-1730119053.jpg?lm=1",
+    "nationalityId": 183,
+    "clubId": 1
+  },
+  {
+    "name": "Dani Olmo",
+    "age": 27,
+    "position": "CAM",
+    "rating": 86,
+    "marketValue": 60.0,
+    "imageUrl": "https://img.a.transfermarkt.technology/portrait/header/293385-1711546268.jpg?lm=1",
+    "nationalityId": 183,
+    "clubId": 1
+  },
+  {
+    "name": "Frenkie de Jong",
+    "age": 28,
+    "position": "CM",
+    "rating": 90,
+    "marketValue": 80.0,
+    "imageUrl": "https://img.a.transfermarkt.technology/portrait/header/326330-1746041680.jpg?lm=1",
+    "nationalityId": 141,
+    "clubId": 1
+  },
+  {
+    "name": "Marc Bernal",
+    "age": 18,
+    "position": "CM",
+    "rating": 78,
+    "marketValue": 18.0,
+    "imageUrl": "https://img.a.transfermarkt.technology/portrait/header/1018920-1724052540.jpg?lm=1",
+    "nationalityId": 183,
+    "clubId": 1
+  },
+  {
+    "name": "Jules Koundé",
+    "age": 26,
+    "position": "CB",
+    "rating": 88,
+    "marketValue": 70.0,
+    "imageUrl": "https://img.a.transfermarkt.technology/portrait/header/411975-1702502639.jpg?lm=1",
+    "nationalityId": 71,
+    "clubId": 1
+  },
+  {
+    "name": "Eric García",
+    "age": 24,
+    "position": "CB",
+    "rating": 84,
+    "marketValue": 18.0,
+    "imageUrl": "https://img.a.transfermarkt.technology/portrait/header/466794-1693604801.jpg?lm=1",
+    "nationalityId": 183,
+    "clubId": 1
+  },
+  {
+    "name": "Wojciech Szczęsny",
+    "age": 35,
+    "position": "GK",
+    "rating": 85,
+    "marketValue": 1.0,
+    "imageUrl": "https://img.a.transfermarkt.technology/portrait/header/44058-1744278078.jpg?lm=1",
+    "nationalityId": 156,
+    "clubId": 1
+  },
+  {
+    "name": "Roony Bardghji",
+    "age": 18,
+    "position": "RW",
+    "rating": 80,
+    "marketValue": 25.0,
+    "imageUrl": "https://img.a.transfermarkt.technology/portrait/header/792331-1667420074.jpg?lm=1",
+    "nationalityId": 187,
+    "clubId": 1
+  },
+  {
+    "name": "Thibaut Courtois",
+    "age": 33,
+    "position": "GK",
+    "rating": 90,
+    "marketValue": 20.0,
+    "imageUrl": "https://img.a.transfermarkt.technology/portrait/header/34352-1697400000.jpg?lm=1",
+    "nationalityId": 56,
+    "clubId": 2
+  },
+  {
+    "name": "Andriy Lunin",
+    "age": 26,
+    "position": "GK",
+    "rating": 85,
+    "marketValue": 18.0,
+    "imageUrl": "https://img.a.transfermarkt.technology/portrait/header/233642-1680000000.jpg?lm=1",
+    "nationalityId": 180,
+    "clubId": 2
+  },
+  {
+    "name": "Fran González",
+    "age": 20,
+    "position": "GK",
+    "rating": 78,
+    "marketValue": 5.0,
+    "imageUrl": "https://img.a.transfermarkt.technology/portrait/header/123456-1700000000.jpg?lm=1",
+    "nationalityId": 183,
+    "clubId": 2
+  },
+  {
+    "name": "Sergio Mestre",
+    "age": 24,
+    "position": "GK",
+    "rating": 76,
+    "marketValue": 3.0,
+    "imageUrl": "https://img.a.transfermarkt.technology/portrait/header/654321-1700000000.jpg?lm=1",
+    "nationalityId": 183,
+    "clubId": 2
+  },
+  {
+    "name": "Dani Carvajal",
+    "age": 33,
+    "position": "RB",
+    "rating": 87,
+    "marketValue": 8.0,
+    "imageUrl": "https://img.a.transfermarkt.technology/portrait/header/16619-1700000000.jpg?lm=1",
+    "nationalityId": 183,
+    "clubId": 2
+  },
+  {
+    "name": "Éder Militão",
+    "age": 27,
+    "position": "CB",
+    "rating": 88,
+    "marketValue": 30.0,
+    "imageUrl": "https://img.a.transfermarkt.technology/portrait/header/311116-1700000000.jpg?lm=1",
+    "nationalityId": 32,
+    "clubId": 2
+  },
+  {
+    "name": "David Alaba",
+    "age": 33,
+    "position": "CB",
+    "rating": 85,
+    "marketValue": 6.0,
+    "imageUrl": "https://img.a.transfermarkt.technology/portrait/header/50069-1700000000.jpg?lm=1",
+    "nationalityId": 8,
+    "clubId": 2
+  },
+  {
+    "name": "Antonio Rüdiger",
+    "age": 32,
+    "position": "CB",
+    "rating": 86,
+    "marketValue": 20.0,
+    "imageUrl": "https://img.a.transfermarkt.technology/portrait/header/181291-1700000000.jpg?lm=1",
+    "nationalityId": 81,
+    "clubId": 2
+  },
+  {
+    "name": "Dean Huijsen",
+    "age": 20,
+    "position": "CB",
+    "rating": 80,
+    "marketValue": 60.0,
+    "imageUrl": "https://img.a.transfermarkt.technology/portrait/header/606782-1700000000.jpg?lm=1",
+    "nationalityId": 183,
+    "clubId": 2
+  },
+  {
+    "name": "Fran García",
+    "age": 24,
+    "position": "LB",
+    "rating": 83,
+    "marketValue": 12.0,
+    "imageUrl": "https://img.a.transfermarkt.technology/portrait/header/234567-1700000000.jpg?lm=1",
+    "nationalityId": 183,
+    "clubId": 2
+  },
+  {
+    "name": "Lucas Vázquez",
+    "age": 33,
+    "position": "RB",
+    "rating": 82,
+    "marketValue": 5.0,
+    "imageUrl": "https://img.a.transfermarkt.technology/portrait/header/345678-1700000000.jpg?lm=1",
+    "nationalityId": 183,
+    "clubId": 2
+  },
+  {
+    "name": "Jude Bellingham",
+    "age": 22,
+    "position": "CM",
+    "rating": 92,
+    "marketValue": 180.0,
+    "imageUrl": "https://img.a.transfermarkt.technology/portrait/header/472112-1700000000.jpg?lm=1",
+    "nationalityId": 62,
+    "clubId": 2
+  },
+  {
+    "name": "Eduardo Camavinga",
+    "age": 22,
+    "position": "CM",
+    "rating": 88,
+    "marketValue": 85.0,
+    "imageUrl": "https://img.a.transfermarkt.technology/portrait/header/517989-1700000000.jpg?lm=1",
+    "nationalityId": 27,
+    "clubId": 2
+  },
+  {
+    "name": "Fede Valverde",
+    "age": 26,
+    "position": "CM",
+    "rating": 89,
+    "marketValue": 90.0,
+    "imageUrl": "https://img.a.transfermarkt.technology/portrait/header/553801-1700000000.jpg?lm=1",
+    "nationalityId": 183,
+    "clubId": 2
+  },
+  {
+    "name": "Aurelien Tchouaméni",
+    "age": 23,
+    "position": "CM",
+    "rating": 90,
+    "marketValue": 100.0,
+    "imageUrl": "https://img.a.transfermarkt.technology/portrait/header/547451-1700000000.jpg?lm=1",
+    "nationalityId": 107,
+    "clubId": 2
+  },
+  {
+    "name": "Dani Ceballos",
+    "age": 29,
+    "position": "CM",
+    "rating": 84,
+    "marketValue": 10.0,
+    "imageUrl": "https://img.a.transfermarkt.technology/portrait/header/202462-1700000000.jpg?lm=1",
+    "nationalityId": 183,
+    "clubId": 2
+  },
+  {
+    "name": "Arda Güler",
+    "age": 19,
+    "position": "CAM",
+    "rating": 85,
+    "marketValue": 45.0,
+    "imageUrl": "https://img.a.transfermarkt.technology/portrait/header/657890-1700000000.jpg?lm=1",
+    "nationalityId": 26,
+    "clubId": 2
+  },
+  {
+    "name": "Kylian Mbappé",
+    "age": 26,
+    "position": "ST",
+    "rating": 93,
+    "marketValue": 200.0,
+    "imageUrl": "https://img.a.transfermarkt.technology/portrait/header/342229-1700000000.jpg?lm=1",
+    "nationalityId": 196,
+    "clubId": 2
+  },
+  {
+    "name": "Vinícius Júnior",
+    "age": 23,
+    "position": "LW",
+    "rating": 91,
+    "marketValue": 150.0,
+    "imageUrl": "https://img.a.transfermarkt.technology/portrait/header/382493-1700000000.jpg?lm=1",
+    "nationalityId": 32,
+    "clubId": 2
+  },
+  {
+    "name": "Rodrygo",
+    "age": 22,
+    "position": "RW",
+    "rating": 88,
+    "marketValue": 110.0,
+    "imageUrl": "https://img.a.transfermarkt.technology/portrait/header/393366-1700000000.jpg?lm=1",
+    "nationalityId": 32,
+    "clubId": 2
+  },
+  {
+    "name": "Endrick",
+    "age": 17,
+    "position": "ST",
+    "rating": 84,
+    "marketValue": 120.0,
+    "imageUrl": "https://img.a.transfermarkt.technology/portrait/header/1012345-1700000000.jpg?lm=1",
+    "nationalityId": 32,
+    "clubId": 2
+  },
+  {
+    "name": "Franco Mastantuono",
+    "age": 19,
+    "position": "LW",
+    "rating": 78,
+    "marketValue": 20.0,
+    "imageUrl": "https://img.a.transfermarkt.technology/portrait/header/1098765-1700000000.jpg?lm=1",
+    "nationalityId": 183,
+    "clubId": 2
+  },
+  {
+    "name": "Jan Oblak",
+    "age": 33,
+    "position": "GK",
+    "rating": 92,
+    "marketValue": 15.0,
+    "imageUrl": "https://img.a.transfermarkt.technology/portrait/header/102191-1700000000.jpg?lm=1",
+    "nationalityId": 76,
+    "clubId": 3
+  },
+  {
+    "name": "Juan Musso",
+    "age": 31,
+    "position": "GK",
+    "rating": 88,
+    "marketValue": 10.0,
+    "imageUrl": "https://img.a.transfermarkt.technology/portrait/header/301903-1700000000.jpg?lm=1",
+    "nationalityId": 11,
+    "clubId": 3
+  },
+  {
+    "name": "César Azpilicueta",
+    "age": 34,
+    "position": "CB",
+    "rating": 86,
+    "marketValue": 7.0,
+    "imageUrl": "https://img.a.transfermarkt.technology/portrait/header/40374-1700000000.jpg?lm=1",
+    "nationalityId": 183,
+    "clubId": 3
+  },
+  {
+    "name": "José María Giménez",
+    "age": 30,
+    "position": "CB",
+    "rating": 88,
+    "marketValue": 18.0,
+    "imageUrl": "https://img.a.transfermarkt.technology/portrait/header/85683-1700000000.jpg?lm=1",
+    "nationalityId": 140,
+    "clubId": 3
+  },
+  {
+    "name": "Clément Lenglet",
+    "age": 28,
+    "position": "CB",
+    "rating": 85,
+    "marketValue": 6.0,
+    "imageUrl": "https://img.a.transfermarkt.technology/portrait/header/227547-1700000000.jpg?lm=1",
+    "nationalityId": 71,
+    "clubId": 3
+  },
+  {
+    "name": "Reinildo Mandava",
+    "age": 31,
+    "position": "LB",
+    "rating": 84,
+    "marketValue": 3.0,
+    "imageUrl": "https://img.a.transfermarkt.technology/portrait/header/410546-1700000000.jpg?lm=1",
+    "nationalityId": 207,
+    "clubId": 3
+  },
+  {
+    "name": "Matteo Ruggeri",
+    "age": 23,
+    "position": "LB",
+    "rating": 82,
+    "marketValue": 17.0,
+    "imageUrl": "https://img.a.transfermarkt.technology/portrait/header/543432-1700000000.jpg?lm=1",
+    "nationalityId": 23,
+    "clubId": 3
+  },
+  {
+    "name": "Nahuel Molina",
+    "age": 25,
+    "position": "RB",
+    "rating": 87,
+    "marketValue": 30.0,
+    "imageUrl": "https://img.a.transfermarkt.technology/portrait/header/535499-1700000000.jpg?lm=1",
+    "nationalityId": 11,
+    "clubId": 3
+  },
+  {
+    "name": "Marcos Llorente",
+    "age": 29,
+    "position": "CM",
+    "rating": 90,
+    "marketValue": 65.0,
+    "imageUrl": "https://img.a.transfermarkt.technology/portrait/header/86726-1700000000.jpg?lm=1",
+    "nationalityId": 183,
+    "clubId": 3
+  },
+  {
+    "name": "Koke",
+    "age": 34,
+    "position": "CM",
+    "rating": 87,
+    "marketValue": 4.0,
+    "imageUrl": "https://img.a.transfermarkt.technology/portrait/header/45747-1700000000.jpg?lm=1",
+    "nationalityId": 183,
+    "clubId": 3
+  },
+  {
+    "name": "Rodrigo De Paul",
+    "age": 30,
+    "position": "CM",
+    "rating": 88,
+    "marketValue": 35.0,
+    "imageUrl": "https://img.a.transfermarkt.technology/portrait/header/361986-1700000000.jpg?lm=1",
+    "nationalityId": 22,
+    "clubId": 3
+  },
+  {
+    "name": "Pablo Barrios",
+    "age": 23,
+    "position": "CM",
+    "rating": 84,
+    "marketValue": 25.0,
+    "imageUrl": "https://img.a.transfermarkt.technology/portrait/header/594322-1700000000.jpg?lm=1",
+    "nationalityId": 183,
+    "clubId": 3
+  },
+  {
+    "name": "Conor Gallagher",
+    "age": 24,
+    "position": "CM",
+    "rating": 86,
+    "marketValue": 40.0,
+    "imageUrl": "https://img.a.transfermarkt.technology/portrait/header/447307-1700000000.jpg?lm=1",
+    "nationalityId": 62,
+    "clubId": 3
+  },
+  {
+    "name": "Samuel Lino",
+    "age": 23,
+    "position": "LW",
+    "rating": 85,
+    "marketValue": 20.0,
+    "imageUrl": "https://img.a.transfermarkt.technology/portrait/header/426762-1700000000.jpg?lm=1",
+    "nationalityId": 32,
+    "clubId": 3
+  },
+  {
+    "name": "Rodrigo Riquelme",
+    "age": 25,
+    "position": "LW",
+    "rating": 82,
+    "marketValue": 10.0,
+    "imageUrl": "https://img.a.transfermarkt.technology/portrait/header/248215-1700000000.jpg?lm=1",
+    "nationalityId": 183,
+    "clubId": 3
+  },
+  {
+    "name": "Giuliano Simeone",
+    "age": 23,
+    "position": "RW",
+    "rating": 83,
+    "marketValue": 18.0,
+    "imageUrl": "https://img.a.transfermarkt.technology/portrait/header/550012-1700000000.jpg?lm=1",
+    "nationalityId": 60,
+    "clubId": 3
+  },
+  {
+    "name": "Antoine Griezmann",
+    "age": 34,
+    "position": "ST",
+    "rating": 87,
+    "marketValue": 12.0,
+    "imageUrl": "https://img.a.transfermarkt.technology/portrait/header/12944-1700000000.jpg?lm=1",
+    "nationalityId": 71,
+    "clubId": 3
+  },
+  {
+    "name": "Julián Álvarez",
+    "age": 23,
+    "position": "ST",
+    "rating": 91,
+    "marketValue": 80.0,
+    "imageUrl": "https://img.a.transfermarkt.technology/portrait/header/563933-1700000000.jpg?lm=1",
+    "nationalityId": 22,
+    "clubId": 3
+  },
+  {
+    "name": "Alexander Sørloth",
+    "age": 29,
+    "position": "ST",
+    "rating": 85,
+    "marketValue": 15.0,
+    "imageUrl": "https://img.a.transfermarkt.technology/portrait/header/115267-1700000000.jpg?lm=1",
+    "nationalityId": 160,
+    "clubId": 3
+  },
+  {
+    "name": "Taufik Seidou",
+    "age": 17,
+    "position": "LW",
+    "rating": 79,
+    "marketValue": 3.0,
+    "imageUrl": "https://img.a.transfermarkt.technology/portrait/header/800123-1700000000.jpg?lm=1",
+    "nationalityId": 208,
+    "clubId": 3
+  },
+  {
+    "name": "Álex Baena",
+    "age": 23,
+    "position": "LW",
+    "rating": 85,
+    "marketValue": 42.0,
+    "imageUrl": "https://img.a.transfermarkt.technology/portrait/header/486320-1700000000.jpg?lm=1",
+    "nationalityId": 183,
+    "clubId": 3
+  },
+  {
+    "name": "Johnny Cardoso",
+    "age": 23,
+    "position": "CM",
+    "rating": 84,
+    "marketValue": 30.0,
+    "imageUrl": "https://img.a.transfermarkt.technology/portrait/header/601234-1700000000.jpg?lm=1",
+    "nationalityId": 32,
+    "clubId": 3
+  },
+  {
+    "name": "Thiago Almada",
+    "age": 24,
+    "position": "CAM",
+    "rating": 86,
+    "marketValue": 21.0,
+    "imageUrl": "https://img.a.transfermarkt.technology/portrait/header/468902-1700000000.jpg?lm=1",
+    "nationalityId": 22,
+    "clubId": 3
+  },
+  {
+    "name": "Dávid Hancko",
+    "age": 25,
+    "position": "CB",
+    "rating": 84,
+    "marketValue": 26.0,
+    "imageUrl": "https://img.a.transfermarkt.technology/portrait/header/291234-1700000000.jpg?lm=1",
+    "nationalityId": 168,
+    "clubId": 3
+  },
+  {
+    "name": "Marc Pubill",
+    "age": 21,
+    "position": "CB",
+    "rating": 82,
+    "marketValue": 16.0,
+    "imageUrl": "https://img.a.transfermarkt.technology/portrait/header/657234-1700000000.jpg?lm=1",
+    "nationalityId": 183,
+    "clubId": 3
+  },
+  {
+    "name": "Santiago Mouriño",
+    "age": 23,
+    "position": "CB",
+    "rating": 80,
+    "marketValue": 4.0,
+    "imageUrl": "https://img.a.transfermarkt.technology/portrait/header/657890-1700000001.jpg?lm=1",
+    "nationalityId": 183,
+    "clubId": 3
+  },
+  {
+    "name": "Giacomo Raspadori",
+    "age": 23,
+    "position": "LW",
+    "rating": 86,
+    "marketValue": 22.0,
+    "imageUrl": "https://img.a.transfermarkt.technology/portrait/header/631234-1700000000.jpg?lm=1",
+    "nationalityId": 23,
+    "clubId": 3
+  },
+  {
+    "name": "Odysseas Vlachodimos",
+    "age": 31,
+    "position": "GK",
+    "rating": 79,
+    "marketValue": 2.0,
+    "imageUrl": "https://img.a.transfermarkt.technology/portrait/header/631234-1700000000.jpg?lm=1",
+    "nationalityId": 25,
+    "clubId": 4
+  },
+  {
+    "name": "Ørjan Nyland",
+    "age": 34,
+    "position": "GK",
+    "rating": 75,
+    "marketValue": 0.9,
+    "imageUrl": "https://img.a.transfermarkt.technology/portrait/header/631235-1700000000.jpg?lm=1",
+    "nationalityId": 50,
+    "clubId": 4
+  },
+  {
+    "name": "Kike Salas",
+    "age": 23,
+    "position": "CB",
+    "rating": 76,
+    "marketValue": 8.0,
+    "imageUrl": "https://img.a.transfermarkt.technology/portrait/header/631236-1700000000.jpg?lm=1",
+    "nationalityId": 181,
+    "clubId": 4
+  },
+  {
+    "name": "José Ángel Carmona",
+    "age": 23,
+    "position": "RB",
+    "rating": 77,
+    "marketValue": 12.0,
+    "imageUrl": "https://img.a.transfermarkt.technology/portrait/header/631237-1700000000.jpg?lm=1",
+    "nationalityId": 181,
+    "clubId": 4
+  },
+  {
+    "name": "Gabriel Suazo",
+    "age": 28,
+    "position": "LB",
+    "rating": 75,
+    "marketValue": 4.0,
+    "imageUrl": "https://img.a.transfermarkt.technology/portrait/header/631238-1700000000.jpg?lm=1",
+    "nationalityId": 38,
+    "clubId": 4
+  },
+  {
+    "name": "Fábio Cardoso",
+    "age": 31,
+    "position": "CB",
+    "rating": 74,
+    "marketValue": 1.4,
+    "imageUrl": "https://img.a.transfermarkt.technology/portrait/header/631239-1700000000.jpg?lm=1",
+    "nationalityId": 164,
+    "clubId": 4
+  },
+  {
+    "name": "Marcão",
+    "age": 29,
+    "position": "CB",
+    "rating": 77,
+    "marketValue": 2.0,
+    "imageUrl": "https://img.a.transfermarkt.technology/portrait/header/631240-1700000000.jpg?lm=1",
+    "nationalityId": 31,
+    "clubId": 4
+  },
+  {
+    "name": "Tanguy Nianzou",
+    "age": 23,
+    "position": "CB",
+    "rating": 77,
+    "marketValue": 3.6,
+    "imageUrl": "https://img.a.transfermarkt.technology/portrait/header/631241-1700000000.jpg?lm=1",
+    "nationalityId": 81,
+    "clubId": 4
+  },
+  {
+    "name": "Joan Jordán",
+    "age": 31,
+    "position": "CM",
+    "rating": 78,
+    "marketValue": 1.8,
+    "imageUrl": "https://img.a.transfermarkt.technology/portrait/header/631242-1700000000.jpg?lm=1",
+    "nationalityId": 181,
+    "clubId": 4
+  },
+  {
+    "name": "Juanlu Sánchez",
+    "age": 22,
+    "position": "LM",
+    "rating": 76,
+    "marketValue": 15.5,
+    "imageUrl": "https://img.a.transfermarkt.technology/portrait/header/631243-1700000000.jpg?lm=1",
+    "nationalityId": 181,
+    "clubId": 4
+  },
+  {
+    "name": "Lucien Agoumé",
+    "age": 23,
+    "position": "CM",
+    "rating": 77,
+    "marketValue": 9.3,
+    "imageUrl": "https://img.a.transfermarkt.technology/portrait/header/631244-1700000000.jpg?lm=1",
+    "nationalityId": 81,
+    "clubId": 4
+  },
+  {
+    "name": "Djibril Sow",
+    "age": 28,
+    "position": "CDM",
+    "rating": 79,
+    "marketValue": 7.4,
+    "imageUrl": "https://img.a.transfermarkt.technology/portrait/header/631245-1700000000.jpg?lm=1",
+    "nationalityId": 54,
+    "clubId": 4
+  },
+  {
+    "name": "Batista Mendy",
+    "age": 25,
+    "position": "CDM",
+    "rating": 75,
+    "marketValue": 10.5,
+    "imageUrl": "https://img.a.transfermarkt.technology/portrait/header/631246-1700000000.jpg?lm=1",
+    "nationalityId": 181,
+    "clubId": 4
+  },
+  {
+    "name": "Nemanja Gudelj",
+    "age": 33,
+    "position": "CDM",
+    "rating": 78,
+    "marketValue": 2.0,
+    "imageUrl": "https://img.a.transfermarkt.technology/portrait/header/631247-1700000000.jpg?lm=1",
+    "nationalityId": 38,
+    "clubId": 4
+  },
+  {
+    "name": "Akor Adams",
+    "age": 25,
+    "position": "ST",
+    "rating": 76,
+    "marketValue": 6.3,
+    "imageUrl": "https://img.a.transfermarkt.technology/portrait/header/631248-1700000000.jpg?lm=1",
+    "nationalityId": 105,
+    "clubId": 4
+  },
+  {
+    "name": "Isaac Romero",
+    "age": 25,
+    "position": "ST",
+    "rating": 77,
+    "marketValue": 8.8,
+    "imageUrl": "https://img.a.transfermarkt.technology/portrait/header/631249-1700000000.jpg?lm=1",
+    "nationalityId": 181,
+    "clubId": 4
+  },
+  {
+    "name": "Alfon González",
+    "age": 26,
+    "position": "RW",
+    "rating": 75,
+    "marketValue": 5.2,
+    "imageUrl": "https://img.a.transfermarkt.technology/portrait/header/631250-1700000000.jpg?lm=1",
+    "nationalityId": 181,
+    "clubId": 4
+  },
+  {
+    "name": "Chidera Ejuke",
+    "age": 27,
+    "position": "LW",
+    "rating": 76,
+    "marketValue": 2.4,
+    "imageUrl": "https://img.a.transfermarkt.technology/portrait/header/631251-1700000000.jpg?lm=1",
+    "nationalityId": 105,
+    "clubId": 4
+  },
+  {
+    "name": "Peque Fernández",
+    "age": 22,
+    "position": "CAM",
+    "rating": 75,
+    "marketValue": 5.8,
+    "imageUrl": "https://img.a.transfermarkt.technology/portrait/header/631252-1700000000.jpg?lm=1",
+    "nationalityId": 181,
+    "clubId": 4
+  },
+  {
+    "name": "Adnan Januzaj",
+    "age": 30,
+    "position": "CAM",
+    "rating": 77,
+    "marketValue": 0.6,
+    "imageUrl": "https://img.a.transfermarkt.technology/portrait/header/631253-1700000000.jpg?lm=1",
+    "nationalityId": 38,
+    "clubId": 4
+  },
+  {
+    "name": "Rubén Vargas",
+    "age": 27,
+    "position": "RW",
+    "rating": 78,
+    "marketValue": 6.8,
+    "imageUrl": "https://img.a.transfermarkt.technology/portrait/header/631254-1700000000.jpg?lm=1",
+    "nationalityId": 181,
+    "clubId": 4
+  },
+  {
+    "name": "Stole Dimitrievski",
+    "age": 31,
+    "position": "GK",
+    "rating": 78,
+    "marketValue": 9.0,
+    "imageUrl": "https://img.a.transfermarkt.technology/portrait/header/631234-1700000000.jpg?lm=1",
+    "nationalityId": 41,
+    "clubId": 5
+  },
+  {
+    "name": "Julen Agirrezabala",
+    "age": 24,
+    "position": "GK",
+    "rating": 76,
+    "marketValue": 15.0,
+    "imageUrl": "https://img.a.transfermarkt.technology/portrait/header/631235-1700000000.jpg?lm=1",
+    "nationalityId": 181,
+    "clubId": 5
+  },
+  {
+    "name": "Cristian Rivero",
+    "age": 27,
+    "position": "GK",
+    "rating": 72,
+    "marketValue": 0.5,
+    "imageUrl": "https://img.a.transfermarkt.technology/portrait/header/631236-1700000000.jpg?lm=1",
+    "nationalityId": 181,
+    "clubId": 5
+  },
+  {
+    "name": "José Gayà",
+    "age": 30,
+    "position": "LB",
+    "rating": 82,
+    "marketValue": 9.0,
+    "imageUrl": "https://img.a.transfermarkt.technology/portrait/header/631237-1700000000.jpg?lm=1",
+    "nationalityId": 181,
+    "clubId": 5
+  },
+  {
+    "name": "Jesús Vázquez",
+    "age": 22,
+    "position": "LB",
+    "rating": 75,
+    "marketValue": 3.0,
+    "imageUrl": "https://img.a.transfermarkt.technology/portrait/header/631238-1700000000.jpg?lm=1",
+    "nationalityId": 181,
+    "clubId": 5
+  },
+  {
+    "name": "Thierry Correia",
+    "age": 26,
+    "position": "RB",
+    "rating": 77,
+    "marketValue": 3.0,
+    "imageUrl": "https://img.a.transfermarkt.technology/portrait/header/631239-1700000000.jpg?lm=1",
+    "nationalityId": 181,
+    "clubId": 5
+  },
+  {
+    "name": "Dimitri Foulquier",
+    "age": 32,
+    "position": "RB",
+    "rating": 74,
+    "marketValue": 1.5,
+    "imageUrl": "https://img.a.transfermarkt.technology/portrait/header/631240-1700000000.jpg?lm=1",
+    "nationalityId": 181,
+    "clubId": 5
+  },
+  {
+    "name": "César Tárrega",
+    "age": 23,
+    "position": "CB",
+    "rating": 75,
+    "marketValue": 3.0,
+    "imageUrl": "https://img.a.transfermarkt.technology/portrait/header/631241-1700000000.jpg?lm=1",
+    "nationalityId": 181,
+    "clubId": 5
+  },
+  {
+    "name": "José Copete",
+    "age": 25,
+    "position": "CB",
+    "rating": 77,
+    "marketValue": 3.0,
+    "imageUrl": "https://img.a.transfermarkt.technology/portrait/header/631242-1700000000.jpg?lm=1",
+    "nationalityId": 181,
+    "clubId": 5
+  },
+  {
+    "name": "Baptiste Santamaría",
+    "age": 30,
+    "position": "CDM",
+    "rating": 78,
+    "marketValue": 7.0,
+    "imageUrl": "https://img.a.transfermarkt.technology/portrait/header/631243-1700000000.jpg?lm=1",
+    "nationalityId": 181,
+    "clubId": 5
+  },
+  {
+    "name": "Pepelu",
+    "age": 27,
+    "position": "CDM",
+    "rating": 79,
+    "marketValue": 9.0,
+    "imageUrl": "https://img.a.transfermarkt.technology/portrait/header/631244-1700000000.jpg?lm=1",
+    "nationalityId": 181,
+    "clubId": 5
+  },
+  {
+    "name": "Javi Guerra",
+    "age": 22,
+    "position": "CM",
+    "rating": 80,
+    "marketValue": 25.0,
+    "imageUrl": "https://img.a.transfermarkt.technology/portrait/header/631245-1700000000.jpg?lm=1",
+    "nationalityId": 181,
+    "clubId": 5
+  },
+  {
+    "name": "Filip Ugrinic",
+    "age": 26,
+    "position": "CM",
+    "rating": 77,
+    "marketValue": 7.0,
+    "imageUrl": "https://img.a.transfermarkt.technology/portrait/header/631246-1700000000.jpg?lm=1",
+    "nationalityId": 181,
+    "clubId": 5
+  },
+  {
+    "name": "Lucas Beltrán",
+    "age": 24,
+    "position": "CAM",
+    "rating": 79,
+    "marketValue": 18.0,
+    "imageUrl": "https://img.a.transfermarkt.technology/portrait/header/631247-1700000000.jpg?lm=1",
+    "nationalityId": 181,
+    "clubId": 5
+  },
+  {
+    "name": "André Almeida",
+    "age": 25,
+    "position": "CAM",
+    "rating": 78,
+    "marketValue": 10.0,
+    "imageUrl": "https://img.a.transfermarkt.technology/portrait/header/631248-1700000000.jpg?lm=1",
+    "nationalityId": 181,
+    "clubId": 5
+  },
+  {
+    "name": "Largie Ramazani",
+    "age": 24,
+    "position": "LW",
+    "rating": 77,
+    "marketValue": 7.5,
+    "imageUrl": "https://img.a.transfermarkt.technology/portrait/header/631249-1700000000.jpg?lm=1",
+    "nationalityId": 181,
+    "clubId": 5
+  },
+  {
+    "name": "Arnaut Danjuma",
+    "age": 28,
+    "position": "LW",
+    "rating": 76,
+    "marketValue": 4.0,
+    "imageUrl": "https://img.a.transfermarkt.technology/portrait/header/631250-1700000000.jpg?lm=1",
+    "nationalityId": 181,
+    "clubId": 5
+  },
+  {
+    "name": "Luis Rioja",
+    "age": 31,
+    "position": "LW",
+    "rating": 75,
+    "marketValue": 2.0,
+    "imageUrl": "https://img.a.transfermarkt.technology/portrait/header/631251-1700000000.jpg?lm=1",
+    "nationalityId": 181,
+    "clubId": 5
+  },
+  {
+    "name": "Diego López",
+    "age": 23,
+    "position": "RW",
+    "rating": 80,
+    "marketValue": 15.0,
+    "imageUrl": "https://img.a.transfermarkt.technology/portrait/header/631252-1700000000.jpg?lm=1",
+    "nationalityId": 181,
+    "clubId": 5
+  },
+  {
+    "name": "Dani Raba",
+    "age": 29,
+    "position": "ST",
+    "rating": 77,
+    "marketValue": 2.5,
+    "imageUrl": "https://img.a.transfermarkt.technology/portrait/header/631253-1700000000.jpg?lm=1",
+    "nationalityId": 181,
+    "clubId": 5
+  },
+  {
+    "name": "Hugo Duro",
+    "age": 25,
+    "position": "CF",
+    "rating": 79,
+    "marketValue": 14.0,
+    "imageUrl": "https://img.a.transfermarkt.technology/portrait/header/631254-1700000000.jpg?lm=1",
+    "nationalityId": 181,
+    "clubId": 5
+  },
+  {
+    "name": "Unai Simón",
+    "age": 28,
+    "position": "GK",
+    "rating": 85,
+    "marketValue": 28.0,
+    "imageUrl": "https://img.a.transfermarkt.technology/portrait/header/631234-1700000000.jpg?lm=1",
+    "nationalityId": 181,
+    "clubId": 6
+  },
+  {
+    "name": "Álex Padilla",
+    "age": 22,
+    "position": "GK",
+    "rating": 75,
+    "marketValue": 3.0,
+    "imageUrl": "https://img.a.transfermarkt.technology/portrait/header/631235-1700000000.jpg?lm=1",
+    "nationalityId": 181,
+    "clubId": 6
+  },
+  {
+    "name": "Julen Agirrezabala",
+    "age": 24,
+    "position": "GK",
+    "rating": 77,
+    "marketValue": 1.0,
+    "imageUrl": "https://img.a.transfermarkt.technology/portrait/header/631236-1700000000.jpg?lm=1",
+    "nationalityId": 181,
+    "clubId": 6
+  },
+  {
+    "name": "Dani Vivian",
+    "age": 26,
+    "position": "CB",
+    "rating": 82,
+    "marketValue": 40.0,
+    "imageUrl": "https://img.a.transfermarkt.technology/portrait/header/631237-1700000000.jpg?lm=1",
+    "nationalityId": 181,
+    "clubId": 6
+  },
+  {
+    "name": "Aitor Paredes",
+    "age": 25,
+    "position": "CB",
+    "rating": 80,
+    "marketValue": 22.0,
+    "imageUrl": "https://img.a.transfermarkt.technology/portrait/header/631238-1700000000.jpg?lm=1",
+    "nationalityId": 181,
+    "clubId": 6
+  },
+  {
+    "name": "Yeray Álvarez",
+    "age": 30,
+    "position": "CB",
+    "rating": 78,
+    "marketValue": 7.0,
+    "imageUrl": "https://img.a.transfermarkt.technology/portrait/header/631239-1700000000.jpg?lm=1",
+    "nationalityId": 181,
+    "clubId": 6
+  },
+  {
+    "name": "Unai Egiluz",
+    "age": 23,
+    "position": "CB",
+    "rating": 76,
+    "marketValue": 0.6,
+    "imageUrl": "https://img.a.transfermarkt.technology/portrait/header/631240-1700000000.jpg?lm=1",
+    "nationalityId": 181,
+    "clubId": 6
+  },
+  {
+    "name": "Adama Boiro",
+    "age": 23,
+    "position": "LB",
+    "rating": 77,
+    "marketValue": 2.5,
+    "imageUrl": "https://img.a.transfermarkt.technology/portrait/header/631241-1700000000.jpg?lm=1",
+    "nationalityId": 181,
+    "clubId": 6
+  },
+  {
+    "name": "Yuri Berchiche",
+    "age": 35,
+    "position": "LB",
+    "rating": 79,
+    "marketValue": 1.4,
+    "imageUrl": "https://img.a.transfermarkt.technology/portrait/header/631242-1700000000.jpg?lm=1",
+    "nationalityId": 181,
+    "clubId": 6
+  },
+  {
+    "name": "Iñigo Lekue",
+    "age": 32,
+    "position": "RB",
+    "rating": 77,
+    "marketValue": 3.0,
+    "imageUrl": "https://img.a.transfermarkt.technology/portrait/header/631243-1700000000.jpg?lm=1",
+    "nationalityId": 181,
+    "clubId": 6
+  },
+  {
+    "name": "Mikel Vesga",
+    "age": 32,
+    "position": "CDM",
+    "rating": 80,
+    "marketValue": 2.5,
+    "imageUrl": "https://img.a.transfermarkt.technology/portrait/header/631244-1700000000.jpg?lm=1",
+    "nationalityId": 181,
+    "clubId": 6
+  },
+  {
+    "name": "Oihan Sancet",
+    "age": 25,
+    "position": "CM",
+    "rating": 84,
+    "marketValue": 60.0,
+    "imageUrl": "https://img.a.transfermarkt.technology/portrait/header/631245-1700000000.jpg?lm=1",
+    "nationalityId": 181,
+    "clubId": 6
+  },
+  {
+    "name": "Mikel Jauregizar",
+    "age": 21,
+    "position": "CM",
+    "rating": 78,
+    "marketValue": 30.0,
+    "imageUrl": "https://img.a.transfermarkt.technology/portrait/header/631246-1700000000.jpg?lm=1",
+    "nationalityId": 181,
+    "clubId": 6
+  },
+  {
+    "name": "Beñat Prados",
+    "age": 24,
+    "position": "CM",
+    "rating": 77,
+    "marketValue": 18.0,
+    "imageUrl": "https://img.a.transfermarkt.technology/portrait/header/631247-1700000000.jpg?lm=1",
+    "nationalityId": 181,
+    "clubId": 6
+  },
+  {
+    "name": "Robert Navarro",
+    "age": 23,
+    "position": "RW",
+    "rating": 79,
+    "marketValue": 6.0,
+    "imageUrl": "https://img.a.transfermarkt.technology/portrait/header/631248-1700000000.jpg?lm=1",
+    "nationalityId": 181,
+    "clubId": 6
+  },
+  {
+    "name": "Nico Williams",
+    "age": 23,
+    "position": "LW",
+    "rating": 85,
+    "marketValue": 70.0,
+    "imageUrl": "https://img.a.transfermarkt.technology/portrait/header/631249-1700000000.jpg?lm=1",
+    "nationalityId": 181,
+    "clubId": 6
+  },
+  {
+    "name": "Álex Berenguer",
+    "age": 30,
+    "position": "LW",
+    "rating": 79,
+    "marketValue": 9.0,
+    "imageUrl": "https://img.a.transfermarkt.technology/portrait/header/631250-1700000000.jpg?lm=1",
+    "nationalityId": 181,
+    "clubId": 6
+  },
+  {
+    "name": "Iñaki Williams",
+    "age": 31,
+    "position": "RW",
+    "rating": 80,
+    "marketValue": 15.0,
+    "imageUrl": "https://img.a.transfermarkt.technology/portrait/header/631251-1700000000.jpg?lm=1",
+    "nationalityId": 181,
+    "clubId": 6
+  },
+  {
+    "name": "Maroan Sannadi",
+    "age": 24,
+    "position": "CF",
+    "rating": 80,
+    "marketValue": 10.0,
+    "imageUrl": "https://img.a.transfermarkt.technology/portrait/header/631252-1700000000.jpg?lm=1",
+    "nationalityId": 181,
+    "clubId": 6
+  },
+  {
+    "name": "Gorka Guruzeta",
+    "age": 28,
+    "position": "CF",
+    "rating": 79,
+    "marketValue": 9.0,
+    "imageUrl": "https://img.a.transfermarkt.technology/portrait/header/631253-1700000000.jpg?lm=1",
+    "nationalityId": 181,
+    "clubId": 6
+  },
+  {
+    "name": "Urko Izeta",
+    "age": 25,
+    "position": "CF",
+    "rating": 76,
+    "marketValue": 2.0,
+    "imageUrl": "https://img.a.transfermarkt.technology/portrait/header/631254-1700000000.jpg?lm=1",
+    "nationalityId": 181,
+    "clubId": 6
+  },
+  {
+    "name": "Álex Remiro",
+    "age": 30,
+    "position": "GK",
+    "rating": 83,
+    "marketValue": 20.0,
+    "imageUrl": "https://img.a.transfermarkt.technology/portrait/header/231592-1700000000.jpg?lm=1",
+    "nationalityId": 181,
+    "clubId": 7
+  },
+  {
+    "name": "Unai Marrero",
+    "age": 23,
+    "position": "GK",
+    "rating": 75,
+    "marketValue": 1.5,
+    "imageUrl": "https://img.a.transfermarkt.technology/portrait/header/231593-1700000000.jpg?lm=1",
+    "nationalityId": 181,
+    "clubId": 7
+  },
+  {
+    "name": "Nayef Aguerd",
+    "age": 29,
+    "position": "CB",
+    "rating": 84,
+    "marketValue": 35.0,
+    "imageUrl": "https://img.a.transfermarkt.technology/portrait/header/231594-1700000000.jpg?lm=1",
+    "nationalityId": 12,
+    "clubId": 7
+  },
+  {
+    "name": "Igor Zubeldia",
+    "age": 28,
+    "position": "CB",
+    "rating": 80,
+    "marketValue": 18.0,
+    "imageUrl": "https://img.a.transfermarkt.technology/portrait/header/231595-1700000000.jpg?lm=1",
+    "nationalityId": 181,
+    "clubId": 7
+  },
+  {
+    "name": "Jon Pacheco",
+    "age": 24,
+    "position": "CB",
+    "rating": 78,
+    "marketValue": 10.0,
+    "imageUrl": "https://img.a.transfermarkt.technology/portrait/header/231596-1700000000.jpg?lm=1",
+    "nationalityId": 181,
+    "clubId": 7
+  },
+  {
+    "name": "Aihen Muñoz",
+    "age": 28,
+    "position": "LB",
+    "rating": 77,
+    "marketValue": 5.0,
+    "imageUrl": "https://img.a.transfermarkt.technology/portrait/header/231597-1700000000.jpg?lm=1",
+    "nationalityId": 181,
+    "clubId": 7
+  },
+  {
+    "name": "José Ángel Esmorís Tasende",
+    "age": 27,
+    "position": "LB",
+    "rating": 79,
+    "marketValue": 8.0,
+    "imageUrl": "https://img.a.transfermarkt.technology/portrait/header/231598-1700000000.jpg?lm=1",
+    "nationalityId": 181,
+    "clubId": 7
+  },
+  {
+    "name": "Andoni Gorosabel",
+    "age": 27,
+    "position": "RB",
+    "rating": 78,
+    "marketValue": 6.0,
+    "imageUrl": "https://img.a.transfermarkt.technology/portrait/header/231599-1700000000.jpg?lm=1",
+    "nationalityId": 181,
+    "clubId": 7
+  },
+  {
+    "name": "Martin Zubimendi",
+    "age": 24,
+    "position": "CDM",
+    "rating": 85,
+    "marketValue": 50.0,
+    "imageUrl": "https://img.a.transfermarkt.technology/portrait/header/231600-1700000000.jpg?lm=1",
+    "nationalityId": 181,
+    "clubId": 7
+  },
+  {
+    "name": "David Silva",
+    "age": 39,
+    "position": "CM",
+    "rating": 82,
+    "marketValue": 4.0,
+    "imageUrl": "https://img.a.transfermarkt.technology/portrait/header/231601-1700000000.jpg?lm=1",
+    "nationalityId": 181,
+    "clubId": 7
+  },
+  {
+    "name": "Brais Méndez",
+    "age": 27,
+    "position": "CM",
+    "rating": 80,
+    "marketValue": 20.0,
+    "imageUrl": "https://img.a.transfermarkt.technology/portrait/header/231602-1700000000.jpg?lm=1",
+    "nationalityId": 181,
+    "clubId": 7
+  },
+  {
+    "name": "Takefusa Kubo",
+    "age": 24,
+    "position": "RW",
+    "rating": 81,
+    "marketValue": 25.0,
+    "imageUrl": "https://img.a.transfermarkt.technology/portrait/header/231603-1700000000.jpg?lm=1",
+    "nationalityId": 181,
+    "clubId": 7
+  },
+  {
+    "name": "Mikel Oyarzabal",
+    "age": 28,
+    "position": "CF",
+    "rating": 84,
+    "marketValue": 30.0,
+    "imageUrl": "https://img.a.transfermarkt.technology/portrait/header/231604-1700000000.jpg?lm=1",
+    "nationalityId": 181,
+    "clubId": 7
+  },
+  {
+    "name": "Sheraldo Becker",
+    "age": 30,
+    "position": "LW",
+    "rating": 79,
+    "marketValue": 10.0,
+    "imageUrl": "https://img.a.transfermarkt.technology/portrait/header/231605-1700000000.jpg?lm=1",
+    "nationalityId": 181,
+    "clubId": 7
+  },
+  {
+    "name": "Ander Barrenetxea",
+    "age": 22,
+    "position": "LW",
+    "rating": 77,
+    "marketValue": 5.0,
+    "imageUrl": "https://img.a.transfermarkt.technology/portrait/header/231606-1700000000.jpg?lm=1",
+    "nationalityId": 181,
+    "clubId": 7
+  },
+  {
+    "name": "Orri Óskarsson",
+    "age": 21,
+    "position": "CF",
+    "rating": 76,
+    "marketValue": 3.0,
+    "imageUrl": "https://img.a.transfermarkt.technology/portrait/header/231607-1700000000.jpg?lm=1",
+    "nationalityId": 181,
+    "clubId": 7
+  },
+  {
+    "name": "Jon Karrikaburu",
+    "age": 22,
+    "position": "CF",
+    "rating": 75,
+    "marketValue": 2.0,
+    "imageUrl": "https://img.a.transfermarkt.technology/portrait/header/231608-1700000000.jpg?lm=1",
+    "nationalityId": 181,
+    "clubId": 7
+  },
+  {
+    "name": "Luiz Júnior",
+    "age": 24,
+    "position": "GK",
+    "rating": 79,
+    "marketValue": 10.0,
+    "imageUrl": "https://img.a.transfermarkt.technology/portrait/header/231592-1700000000.jpg?lm=1",
+    "nationalityId": 38,
+    "clubId": 8
+  },
+  {
+    "name": "Diego Conde",
+    "age": 26,
+    "position": "GK",
+    "rating": 75,
+    "marketValue": 7.5,
+    "imageUrl": "https://img.a.transfermarkt.technology/portrait/header/231593-1700000000.jpg?lm=1",
+    "nationalityId": 181,
+    "clubId": 8
+  },
+  {
+    "name": "Arnau Tenas",
+    "age": 24,
+    "position": "GK",
+    "rating": 74,
+    "marketValue": 3.0,
+    "imageUrl": "https://img.a.transfermarkt.technology/portrait/header/231594-1700000000.jpg?lm=1",
+    "nationalityId": 181,
+    "clubId": 8
+  },
+  {
+    "name": "Renato Veiga",
+    "age": 22,
+    "position": "CB",
+    "rating": 80,
+    "marketValue": 25.0,
+    "imageUrl": "https://img.a.transfermarkt.technology/portrait/header/231595-1700000000.jpg?lm=1",
+    "nationalityId": 182,
+    "clubId": 8
+  },
+  {
+    "name": "Logan Costa",
+    "age": 24,
+    "position": "CB",
+    "rating": 78,
+    "marketValue": 18.0,
+    "imageUrl": "https://img.a.transfermarkt.technology/portrait/header/231596-1700000000.jpg?lm=1",
+    "nationalityId": 183,
+    "clubId": 8
+  },
+  {
+    "name": "Juan Foyth",
+    "age": 27,
+    "position": "RB",
+    "rating": 80,
+    "marketValue": 15.0,
+    "imageUrl": "https://img.a.transfermarkt.technology/portrait/header/231597-1700000000.jpg?lm=1",
+    "nationalityId": 18,
+    "clubId": 8
+  },
+  {
+    "name": "Kiko Femenía",
+    "age": 34,
+    "position": "RB",
+    "rating": 77,
+    "marketValue": 0.9,
+    "imageUrl": "https://img.a.transfermarkt.technology/portrait/header/231598-1700000000.jpg?lm=1",
+    "nationalityId": 181,
+    "clubId": 8
+  },
+  {
+    "name": "Sergi Cardona",
+    "age": 26,
+    "position": "LB",
+    "rating": 77,
+    "marketValue": 10.0,
+    "imageUrl": "https://img.a.transfermarkt.technology/portrait/header/231599-1700000000.jpg?lm=1",
+    "nationalityId": 181,
+    "clubId": 8
+  },
+  {
+    "name": "Alfonso Pedraza",
+    "age": 29,
+    "position": "LB",
+    "rating": 78,
+    "marketValue": 2.5,
+    "imageUrl": "https://img.a.transfermarkt.technology/portrait/header/231600-1700000000.jpg?lm=1",
+    "nationalityId": 181,
+    "clubId": 8
+  },
+  {
+    "name": "Willy Kambwala",
+    "age": 21,
+    "position": "CB",
+    "rating": 76,
+    "marketValue": 4.0,
+    "imageUrl": "https://img.a.transfermarkt.technology/portrait/header/231601-1700000000.jpg?lm=1",
+    "nationalityId": 181,
+    "clubId": 8
+  },
+  {
+    "name": "Pape Gueye",
+    "age": 26,
+    "position": "CDM",
+    "rating": 80,
+    "marketValue": 15.0,
+    "imageUrl": "https://img.a.transfermarkt.technology/portrait/header/231602-1700000000.jpg?lm=1",
+    "nationalityId": 181,
+    "clubId": 8
+  },
+  {
+    "name": "Santi Comesaña",
+    "age": 28,
+    "position": "CM",
+    "rating": 78,
+    "marketValue": 8.0,
+    "imageUrl": "https://img.a.transfermarkt.technology/portrait/header/231603-1700000000.jpg?lm=1",
+    "nationalityId": 181,
+    "clubId": 8
+  },
+  {
+    "name": "Ramón Terrats",
+    "age": 24,
+    "position": "CM",
+    "rating": 76,
+    "marketValue": 4.0,
+    "imageUrl": "https://img.a.transfermarkt.technology/portrait/header/231604-1700000000.jpg?lm=1",
+    "nationalityId": 181,
+    "clubId": 8
+  },
+  {
+    "name": "Dani Parejo",
+    "age": 36,
+    "position": "CM",
+    "rating": 79,
+    "marketValue": 1.5,
+    "imageUrl": "https://img.a.transfermarkt.technology/portrait/header/231605-1700000000.jpg?lm=1",
+    "nationalityId": 181,
+    "clubId": 8
+  },
+  {
+    "name": "Tajon Buchanan",
+    "age": 26,
+    "position": "RW",
+    "rating": 77,
+    "marketValue": 6.0,
+    "imageUrl": "https://img.a.transfermarkt.technology/portrait/header/231606-1700000000.jpg?lm=1",
+    "nationalityId": 181,
+    "clubId": 8
+  },
+  {
+    "name": "Nicolas Pépé",
+    "age": 30,
+    "position": "RW",
+    "rating": 80,
+    "marketValue": 15.0,
+    "imageUrl": "https://img.a.transfermarkt.technology/portrait/header/231607-1700000000.jpg?lm=1",
+    "nationalityId": 181,
+    "clubId": 8
+  },
+  {
+    "name": "Ilias Akhomach",
+    "age": 21,
+    "position": "RW",
+    "rating": 76,
+    "marketValue": 5.0,
+    "imageUrl": "https://img.a.transfermarkt.technology/portrait/header/231608-1700000000.jpg?lm=1",
+    "nationalityId": 181,
+    "clubId": 8
+  },
+  {
+    "name": "Ayoze Pérez",
+    "age": 31,
+    "position": "CF",
+    "rating": 79,
+    "marketValue": 10.0,
+    "imageUrl": "https://img.a.transfermarkt.technology/portrait/header/231609-1700000000.jpg?lm=1",
+    "nationalityId": 181,
+    "clubId": 8
+  },
+  {
+    "name": "George Mikautadze",
+    "age": 23,
+    "position": "CF",
+    "rating": 80,
+    "marketValue": 31.0,
+    "imageUrl": "https://img.a.transfermarkt.technology/portrait/header/231610-1700000000.jpg?lm=1",
+    "nationalityId": 181,
+    "clubId": 8
+  },
+  {
+    "name": "Etta Eyong",
+    "age": 21,
+    "position": "CF",
+    "rating": 75,
+    "marketValue": 4.0,
+    "imageUrl": "https://img.a.transfermarkt.technology/portrait/header/231611-1700000000.jpg?lm=1",
+    "nationalityId": 181,
+    "clubId": 8
+  },
+  {
+    "name": "Rafael Marín",
+    "age": 23,
+    "position": "CB",
+    "rating": 77,
+    "marketValue": 7.0,
+    "imageUrl": "https://img.a.transfermarkt.technology/portrait/header/231612-1700000000.jpg?lm=1",
+    "nationalityId": 181,
+    "clubId": 8
+  },
+  {
+    "name": "Pau Navarro",
+    "age": 20,
+    "position": "CB",
+    "rating": 75,
+    "marketValue": 3.0,
+    "imageUrl": "https://img.a.transfermarkt.technology/portrait/header/231613-1700000000.jpg?lm=1",
+    "nationalityId": 181,
+    "clubId": 8
+  },
+  {
+    "name": "Adrián",
+    "age": 38,
+    "position": "GK",
+    "rating": 75,
+    "marketValue": 0.5,
+    "imageUrl": "https://img.a.transfermarkt.technology/portrait/header/231592-1700000000.jpg?lm=1",
+    "nationalityId": 181,
+    "clubId": 9
+  },
+  {
+    "name": "Guilherme Fernandes",
+    "age": 24,
+    "position": "GK",
+    "rating": 72,
+    "marketValue": 0.15,
+    "imageUrl": "https://img.a.transfermarkt.technology/portrait/header/231593-1700000000.jpg?lm=1",
+    "nationalityId": 181,
+    "clubId": 9
+  },
+  {
+    "name": "Germán García",
+    "age": 21,
+    "position": "GK",
+    "rating": 65,
+    "marketValue": 0.05,
+    "imageUrl": "https://img.a.transfermarkt.technology/portrait/header/231594-1700000000.jpg?lm=1",
+    "nationalityId": 181,
+    "clubId": 9
+  },
+  {
+    "name": "Natan",
+    "age": 24,
+    "position": "CB",
+    "rating": 79,
+    "marketValue": 9.0,
+    "imageUrl": "https://img.a.transfermarkt.technology/portrait/header/231595-1700000000.jpg?lm=1",
+    "nationalityId": 182,
+    "clubId": 9
+  },
+  {
+    "name": "Diego Llorente",
+    "age": 31,
+    "position": "CB",
+    "rating": 78,
+    "marketValue": 6.0,
+    "imageUrl": "https://img.a.transfermarkt.technology/portrait/header/231596-1700000000.jpg?lm=1",
+    "nationalityId": 181,
+    "clubId": 9
+  },
+  {
+    "name": "Marc Bartra",
+    "age": 34,
+    "position": "CB",
+    "rating": 76,
+    "marketValue": 1.0,
+    "imageUrl": "https://img.a.transfermarkt.technology/portrait/header/231597-1700000000.jpg?lm=1",
+    "nationalityId": 181,
+    "clubId": 9
+  },
+  {
+    "name": "Chadi Riad",
+    "age": 21,
+    "position": "CB",
+    "rating": 80,
+    "marketValue": 15.0,
+    "imageUrl": "https://img.a.transfermarkt.technology/portrait/header/231598-1700000000.jpg?lm=1",
+    "nationalityId": 181,
+    "clubId": 9
+  },
+  {
+    "name": "Romain Perraud",
+    "age": 27,
+    "position": "LB",
+    "rating": 77,
+    "marketValue": 5.0,
+    "imageUrl": "https://img.a.transfermarkt.technology/portrait/header/231599-1700000000.jpg?lm=1",
+    "nationalityId": 181,
+    "clubId": 9
+  },
+  {
+    "name": "Ricardo Rodríguez",
+    "age": 32,
+    "position": "LB",
+    "rating": 75,
+    "marketValue": 2.0,
+    "imageUrl": "https://img.a.transfermarkt.technology/portrait/header/231600-1700000000.jpg?lm=1",
+    "nationalityId": 181,
+    "clubId": 9
+  },
+  {
+    "name": "Aitor Ruibal",
+    "age": 29,
+    "position": "RB",
+    "rating": 78,
+    "marketValue": 3.5,
+    "imageUrl": "https://img.a.transfermarkt.technology/portrait/header/231601-1700000000.jpg?lm=1",
+    "nationalityId": 181,
+    "clubId": 9
+  },
+  {
+    "name": "Ángel Ortiz",
+    "age": 20,
+    "position": "RB",
+    "rating": 76,
+    "marketValue": 2.5,
+    "imageUrl": "https://img.a.transfermarkt.technology/portrait/header/231602-1700000000.jpg?lm=1",
+    "nationalityId": 181,
+    "clubId": 9
+  },
+  {
+    "name": "Héctor Bellerín",
+    "age": 30,
+    "position": "RB",
+    "rating": 77,
+    "marketValue": 2.0,
+    "imageUrl": "https://img.a.transfermarkt.technology/portrait/header/231603-1700000000.jpg?lm=1",
+    "nationalityId": 181,
+    "clubId": 9
+  },
+  {
+    "name": "Marc Roca",
+    "age": 27,
+    "position": "CDM",
+    "rating": 79,
+    "marketValue": 9.0,
+    "imageUrl": "https://img.a.transfermarkt.technology/portrait/header/231604-1700000000.jpg?lm=1",
+    "nationalityId": 181,
+    "clubId": 9
+  },
+  {
+    "name": "William Carvalho",
+    "age": 33,
+    "position": "CDM",
+    "rating": 78,
+    "marketValue": 6.0,
+    "imageUrl": "https://img.a.transfermarkt.technology/portrait/header/231605-1700000000.jpg?lm=1",
+    "nationalityId": 181,
+    "clubId": 9
+  },
+  {
+    "name": "Sergi Altimira",
+    "age": 23,
+    "position": "CM",
+    "rating": 77,
+    "marketValue": 4.0,
+    "imageUrl": "https://img.a.transfermarkt.technology/portrait/header/231606-1700000000.jpg?lm=1",
+    "nationalityId": 181,
+    "clubId": 9
+  },
+  {
+    "name": "Pablo Fornals",
+    "age": 29,
+    "position": "CM",
+    "rating": 80,
+    "marketValue": 12.0,
+    "imageUrl": "https://img.a.transfermarkt.technology/portrait/header/231607-1700000000.jpg?lm=1",
+    "nationalityId": 181,
+    "clubId": 9
+  },
+  {
+    "name": "Giovani Lo Celso",
+    "age": 28,
+    "position": "CM",
+    "rating": 79,
+    "marketValue": 16.0,
+    "imageUrl": "https://img.a.transfermarkt.technology/portrait/header/231608-1700000000.jpg?lm=1",
+    "nationalityId": 181,
+    "clubId": 9
+  },
+  {
+    "name": "Sofyan Amrabat",
+    "age": 29,
+    "position": "CM",
+    "rating": 80,
+    "marketValue": 17.0,
+    "imageUrl": "https://img.a.transfermarkt.technology/portrait/header/231609-1700000000.jpg?lm=1",
+    "nationalityId": 181,
+    "clubId": 9
+  },
+  {
+    "name": "Antony",
+    "age": 26,
+    "position": "RW",
+    "rating": 78,
+    "marketValue": 6.0,
+    "imageUrl": "https://img.a.transfermarkt.technology/portrait/header/231610-1700000000.jpg?lm=1",
+    "nationalityId": 181,
+    "clubId": 9
+  },
+  {
+    "name": "Isco",
+    "age": 33,
+    "position": "CAM",
+    "rating": 79,
+    "marketValue": 5.0,
+    "imageUrl": "https://img.a.transfermarkt.technology/portrait/header/231611-1700000000.jpg?lm=1",
+    "nationalityId": 181,
+    "clubId": 9
+  },
+  {
+    "name": "José Carlos Ramírez",
+    "age": 20,
+    "position": "CF",
+    "rating": 75,
+    "marketValue": 2.0,
+    "imageUrl": "https://img.a.transfermarkt.technology/portrait/header/231612-1700000000.jpg?lm=1",
+    "nationalityId": 181,
+    "clubId": 9
+  },
+  {
+    "name": "Antonio Sanabria",
+    "age": 20,
+    "position": "CF",
+    "rating": 77,
+    "marketValue": 3.0,
+    "imageUrl": "https://img.a.transfermarkt.technology/portrait/header/231613-1700000000.jpg?lm=1",
+    "nationalityId": 181,
+    "clubId": 9
+  },
+  {
+    "name": "Sergio Herrera",
+    "age": 32,
+    "position": "GK",
+    "rating": 75,
+    "marketValue": 3.5,
+    "imageUrl": "https://img.a.transfermarkt.technology/portrait/header/231614-1700000000.jpg?lm=1",
+    "nationalityId": 181,
+    "clubId": 10
+  },
+  {
+    "name": "Aitor Fernández",
+    "age": 34,
+    "position": "GK",
+    "rating": 74,
+    "marketValue": 2.0,
+    "imageUrl": "https://img.a.transfermarkt.technology/portrait/header/231615-1700000000.jpg?lm=1",
+    "nationalityId": 181,
+    "clubId": 10
+  },
+  {
+    "name": "Pablo Valencia",
+    "age": 24,
+    "position": "GK",
+    "rating": 68,
+    "marketValue": 0.1,
+    "imageUrl": "https://img.a.transfermarkt.technology/portrait/header/231616-1700000000.jpg?lm=1",
+    "nationalityId": 181,
+    "clubId": 10
+  },
+  {
+    "name": "Dimitrios Stamatakis",
+    "age": 22,
+    "position": "GK",
+    "rating": 70,
+    "marketValue": 0.2,
+    "imageUrl": "https://img.a.transfermarkt.technology/portrait/header/231617-1700000000.jpg?lm=1",
+    "nationalityId": 181,
+    "clubId": 10
+  },
+  {
+    "name": "David García",
+    "age": 32,
+    "position": "CB",
+    "rating": 77,
+    "marketValue": 5.0,
+    "imageUrl": "https://img.a.transfermarkt.technology/portrait/header/231618-1700000000.jpg?lm=1",
+    "nationalityId": 181,
+    "clubId": 10
+  },
+  {
+    "name": "Aridane Hernández",
+    "age": 34,
+    "position": "CB",
+    "rating": 75,
+    "marketValue": 3.0,
+    "imageUrl": "https://img.a.transfermarkt.technology/portrait/header/231619-1700000000.jpg?lm=1",
+    "nationalityId": 181,
+    "clubId": 10
+  },
+  {
+    "name": "Juan Cruz",
+    "age": 30,
+    "position": "LB",
+    "rating": 76,
+    "marketValue": 2.5,
+    "imageUrl": "https://img.a.transfermarkt.technology/portrait/header/231620-1700000000.jpg?lm=1",
+    "nationalityId": 181,
+    "clubId": 10
+  },
+  {
+    "name": "Nacho Vidal",
+    "age": 31,
+    "position": "RB",
+    "rating": 77,
+    "marketValue": 3.0,
+    "imageUrl": "https://img.a.transfermarkt.technology/portrait/header/231621-1700000000.jpg?lm=1",
+    "nationalityId": 181,
+    "clubId": 10
+  },
+  {
+    "name": "Jon Moncayola",
+    "age": 27,
+    "position": "CM",
+    "rating": 78,
+    "marketValue": 7.0,
+    "imageUrl": "https://img.a.transfermarkt.technology/portrait/header/231622-1700000000.jpg?lm=1",
+    "nationalityId": 181,
+    "clubId": 10
+  },
+  {
+    "name": "Lucas Torró",
+    "age": 31,
+    "position": "CM",
+    "rating": 77,
+    "marketValue": 3.0,
+    "imageUrl": "https://img.a.transfermarkt.technology/portrait/header/231623-1700000000.jpg?lm=1",
+    "nationalityId": 181,
+    "clubId": 10
+  },
+  {
+    "name": "Moi Gómez",
+    "age": 31,
+    "position": "CM",
+    "rating": 76,
+    "marketValue": 2.0,
+    "imageUrl": "https://img.a.transfermarkt.technology/portrait/header/231624-1700000000.jpg?lm=1",
+    "nationalityId": 181,
+    "clubId": 10
+  },
+  {
+    "name": "Aimar Oroz",
+    "age": 23,
+    "position": "CAM",
+    "rating": 79,
+    "marketValue": 15.0,
+    "imageUrl": "https://img.a.transfermarkt.technology/portrait/header/231625-1700000000.jpg?lm=1",
+    "nationalityId": 181,
+    "clubId": 10
+  },
+  {
+    "name": "Rubén García",
+    "age": 29,
+    "position": "LW",
+    "rating": 77,
+    "marketValue": 4.0,
+    "imageUrl": "https://img.a.transfermarkt.technology/portrait/header/231626-1700000000.jpg?lm=1",
+    "nationalityId": 181,
+    "clubId": 10
+  },
+  {
+    "name": "Chimy Ávila",
+    "age": 30,
+    "position": "RW",
+    "rating": 79,
+    "marketValue": 5.0,
+    "imageUrl": "https://img.a.transfermarkt.technology/portrait/header/231627-1700000000.jpg?lm=1",
+    "nationalityId": 181,
+    "clubId": 10
+  },
+  {
+    "name": "Ante Budimir",
+    "age": 33,
+    "position": "ST",
+    "rating": 78,
+    "marketValue": 6.0,
+    "imageUrl": "https://img.a.transfermarkt.technology/portrait/header/231628-1700000000.jpg?lm=1",
+    "nationalityId": 181,
+    "clubId": 10
+  },
+  {
+    "name": "Asier Osambela",
+    "age": 21,
+    "position": "CF",
+    "rating": 75,
+    "marketValue": 0.5,
+    "imageUrl": "https://img.a.transfermarkt.technology/portrait/header/231629-1700000000.jpg?lm=1",
+    "nationalityId": 181,
+    "clubId": 10
+  },
+  {
+    "name": "Mauro Echegoyen",
+    "age": 20,
+    "position": "CF",
+    "rating": 72,
+    "marketValue": 0.2,
+    "imageUrl": "https://img.a.transfermarkt.technology/portrait/header/231630-1700000000.jpg?lm=1",
+    "nationalityId": 181,
+    "clubId": 10
+  },
+  {
+    "name": "Joan García",
+    "age": 24,
+    "position": "GK",
+    "rating": 75,
+    "marketValue": 3.5,
+    "imageUrl": "https://img.a.transfermarkt.technology/portrait/header/231614-1700000000.jpg?lm=1",
+    "nationalityId": 181,
+    "clubId": 11
+  },
+  {
+    "name": "Fernando Pacheco",
+    "age": 33,
+    "position": "GK",
+    "rating": 77,
+    "marketValue": 4.5,
+    "imageUrl": "https://img.a.transfermarkt.technology/portrait/header/231615-1700000000.jpg?lm=1",
+    "nationalityId": 181,
+    "clubId": 11
+  },
+  {
+    "name": "Ángel Fortuño",
+    "age": 23,
+    "position": "GK",
+    "rating": 70,
+    "marketValue": 0.2,
+    "imageUrl": "https://img.a.transfermarkt.technology/portrait/header/231616-1700000000.jpg?lm=1",
+    "nationalityId": 181,
+    "clubId": 11
+  },
+  {
+    "name": "Carlos Romero",
+    "age": 22,
+    "position": "LB",
+    "rating": 72,
+    "marketValue": 1.5,
+    "imageUrl": "https://img.a.transfermarkt.technology/portrait/header/231617-1700000000.jpg?lm=1",
+    "nationalityId": 181,
+    "clubId": 11
+  },
+  {
+    "name": "Miguel Rubio",
+    "age": 27,
+    "position": "CB",
+    "rating": 74,
+    "marketValue": 2.0,
+    "imageUrl": "https://img.a.transfermarkt.technology/portrait/header/231618-1700000000.jpg?lm=1",
+    "nationalityId": 181,
+    "clubId": 11
+  },
+  {
+    "name": "Fernando Calero",
+    "age": 29,
+    "position": "CB",
+    "rating": 76,
+    "marketValue": 3.0,
+    "imageUrl": "https://img.a.transfermarkt.technology/portrait/header/231619-1700000000.jpg?lm=1",
+    "nationalityId": 181,
+    "clubId": 11
+  },
+  {
+    "name": "Leandro Cabrera",
+    "age": 33,
+    "position": "CB",
+    "rating": 75,
+    "marketValue": 2.5,
+    "imageUrl": "https://img.a.transfermarkt.technology/portrait/header/231620-1700000000.jpg?lm=1",
+    "nationalityId": 181,
+    "clubId": 11
+  },
+  {
+    "name": "Omar El Hilali",
+    "age": 21,
+    "position": "RB",
+    "rating": 73,
+    "marketValue": 1.0,
+    "imageUrl": "https://img.a.transfermarkt.technology/portrait/header/231621-1700000000.jpg?lm=1",
+    "nationalityId": 181,
+    "clubId": 11
+  },
+  {
+    "name": "Alex Král",
+    "age": 26,
+    "position": "CM",
+    "rating": 77,
+    "marketValue": 2.5,
+    "imageUrl": "https://img.a.transfermarkt.technology/portrait/header/231622-1700000000.jpg?lm=1",
+    "nationalityId": 181,
+    "clubId": 11
+  },
+  {
+    "name": "Pol Lozano",
+    "age": 25,
+    "position": "CM",
+    "rating": 75,
+    "marketValue": 2.0,
+    "imageUrl": "https://img.a.transfermarkt.technology/portrait/header/231623-1700000000.jpg?lm=1",
+    "nationalityId": 181,
+    "clubId": 11
+  },
+  {
+    "name": "Urko González de Zárate",
+    "age": 23,
+    "position": "CM",
+    "rating": 74,
+    "marketValue": 1.5,
+    "imageUrl": "https://img.a.transfermarkt.technology/portrait/header/231624-1700000000.jpg?lm=1",
+    "nationalityId": 181,
+    "clubId": 11
+  },
+  {
+    "name": "Javi Puado",
+    "age": 26,
+    "position": "LW",
+    "rating": 78,
+    "marketValue": 5.0,
+    "imageUrl": "https://img.a.transfermarkt.technology/portrait/header/231625-1700000000.jpg?lm=1",
+    "nationalityId": 181,
+    "clubId": 11
+  },
+  {
+    "name": "Jofre Carreras",
+    "age": 23,
+    "position": "RW",
+    "rating": 74,
+    "marketValue": 2.0,
+    "imageUrl": "https://img.a.transfermarkt.technology/portrait/header/231626-1700000000.jpg?lm=1",
+    "nationalityId": 181,
+    "clubId": 11
+  },
+  {
+    "name": "Walid Cheddira",
+    "age": 31,
+    "position": "CF",
+    "rating": 76,
+    "marketValue": 3.0,
+    "imageUrl": "https://img.a.transfermarkt.technology/portrait/header/231627-1700000000.jpg?lm=1",
+    "nationalityId": 181,
+    "clubId": 11
+  },
+  {
+    "name": "Álex Almansa",
+    "age": 31,
+    "position": "CF",
+    "rating": 75,
+    "marketValue": 2.5,
+    "imageUrl": "https://img.a.transfermarkt.technology/portrait/header/231628-1700000000.jpg?lm=1",
+    "nationalityId": 181,
+    "clubId": 11
+  },
+  {
+    "name": "Iván Villar",
+    "age": 28,
+    "position": "GK",
+    "rating": 72,
+    "marketValue": 0.9,
+    "imageUrl": "https://img.a.transfermarkt.technology/portrait/header/231614-1700000000.jpg?lm=1",
+    "nationalityId": 181,
+    "clubId": 12
+  },
+  {
+    "name": "Vicente Guaita",
+    "age": 38,
+    "position": "GK",
+    "rating": 73,
+    "marketValue": 0.7,
+    "imageUrl": "https://img.a.transfermarkt.technology/portrait/header/231615-1700000000.jpg?lm=1",
+    "nationalityId": 181,
+    "clubId": 12
+  },
+  {
+    "name": "Marc Vidal",
+    "age": 25,
+    "position": "GK",
+    "rating": 65,
+    "marketValue": 0.3,
+    "imageUrl": "https://img.a.transfermarkt.technology/portrait/header/231616-1700000000.jpg?lm=1",
+    "nationalityId": 181,
+    "clubId": 12
+  },
+  {
+    "name": "Javi Rodríguez",
+    "age": 22,
+    "position": "CB",
+    "rating": 75,
+    "marketValue": 15.0,
+    "imageUrl": "https://img.a.transfermarkt.technology/portrait/header/231617-1700000000.jpg?lm=1",
+    "nationalityId": 181,
+    "clubId": 12
+  },
+  {
+    "name": "Carl Starfelt",
+    "age": 30,
+    "position": "CB",
+    "rating": 77,
+    "marketValue": 6.0,
+    "imageUrl": "https://img.a.transfermarkt.technology/portrait/header/231618-1700000000.jpg?lm=1",
+    "nationalityId": 181,
+    "clubId": 12
+  },
+  {
+    "name": "Carlos Domínguez",
+    "age": 24,
+    "position": "CB",
+    "rating": 73,
+    "marketValue": 3.0,
+    "imageUrl": "https://img.a.transfermarkt.technology/portrait/header/231619-1700000000.jpg?lm=1",
+    "nationalityId": 181,
+    "clubId": 12
+  },
+  {
+    "name": "Joseph Aidoo",
+    "age": 29,
+    "position": "CB",
+    "rating": 74,
+    "marketValue": 1.2,
+    "imageUrl": "https://img.a.transfermarkt.technology/portrait/header/231620-1700000000.jpg?lm=1",
+    "nationalityId": 181,
+    "clubId": 12
+  },
+  {
+    "name": "Yoel Lago",
+    "age": 21,
+    "position": "CB",
+    "rating": 70,
+    "marketValue": 1.0,
+    "imageUrl": "https://img.a.transfermarkt.technology/portrait/header/231621-1700000000.jpg?lm=1",
+    "nationalityId": 181,
+    "clubId": 12
+  },
+  {
+    "name": "Marcos Alonso",
+    "age": 34,
+    "position": "LB",
+    "rating": 75,
+    "marketValue": 1.5,
+    "imageUrl": "https://img.a.transfermarkt.technology/portrait/header/231622-1700000000.jpg?lm=1",
+    "nationalityId": 181,
+    "clubId": 12
+  },
+  {
+    "name": "Mihailo Ristić",
+    "age": 29,
+    "position": "LB",
+    "rating": 72,
+    "marketValue": 0.9,
+    "imageUrl": "https://img.a.transfermarkt.technology/portrait/header/231623-1700000000.jpg?lm=1",
+    "nationalityId": 181,
+    "clubId": 12
+  },
+  {
+    "name": "Óscar Mingueza",
+    "age": 26,
+    "position": "RB",
+    "rating": 78,
+    "marketValue": 20.0,
+    "imageUrl": "https://img.a.transfermarkt.technology/portrait/header/231624-1700000000.jpg?lm=1",
+    "nationalityId": 181,
+    "clubId": 12
+  },
+  {
+    "name": "Sergio Carreira",
+    "age": 24,
+    "position": "RB",
+    "rating": 74,
+    "marketValue": 4.0,
+    "imageUrl": "https://img.a.transfermarkt.technology/portrait/header/231625-1700000000.jpg?lm=1",
+    "nationalityId": 181,
+    "clubId": 12
+  },
+  {
+    "name": "Javier Manquillo",
+    "age": 31,
+    "position": "RB",
+    "rating": 70,
+    "marketValue": 1.0,
+    "imageUrl": "https://img.a.transfermarkt.technology/portrait/header/231626-1700000000.jpg?lm=1",
+    "nationalityId": 181,
+    "clubId": 12
+  },
+  {
+    "name": "Damián Rodríguez",
+    "age": 22,
+    "position": "CDM",
+    "rating": 74,
+    "marketValue": 3.0,
+    "imageUrl": "https://img.a.transfermarkt.technology/portrait/header/231627-1700000000.jpg?lm=1",
+    "nationalityId": 181,
+    "clubId": 12
+  },
+  {
+    "name": "Jailson",
+    "age": 29,
+    "position": "CDM",
+    "rating": 72,
+    "marketValue": 1.0,
+    "imageUrl": "https://img.a.transfermarkt.technology/portrait/header/231628-1700000000.jpg?lm=1",
+    "nationalityId": 181,
+    "clubId": 12
+  },
+  {
+    "name": "Fran Beltrán",
+    "age": 26,
+    "position": "CM",
+    "rating": 76,
+    "marketValue": 8.0,
+    "imageUrl": "https://img.a.transfermarkt.technology/portrait/header/231629-1700000000.jpg?lm=1",
+    "nationalityId": 181,
+    "clubId": 12
+  },
+  {
+    "name": "Ilaix Moriba",
+    "age": 22,
+    "position": "CM",
+    "rating": 75,
+    "marketValue": 6.0,
+    "imageUrl": "https://img.a.transfermarkt.technology/portrait/header/231630-1700000000.jpg?lm=1",
+    "nationalityId": 181,
+    "clubId": 12
+  },
+  {
+    "name": "Hugo Sotelo",
+    "age": 21,
+    "position": "CM",
+    "rating": 74,
+    "marketValue": 4.0,
+    "imageUrl": "https://img.a.transfermarkt.technology/portrait/header/231631-1700000000.jpg?lm=1",
+    "nationalityId": 181,
+    "clubId": 12
+  },
+  {
+    "name": "Luca de la Torre",
+    "age": 27,
+    "position": "CM",
+    "rating": 72,
+    "marketValue": 2.0,
+    "imageUrl": "https://img.a.transfermarkt.technology/portrait/header/231632-1700000000.jpg?lm=1",
+    "nationalityId": 181,
+    "clubId": 12
+  },
+  {
+    "name": "Miguel Román",
+    "age": 22,
+    "position": "CM",
+    "rating": 65,
+    "marketValue": 0.4,
+    "imageUrl": "https://img.a.transfermarkt.technology/portrait/header/231633-1700000000.jpg?lm=1",
+    "nationalityId": 181,
+    "clubId": 12
+  },
+  {
+    "name": "Fer López",
+    "age": 21,
+    "position": "CAM",
+    "rating": 75,
+    "marketValue": 5.0,
+    "imageUrl": "https://img.a.transfermarkt.technology/portrait/header/231634-1700000000.jpg?lm=1",
+    "nationalityId": 181,
+    "clubId": 12
+  },
+  {
+    "name": "Hugo Álvarez",
+    "age": 21,
+    "position": "LW",
+    "rating": 74,
+    "marketValue": 7.5,
+    "imageUrl": "https://img.a.transfermarkt.technology/portrait/header/231635-1700000000.jpg?lm=1",
+    "nationalityId": 181,
+    "clubId": 12
+  },
+  {
+    "name": "Alfon González",
+    "age": 26,
+    "position": "LW",
+    "rating": 73,
+    "marketValue": 5.0,
+    "imageUrl": "https://img.a.transfermarkt.technology/portrait/header/231636-1700000000.jpg?lm=1",
+    "nationalityId": 181,
+    "clubId": 12
+  },
+  {
+    "name": "Williot Swedberg",
+    "age": 21,
+    "position": "LW",
+    "rating": 72,
+    "marketValue": 5.0,
+    "imageUrl": "https://img.a.transfermarkt.technology/portrait/header/231637-1700000000.jpg?lm=1",
+    "nationalityId": 181,
+    "clubId": 12
+  },
+  {
+    "name": "Jonathan Bamba",
+    "age": 24,
+    "position": "LW",
+    "rating": 71,
+    "marketValue": 4.0,
+    "imageUrl": "https://img.a.transfermarkt.technology/portrait/header/231638-1700000000.jpg?lm=1",
+    "nationalityId": 181,
+    "clubId": 12
+  },
+  {
+    "name": "Andrés Silva",
+    "age": 25,
+    "position": "LW",
+    "rating": 70,
+    "marketValue": 2.0,
+    "imageUrl": "https://img.a.transfermarkt.technology/portrait/header/231639-1700000000.jpg?lm=1",
+    "nationalityId": 181,
+    "clubId": 12
+  },
+  {
+    "name": "Nahuel Guzmán",
+    "age": 24,
+    "position": "LW",
+    "rating": 69,
+    "marketValue": 1.0,
+    "imageUrl": "https://img.a.transfermarkt.technology/portrait/header/231640-1700000000.jpg?lm=1",
+    "nationalityId": 181,
+    "clubId": 12
+  },
+  {
+    "name": "Diego Llorente",
+    "age": 23,
+    "position": "LW",
+    "rating": 68,
+    "marketValue": 1.0,
+    "imageUrl": "https://img.a.transfermarkt.technology/portrait/header/231641-1700000000.jpg?lm=1",
+    "nationalityId": 181,
+    "clubId": 12
+  },
+  {
+    "name": "Dominik Livaković",
+    "age": 30,
+    "position": "GK",
+    "rating": 78,
+    "marketValue": 12.0,
+    "imageUrl": "https://img.a.transfermarkt.technology/portrait/header/231614-1700000000.jpg?lm=1",
+    "nationalityId": 181,
+    "clubId": 13
+  },
+  {
+    "name": "Paulo Gazzaniga",
+    "age": 33,
+    "position": "GK",
+    "rating": 73,
+    "marketValue": 1.5,
+    "imageUrl": "https://img.a.transfermarkt.technology/portrait/header/231615-1700000000.jpg?lm=1",
+    "nationalityId": 181,
+    "clubId": 13
+  },
+  {
+    "name": "Vladyslav Krapyvtsov",
+    "age": 22,
+    "position": "GK",
+    "rating": 70,
+    "marketValue": 0.5,
+    "imageUrl": "https://img.a.transfermarkt.technology/portrait/header/231616-1700000000.jpg?lm=1",
+    "nationalityId": 181,
+    "clubId": 13
+  },
+  {
+    "name": "Alejandro Francés",
+    "age": 23,
+    "position": "CB",
+    "rating": 75,
+    "marketValue": 4.0,
+    "imageUrl": "https://img.a.transfermarkt.technology/portrait/header/231617-1700000000.jpg?lm=1",
+    "nationalityId": 181,
+    "clubId": 13
+  },
+  {
+    "name": "David López",
+    "age": 35,
+    "position": "CB",
+    "rating": 73,
+    "marketValue": 1.0,
+    "imageUrl": "https://img.a.transfermarkt.technology/portrait/header/231618-1700000000.jpg?lm=1",
+    "nationalityId": 181,
+    "clubId": 13
+  },
+  {
+    "name": "Daley Blind",
+    "age": 35,
+    "position": "CB",
+    "rating": 74,
+    "marketValue": 1.5,
+    "imageUrl": "https://img.a.transfermarkt.technology/portrait/header/231619-1700000000.jpg?lm=1",
+    "nationalityId": 181,
+    "clubId": 13
+  },
+  {
+    "name": "Ladislav Krejčí",
+    "age": 26,
+    "position": "CB",
+    "rating": 76,
+    "marketValue": 12.0,
+    "imageUrl": "https://img.a.transfermarkt.technology/portrait/header/231620-1700000000.jpg?lm=1",
+    "nationalityId": 181,
+    "clubId": 13
+  },
+  {
+    "name": "Vitor Reis",
+    "age": 22,
+    "position": "CB",
+    "rating": 74,
+    "marketValue": 2.5,
+    "imageUrl": "https://img.a.transfermarkt.technology/portrait/header/231621-1700000000.jpg?lm=1",
+    "nationalityId": 181,
+    "clubId": 13
+  },
+  {
+    "name": "Arnau Martínez",
+    "age": 22,
+    "position": "RB",
+    "rating": 77,
+    "marketValue": 25.0,
+    "imageUrl": "https://img.a.transfermarkt.technology/portrait/header/231622-1700000000.jpg?lm=1",
+    "nationalityId": 181,
+    "clubId": 13
+  },
+  {
+    "name": "Hugo Rincón",
+    "age": 22,
+    "position": "RB",
+    "rating": 72,
+    "marketValue": 1.5,
+    "imageUrl": "https://img.a.transfermarkt.technology/portrait/header/231623-1700000000.jpg?lm=1",
+    "nationalityId": 181,
+    "clubId": 13
+  },
+  {
+    "name": "Azzedine Ounahi",
+    "age": 25,
+    "position": "CM",
+    "rating": 76,
+    "marketValue": 10.0,
+    "imageUrl": "https://img.a.transfermarkt.technology/portrait/header/231624-1700000000.jpg?lm=1",
+    "nationalityId": 181,
+    "clubId": 13
+  },
+  {
+    "name": "Donny van de Beek",
+    "age": 28,
+    "position": "CM",
+    "rating": 75,
+    "marketValue": 5.0,
+    "imageUrl": "https://img.a.transfermarkt.technology/portrait/header/231625-1700000000.jpg?lm=1",
+    "nationalityId": 181,
+    "clubId": 13
+  },
+  {
+    "name": "Yáser Asprilla",
+    "age": 21,
+    "position": "CM",
+    "rating": 74,
+    "marketValue": 15.0,
+    "imageUrl": "https://img.a.transfermarkt.technology/portrait/header/231626-1700000000.jpg?lm=1",
+    "nationalityId": 181,
+    "clubId": 13
+  },
+  {
+    "name": "Gabriel Misehouy",
+    "age": 21,
+    "position": "CM",
+    "rating": 73,
+    "marketValue": 2.0,
+    "imageUrl": "https://img.a.transfermarkt.technology/portrait/header/231627-1700000000.jpg?lm=1",
+    "nationalityId": 181,
+    "clubId": 13
+  },
+  {
+    "name": "Joel Roca",
+    "age": 20,
+    "position": "LW",
+    "rating": 74,
+    "marketValue": 1.0,
+    "imageUrl": "https://img.a.transfermarkt.technology/portrait/header/231628-1700000000.jpg?lm=1",
+    "nationalityId": 181,
+    "clubId": 13
+  },
+  {
+    "name": "Bryan Gil",
+    "age": 24,
+    "position": "LW",
+    "rating": 75,
+    "marketValue": 6.0,
+    "imageUrl": "https://img.a.transfermarkt.technology/portrait/header/231629-1700000000.jpg?lm=1",
+    "nationalityId": 181,
+    "clubId": 13
+  },
+  {
+    "name": "Vladyslav Vanat",
+    "age": 23,
+    "position": "CF",
+    "rating": 75,
+    "marketValue": 15.0,
+    "imageUrl": "https://img.a.transfermarkt.technology/portrait/header/231630-1700000000.jpg?lm=1",
+    "nationalityId": 181,
+    "clubId": 13
+  },
+  {
+    "name": "Abel Ruiz",
+    "age": 25,
+    "position": "CF",
+    "rating": 74,
+    "marketValue": 4.0,
+    "imageUrl": "https://img.a.transfermarkt.technology/portrait/header/231631-1700000000.jpg?lm=1",
+    "nationalityId": 181,
+    "clubId": 13
+  },
+  {
+    "name": "Manu Vallejo",
+    "age": 27,
+    "position": "CF",
+    "rating": 72,
+    "marketValue": 1.0,
+    "imageUrl": "https://img.a.transfermarkt.technology/portrait/header/231632-1700000000.jpg?lm=1",
+    "nationalityId": 181,
+    "clubId": 13
+  },
+  {
+    "name": "Pau Víctor",
+    "age": 22,
+    "position": "CF",
+    "rating": 70,
+    "marketValue": 0.5,
+    "imageUrl": "https://img.a.transfermarkt.technology/portrait/header/231633-1700000000.jpg?lm=1",
+    "nationalityId": 181,
+    "clubId": 13
+  },
+  {
+    "name": "Dominik Greif",
+    "age": 28,
+    "position": "GK",
+    "rating": 75,
+    "marketValue": 6.0,
+    "imageUrl": "https://img.a.transfermarkt.technology/portrait/header/231614-1700000000.jpg?lm=1",
+    "nationalityId": 181,
+    "clubId": 14
+  },
+  {
+    "name": "Leo Román",
+    "age": 25,
+    "position": "GK",
+    "rating": 73,
+    "marketValue": 5.0,
+    "imageUrl": "https://img.a.transfermarkt.technology/portrait/header/231615-1700000000.jpg?lm=1",
+    "nationalityId": 181,
+    "clubId": 14
+  },
+  {
+    "name": "Iván Cuéllar",
+    "age": 41,
+    "position": "GK",
+    "rating": 70,
+    "marketValue": 0.1,
+    "imageUrl": "https://img.a.transfermarkt.technology/portrait/header/231616-1700000000.jpg?lm=1",
+    "nationalityId": 181,
+    "clubId": 14
+  },
+  {
+    "name": "Pere García",
+    "age": 23,
+    "position": "GK",
+    "rating": 65,
+    "marketValue": 0.05,
+    "imageUrl": "https://img.a.transfermarkt.technology/portrait/header/231617-1700000000.jpg?lm=1",
+    "nationalityId": 181,
+    "clubId": 14
+  },
+  {
+    "name": "Marash Kumbulla",
+    "age": 25,
+    "position": "CB",
+    "rating": 77,
+    "marketValue": 7.5,
+    "imageUrl": "https://img.a.transfermarkt.technology/portrait/header/231618-1700000000.jpg?lm=1",
+    "nationalityId": 181,
+    "clubId": 14
+  },
+  {
+    "name": "Martin Valjent",
+    "age": 29,
+    "position": "CB",
+    "rating": 75,
+    "marketValue": 6.0,
+    "imageUrl": "https://img.a.transfermarkt.technology/portrait/header/231619-1700000000.jpg?lm=1",
+    "nationalityId": 181,
+    "clubId": 14
+  },
+  {
+    "name": "Antonio Raíllo",
+    "age": 33,
+    "position": "CB",
+    "rating": 74,
+    "marketValue": 5.0,
+    "imageUrl": "https://img.a.transfermarkt.technology/portrait/header/231620-1700000000.jpg?lm=1",
+    "nationalityId": 181,
+    "clubId": 14
+  },
+  {
+    "name": "José Copete",
+    "age": 25,
+    "position": "CB",
+    "rating": 72,
+    "marketValue": 3.6,
+    "imageUrl": "https://img.a.transfermarkt.technology/portrait/header/231621-1700000000.jpg?lm=1",
+    "nationalityId": 181,
+    "clubId": 14
+  },
+  {
+    "name": "Mateu Morey",
+    "age": 25,
+    "position": "RB",
+    "rating": 74,
+    "marketValue": 5.0,
+    "imageUrl": "https://img.a.transfermarkt.technology/portrait/header/231622-1700000000.jpg?lm=1",
+    "nationalityId": 181,
+    "clubId": 14
+  },
+  {
+    "name": "Pablo Maffeo",
+    "age": 23,
+    "position": "RB",
+    "rating": 73,
+    "marketValue": 4.0,
+    "imageUrl": "https://img.a.transfermarkt.technology/portrait/header/231623-1700000000.jpg?lm=1",
+    "nationalityId": 181,
+    "clubId": 14
+  },
+  {
+    "name": "Toni Lato",
+    "age": 23,
+    "position": "LB",
+    "rating": 72,
+    "marketValue": 3.0,
+    "imageUrl": "https://img.a.transfermarkt.technology/portrait/header/231624-1700000000.jpg?lm=1",
+    "nationalityId": 181,
+    "clubId": 14
+  },
+  {
+    "name": "Johan Mojica",
+    "age": 32,
+    "position": "LB",
+    "rating": 74,
+    "marketValue": 5.0,
+    "imageUrl": "https://img.a.transfermarkt.technology/portrait/header/231625-1700000000.jpg?lm=1",
+    "nationalityId": 181,
+    "clubId": 14
+  },
+  {
+    "name": "Omar Mascarell",
+    "age": 32,
+    "position": "CDM",
+    "rating": 73,
+    "marketValue": 0.9,
+    "imageUrl": "https://img.a.transfermarkt.technology/portrait/header/231626-1700000000.jpg?lm=1",
+    "nationalityId": 181,
+    "clubId": 14
+  },
+  {
+    "name": "Iddrisu Baba",
+    "age": 28,
+    "position": "CDM",
+    "rating": 75,
+    "marketValue": 5.0,
+    "imageUrl": "https://img.a.transfermarkt.technology/portrait/header/231627-1700000000.jpg?lm=1",
+    "nationalityId": 181,
+    "clubId": 14
+  },
+  {
+    "name": "Samú Costa",
+    "age": 24,
+    "position": "CM",
+    "rating": 74,
+    "marketValue": 4.0,
+    "imageUrl": "https://img.a.transfermarkt.technology/portrait/header/231628-1700000000.jpg?lm=1",
+    "nationalityId": 181,
+    "clubId": 14
+  },
+  {
+    "name": "Pablo Torre",
+    "age": 22,
+    "position": "CAM",
+    "rating": 75,
+    "marketValue": 5.0,
+    "imageUrl": "https://img.a.transfermarkt.technology/portrait/header/231629-1700000000.jpg?lm=1",
+    "nationalityId": 181,
+    "clubId": 14
+  },
+  {
+    "name": "Mateo Joseph",
+    "age": 21,
+    "position": "CF",
+    "rating": 73,
+    "marketValue": 4.0,
+    "imageUrl": "https://img.a.transfermarkt.technology/portrait/header/231630-1700000000.jpg?lm=1",
+    "nationalityId": 181,
+    "clubId": 14
+  },
+  {
+    "name": "Vedat Muriqi",
+    "age": 31,
+    "position": "CF",
+    "rating": 75,
+    "marketValue": 5.0,
+    "imageUrl": "https://img.a.transfermarkt.technology/portrait/header/231631-1700000000.jpg?lm=1",
+    "nationalityId": 181,
+    "clubId": 14
+  },
+  {
+    "name": "Marc Domènech",
+    "age": 18,
+    "position": "CF",
+    "rating": 70,
+    "marketValue": 1.0,
+    "imageUrl": "https://img.a.transfermarkt.technology/portrait/header/231632-1700000000.jpg?lm=1",
+    "nationalityId": 181,
+    "clubId": 14
+  },
+  {
+    "name": "Antonio Sivera",
+    "age": 28,
+    "position": "GK",
+    "rating": 75,
+    "marketValue": 6.0,
+    "imageUrl": "https://img.a.transfermarkt.technology/portrait/header/231614-1700000000.jpg?lm=1",
+    "nationalityId": 181,
+    "clubId": 15
+  },
+  {
+    "name": "Jesús Owono",
+    "age": 24,
+    "position": "GK",
+    "rating": 73,
+    "marketValue": 5.0,
+    "imageUrl": "https://img.a.transfermarkt.technology/portrait/header/231615-1700000000.jpg?lm=1",
+    "nationalityId": 181,
+    "clubId": 15
+  },
+  {
+    "name": "Adrián Rodríguez",
+    "age": 24,
+    "position": "GK",
+    "rating": 70,
+    "marketValue": 0.5,
+    "imageUrl": "https://img.a.transfermarkt.technology/portrait/header/231616-1700000000.jpg?lm=1",
+    "nationalityId": 181,
+    "clubId": 15
+  },
+  {
+    "name": "Facundo Garcés",
+    "age": 25,
+    "position": "CB",
+    "rating": 74,
+    "marketValue": 3.5,
+    "imageUrl": "https://img.a.transfermarkt.technology/portrait/header/231617-1700000000.jpg?lm=1",
+    "nationalityId": 181,
+    "clubId": 15
+  },
+  {
+    "name": "Manu Sánchez",
+    "age": 23,
+    "position": "LB",
+    "rating": 73,
+    "marketValue": 2.5,
+    "imageUrl": "https://img.a.transfermarkt.technology/portrait/header/231618-1700000000.jpg?lm=1",
+    "nationalityId": 181,
+    "clubId": 15
+  },
+  {
+    "name": "Aleksandar Sedlar",
+    "age": 32,
+    "position": "CB",
+    "rating": 72,
+    "marketValue": 2.0,
+    "imageUrl": "https://img.a.transfermarkt.technology/portrait/header/231619-1700000000.jpg?lm=1",
+    "nationalityId": 181,
+    "clubId": 15
+  },
+  {
+    "name": "Abdel Abqar",
+    "age": 26,
+    "position": "CB",
+    "rating": 71,
+    "marketValue": 1.5,
+    "imageUrl": "https://img.a.transfermarkt.technology/portrait/header/231620-1700000000.jpg?lm=1",
+    "nationalityId": 181,
+    "clubId": 15
+  },
+  {
+    "name": "Santiago Mouriño",
+    "age": 23,
+    "position": "CB",
+    "rating": 73,
+    "marketValue": 2.0,
+    "imageUrl": "https://img.a.transfermarkt.technology/portrait/header/231621-1700000000.jpg?lm=1",
+    "nationalityId": 181,
+    "clubId": 15
+  },
+  {
+    "name": "Nahuel Tenaglia",
+    "age": 28,
+    "position": "RB",
+    "rating": 74,
+    "marketValue": 3.0,
+    "imageUrl": "https://img.a.transfermarkt.technology/portrait/header/231622-1700000000.jpg?lm=1",
+    "nationalityId": 181,
+    "clubId": 15
+  },
+  {
+    "name": "Hugo Novoa",
+    "age": 21,
+    "position": "RW",
+    "rating": 75,
+    "marketValue": 6.0,
+    "imageUrl": "https://img.a.transfermarkt.technology/portrait/header/231623-1700000000.jpg?lm=1",
+    "nationalityId": 181,
+    "clubId": 15
+  },
+  {
+    "name": "Moussa Diarra",
+    "age": 23,
+    "position": "CB",
+    "rating": 72,
+    "marketValue": 2.0,
+    "imageUrl": "https://img.a.transfermarkt.technology/portrait/header/231624-1700000000.jpg?lm=1",
+    "nationalityId": 181,
+    "clubId": 15
+  },
+  {
+    "name": "Adrián Pica",
+    "age": 23,
+    "position": "CB",
+    "rating": 70,
+    "marketValue": 1.0,
+    "imageUrl": "https://img.a.transfermarkt.technology/portrait/header/231625-1700000000.jpg?lm=1",
+    "nationalityId": 181,
+    "clubId": 15
+  },
+  {
+    "name": "Ander Guevara",
+    "age": 25,
+    "position": "CM",
+    "rating": 74,
+    "marketValue": 4.0,
+    "imageUrl": "https://img.a.transfermarkt.technology/portrait/header/231626-1700000000.jpg?lm=1",
+    "nationalityId": 181,
+    "clubId": 15
+  },
+  {
+    "name": "Carlos Vicente",
+    "age": 20,
+    "position": "CM",
+    "rating": 72,
+    "marketValue": 2.0,
+    "imageUrl": "https://img.a.transfermarkt.technology/portrait/header/231627-1700000000.jpg?lm=1",
+    "nationalityId": 181,
+    "clubId": 15
+  },
+  {
+    "name": "Antonio Blanco",
+    "age": 24,
+    "position": "CM",
+    "rating": 73,
+    "marketValue": 3.0,
+    "imageUrl": "https://img.a.transfermarkt.technology/portrait/header/231628-1700000000.jpg?lm=1",
+    "nationalityId": 181,
+    "clubId": 15
+  },
+  {
+    "name": "Tomás Conechny",
+    "age": 24,
+    "position": "CAM",
+    "rating": 71,
+    "marketValue": 1.5,
+    "imageUrl": "https://img.a.transfermarkt.technology/portrait/header/231629-1700000000.jpg?lm=1",
+    "nationalityId": 181,
+    "clubId": 15
+  },
+  {
+    "name": "Jon Guridi",
+    "age": 28,
+    "position": "CM",
+    "rating": 72,
+    "marketValue": 2.5,
+    "imageUrl": "https://img.a.transfermarkt.technology/portrait/header/231630-1700000000.jpg?lm=1",
+    "nationalityId": 181,
+    "clubId": 15
+  },
+  {
+    "name": "Carles Aleñá",
+    "age": 27,
+    "position": "CM",
+    "rating": 75,
+    "marketValue": 5.0,
+    "imageUrl": "https://img.a.transfermarkt.technology/portrait/header/231631-1700000000.jpg?lm=1",
+    "nationalityId": 181,
+    "clubId": 15
+  },
+  {
+    "name": "Carlos Protesoni",
+    "age": 22,
+    "position": "CM",
+    "rating": 70,
+    "marketValue": 1.0,
+    "imageUrl": "https://img.a.transfermarkt.technology/portrait/header/231632-1700000000.jpg?lm=1",
+    "nationalityId": 181,
+    "clubId": 15
+  },
+  {
+    "name": "Joan Jordán",
+    "age": 30,
+    "position": "CM",
+    "rating": 74,
+    "marketValue": 3.5,
+    "imageUrl": "https://img.a.transfermarkt.technology/portrait/header/231633-1700000000.jpg?lm=1",
+    "nationalityId": 181,
+    "clubId": 15
+  },
+  {
+    "name": "Asier Villalibre",
+    "age": 26,
+    "position": "CF",
+    "rating": 73,
+    "marketValue": 4.0,
+    "imageUrl": "https://img.a.transfermarkt.technology/portrait/header/231634-1700000000.jpg?lm=1",
+    "nationalityId": 181,
+    "clubId": 15
+  },
+  {
+    "name": "Toni Martínez",
+    "age": 26,
+    "position": "CF",
+    "rating": 72,
+    "marketValue": 3.0,
+    "imageUrl": "https://img.a.transfermarkt.technology/portrait/header/231635-1700000000.jpg?lm=1",
+    "nationalityId": 181,
+    "clubId": 15
+  },
+  {
+    "name": "Carlos Martín",
+    "age": 21,
+    "position": "CF",
+    "rating": 70,
+    "marketValue": 1.0,
+    "imageUrl": "https://img.a.transfermarkt.technology/portrait/header/231636-1700000000.jpg?lm=1",
+    "nationalityId": 181,
+    "clubId": 15
+  },
+  {
+    "name": "Kike García",
+    "age": 34,
+    "position": "CF",
+    "rating": 75,
+    "marketValue": 5.0,
+    "imageUrl": "https://img.a.transfermarkt.technology/portrait/header/231637-1700000000.jpg?lm=1",
+    "nationalityId": 181,
+    "clubId": 15
+  },
+  {
+    "name": "Pau Cabanes",
+    "age": 19,
+    "position": "CF",
+    "rating": 70,
+    "marketValue": 0.5,
+    "imageUrl": "https://img.a.transfermarkt.technology/portrait/header/231638-1700000000.jpg?lm=1",
+    "nationalityId": 181,
+    "clubId": 15
+  },
+  {
+    "name": "Pau Víctor",
+    "age": 22,
+    "position": "CF",
+    "rating": 70,
+    "marketValue": 0.5,
+    "imageUrl": "https://img.a.transfermarkt.technology/portrait/header/231633-1700000000.jpg?lm=1",
+    "nationalityId": 181,
+    "clubId": 15
+  },
+  {
+    "name": "Matías Dituro",
+    "age": 38,
+    "position": "GK",
+    "rating": 70,
+    "marketValue": 0.2,
+    "imageUrl": "https://img.a.transfermarkt.technology/portrait/header/231614-1700000000.jpg?lm=1",
+    "nationalityId": 181,
+    "clubId": 16
+  },
+  {
+    "name": "Miguel San Román",
+    "age": 27,
+    "position": "GK",
+    "rating": 70,
+    "marketValue": 0.6,
+    "imageUrl": "https://img.a.transfermarkt.technology/portrait/header/231615-1700000000.jpg?lm=1",
+    "nationalityId": 181,
+    "clubId": 16
+  },
+  {
+    "name": "Owen Bosch",
+    "age": 18,
+    "position": "GK",
+    "rating": 60,
+    "marketValue": 0.5,
+    "imageUrl": "https://img.a.transfermarkt.technology/portrait/header/231616-1700000000.jpg?lm=1",
+    "nationalityId": 181,
+    "clubId": 16
+  },
+  {
+    "name": "David Affengruber",
+    "age": 24,
+    "position": "CB",
+    "rating": 70,
+    "marketValue": 5.0,
+    "imageUrl": "https://img.a.transfermarkt.technology/portrait/header/231617-1700000000.jpg?lm=1",
+    "nationalityId": 181,
+    "clubId": 16
+  },
+  {
+    "name": "Bambo Diaby",
+    "age": 27,
+    "position": "CB",
+    "rating": 70,
+    "marketValue": 0.8,
+    "imageUrl": "https://img.a.transfermarkt.technology/portrait/header/231618-1700000000.jpg?lm=1",
+    "nationalityId": 181,
+    "clubId": 16
+  },
+  {
+    "name": "John Donald",
+    "age": 24,
+    "position": "CB",
+    "rating": 70,
+    "marketValue": 0.8,
+    "imageUrl": "https://img.a.transfermarkt.technology/portrait/header/231619-1700000000.jpg?lm=1",
+    "nationalityId": 181,
+    "clubId": 16
+  },
+  {
+    "name": "Matia Barzic",
+    "age": 21,
+    "position": "CB",
+    "rating": 60,
+    "marketValue": 0.5,
+    "imageUrl": "https://img.a.transfermarkt.technology/portrait/header/231620-1700000000.jpg?lm=1",
+    "nationalityId": 181,
+    "clubId": 16
+  },
+  {
+    "name": "Pedro Bigas",
+    "age": 35,
+    "position": "CB",
+    "rating": 70,
+    "marketValue": 0.45,
+    "imageUrl": "https://img.a.transfermarkt.technology/portrait/header/231621-1700000000.jpg?lm=1",
+    "nationalityId": 181,
+    "clubId": 16
+  },
+  {
+    "name": "Álex Martín",
+    "age": 27,
+    "position": "CB",
+    "rating": 70,
+    "marketValue": 0.4,
+    "imageUrl": "https://img.a.transfermarkt.technology/portrait/header/231622-1700000000.jpg?lm=1",
+    "nationalityId": 181,
+    "clubId": 16
+  },
+  {
+    "name": "Mario Gaspar",
+    "age": 34,
+    "position": "CB",
+    "rating": 70,
+    "marketValue": 0.3,
+    "imageUrl": "https://img.a.transfermarkt.technology/portrait/header/231623-1700000000.jpg?lm=1",
+    "nationalityId": 181,
+    "clubId": 16
+  },
+  {
+    "name": "José Salinas",
+    "age": 24,
+    "position": "LB",
+    "rating": 70,
+    "marketValue": 3.0,
+    "imageUrl": "https://img.a.transfermarkt.technology/portrait/header/231624-1700000000.jpg?lm=1",
+    "nationalityId": 181,
+    "clubId": 16
+  },
+  {
+    "name": "Jairo Izquierdo",
+    "age": 31,
+    "position": "LB",
+    "rating": 70,
+    "marketValue": 0.6,
+    "imageUrl": "https://img.a.transfermarkt.technology/portrait/header/231625-1700000000.jpg?lm=1",
+    "nationalityId": 181,
+    "clubId": 16
+  },
+  {
+    "name": "Carlos Clerc",
+    "age": 33,
+    "position": "LB",
+    "rating": 70,
+    "marketValue": 0.4,
+    "imageUrl": "https://img.a.transfermarkt.technology/portrait/header/231626-1700000000.jpg?lm=1",
+    "nationalityId": 181,
+    "clubId": 16
+  },
+  {
+    "name": "Albert Niculăesei",
+    "age": 17,
+    "position": "LB",
+    "rating": 60,
+    "marketValue": 0.5,
+    "imageUrl": "https://img.a.transfermarkt.technology/portrait/header/231627-1700000000.jpg?lm=1",
+    "nationalityId": 181,
+    "clubId": 16
+  },
+  {
+    "name": "Germán Valera",
+    "age": 22,
+    "position": "RW",
+    "rating": 70,
+    "marketValue": 1.0,
+    "imageUrl": "https://img.a.transfermarkt.technology/portrait/header/231628-1700000000.jpg?lm=1",
+    "nationalityId": 181,
+    "clubId": 16
+  },
+  {
+    "name": "Hugo González",
+    "age": 21,
+    "position": "RW",
+    "rating": 70,
+    "marketValue": 0.5,
+    "imageUrl": "https://img.a.transfermarkt.technology/portrait/header/231629-1700000000.jpg?lm=1",
+    "nationalityId": 181,
+    "clubId": 16
+  },
+  {
+    "name": "Álvaro Rodríguez",
+    "age": 21,
+    "position": "CF",
+    "rating": 70,
+    "marketValue": 2.0,
+    "imageUrl": "https://img.a.transfermarkt.technology/portrait/header/231630-1700000000.jpg?lm=1",
+    "nationalityId": 181,
+    "clubId": 16
+  },
+  {
+    "name": "Martim Neto",
+    "age": 22,
+    "position": "CM",
+    "rating": 70,
+    "marketValue": 1.5,
+    "imageUrl": "https://img.a.transfermarkt.technology/portrait/header/231631-1700000000.jpg?lm=1",
+    "nationalityId": 181,
+    "clubId": 16
+  },
+  {
+    "name": "André Silva",
+    "age": 29,
+    "position": "CF",
+    "rating": 70,
+    "marketValue": 1.0,
+    "imageUrl": "https://img.a.transfermarkt.technology/portrait/header/231632-1700000000.jpg?lm=1",
+    "nationalityId": 181,
+    "clubId": 16
+  },
+  {
+    "name": "Federico Redondo",
+    "age": 22,
+    "position": "CDM",
+    "rating": 70,
+    "marketValue": 2.15,
+    "imageUrl": "https://img.a.transfermarkt.technology/portrait/header/231633-1700000000.jpg?lm=1",
+    "nationalityId": 181,
+    "clubId": 16
+  },
+  {
+    "name": "José Pérez",
+    "age": 24,
+    "position": "CM",
+    "rating": 70,
+    "marketValue": 0.8,
+    "imageUrl": "https://img.a.transfermarkt.technology/portrait/header/231634-1700000000.jpg?lm=1",
+    "nationalityId": 181,
+    "clubId": 16
+  },
+  {
+    "name": "Rodri Mendoza",
+    "age": 22,
+    "position": "CAM",
+    "rating": 70,
+    "marketValue": 0.5,
+    "imageUrl": "https://img.a.transfermarkt.technology/portrait/header/231635-1700000000.jpg?lm=1",
+    "nationalityId": 181,
+    "clubId": 16
+  },
+  {
+    "name": "Elbasan Rashani",
+    "age": 30,
+    "position": "LW",
+    "rating": 70,
+    "marketValue": 1.0,
+    "imageUrl": "https://img.a.transfermarkt.technology/portrait/header/231636-1700000000.jpg?lm=1",
+    "nationalityId": 181,
+    "clubId": 16
+  },
+  {
+    "name": "Sory Kaba",
+    "age": 28,
+    "position": "CF",
+    "rating": 70,
+    "marketValue": 1.0,
+    "imageUrl": "https://img.a.transfermarkt.technology/portrait/header/231637-1700000000.jpg?lm=1",
+    "nationalityId": 181,
+    "clubId": 16
+  },
+  {
+    "name": "Dennis Șerban",
+    "age": 22,
+    "position": "CM",
+    "rating": 70,
+    "marketValue": 0.5,
+    "imageUrl": "https://img.a.transfermarkt.technology/portrait/header/231638-1700000000.jpg?lm=1",
+    "nationalityId": 181,
+    "clubId": 16
+  },
+  {
+    "name": "Ricardo",
+    "age": 22,
+    "position": "CM",
+    "rating": 70,
+    "marketValue": 0.5,
+    "imageUrl": "https://img.a.transfermarkt.technology/portrait/header/231639-1700000000.jpg?lm=1",
+    "nationalityId": 181,
+    "clubId": 16
+  },
+  {
+    "name": "Eduardo",
+    "age": 22,
+    "position": "CM",
+    "rating": 70,
+    "marketValue": 0.5,
+    "imageUrl": "https://img.a.transfermarkt.technology/portrait/header/231640-1700000000.jpg?lm=1",
+    "nationalityId": 181,
+    "clubId": 16
+  },
+  {
+    "name": "Luca Zidane",
+    "age": 27,
+    "position": "GK",
+    "rating": 71,
+    "marketValue": 1.5,
+    "imageUrl": "https://img.a.transfermarkt.technology/portrait/header/231650-1700000000.jpg?lm=1",
+    "nationalityId": 181,
+    "clubId": 17
+  },
+  {
+    "name": "Marc Martínez",
+    "age": 35,
+    "position": "GK",
+    "rating": 70,
+    "marketValue": 0.2,
+    "imageUrl": "https://img.a.transfermarkt.technology/portrait/header/231651-1700000000.jpg?lm=1",
+    "nationalityId": 181,
+    "clubId": 17
+  },
+  {
+    "name": "Diego Mariño",
+    "age": 35,
+    "position": "GK",
+    "rating": 70,
+    "marketValue": 0.2,
+    "imageUrl": "https://img.a.transfermarkt.technology/portrait/header/231652-1700000000.jpg?lm=1",
+    "nationalityId": 181,
+    "clubId": 17
+  },
+  {
+    "name": "Pau Casadesús",
+    "age": 21,
+    "position": "RB",
+    "rating": 70,
+    "marketValue": 0.1,
+    "imageUrl": "https://img.a.transfermarkt.technology/portrait/header/231653-1700000000.jpg?lm=1",
+    "nationalityId": 181,
+    "clubId": 17
+  },
+  {
+    "name": "Álex Sola",
+    "age": 28,
+    "position": "RB",
+    "rating": 70,
+    "marketValue": 0.3,
+    "imageUrl": "https://img.a.transfermarkt.technology/portrait/header/231654-1700000000.jpg?lm=1",
+    "nationalityId": 181,
+    "clubId": 17
+  },
+  {
+    "name": "Seydou Fall",
+    "age": 22,
+    "position": "CB",
+    "rating": 70,
+    "marketValue": 0.3,
+    "imageUrl": "https://img.a.transfermarkt.technology/portrait/header/231655-1700000000.jpg?lm=1",
+    "nationalityId": 181,
+    "clubId": 17
+  },
+  {
+    "name": "Pablo Insua",
+    "age": 29,
+    "position": "CB",
+    "rating": 70,
+    "marketValue": 0.4,
+    "imageUrl": "https://img.a.transfermarkt.technology/portrait/header/231656-1700000000.jpg?lm=1",
+    "nationalityId": 181,
+    "clubId": 17
+  },
+  {
+    "name": "Manu Lama",
+    "age": 22,
+    "position": "CB",
+    "rating": 70,
+    "marketValue": 0.2,
+    "imageUrl": "https://img.a.transfermarkt.technology/portrait/header/231657-1700000000.jpg?lm=1",
+    "nationalityId": 181,
+    "clubId": 17
+  },
+  {
+    "name": "Diego Hormigo",
+    "age": 22,
+    "position": "CB",
+    "rating": 70,
+    "marketValue": 0.2,
+    "imageUrl": "https://img.a.transfermarkt.technology/portrait/header/231658-1700000000.jpg?lm=1",
+    "nationalityId": 181,
+    "clubId": 17
+  },
+  {
+    "name": "Loïc Williams",
+    "age": 24,
+    "position": "CB",
+    "rating": 70,
+    "marketValue": 0.3,
+    "imageUrl": "https://img.a.transfermarkt.technology/portrait/header/231659-1700000000.jpg?lm=1",
+    "nationalityId": 181,
+    "clubId": 17
+  },
+  {
+    "name": "Baila Diallo",
+    "age": 22,
+    "position": "LB",
+    "rating": 70,
+    "marketValue": 0.2,
+    "imageUrl": "https://img.a.transfermarkt.technology/portrait/header/231660-1700000000.jpg?lm=1",
+    "nationalityId": 181,
+    "clubId": 17
+  },
+  {
+    "name": "Rubén Alcaraz",
+    "age": 34,
+    "position": "CM",
+    "rating": 70,
+    "marketValue": 0.5,
+    "imageUrl": "https://img.a.transfermarkt.technology/portrait/header/231661-1700000000.jpg?lm=1",
+    "nationalityId": 181,
+    "clubId": 17
+  },
+  {
+    "name": "Sergio Ruiz",
+    "age": 30,
+    "position": "CM",
+    "rating": 70,
+    "marketValue": 2.0,
+    "imageUrl": "https://img.a.transfermarkt.technology/portrait/header/231662-1700000000.jpg?lm=1",
+    "nationalityId": 181,
+    "clubId": 17
+  },
+  {
+    "name": "Luka Gagnidze",
+    "age": 22,
+    "position": "CM",
+    "rating": 70,
+    "marketValue": 1.2,
+    "imageUrl": "https://img.a.transfermarkt.technology/portrait/header/231663-1700000000.jpg?lm=1",
+    "nationalityId": 181,
+    "clubId": 17
+  },
+  {
+    "name": "Martin Hongla",
+    "age": 27,
+    "position": "CDM",
+    "rating": 70,
+    "marketValue": 1.8,
+    "imageUrl": "https://img.a.transfermarkt.technology/portrait/header/231664-1700000000.jpg?lm=1",
+    "nationalityId": 181,
+    "clubId": 17
+  },
+  {
+    "name": "Pedro Alemañ",
+    "age": 23,
+    "position": "CM",
+    "rating": 70,
+    "marketValue": 0.2,
+    "imageUrl": "https://img.a.transfermarkt.technology/portrait/header/231665-1700000000.jpg?lm=1",
+    "nationalityId": 181,
+    "clubId": 17
+  },
+  {
+    "name": "Juanma Lendínez",
+    "age": 22,
+    "position": "CM",
+    "rating": 70,
+    "marketValue": 0.2,
+    "imageUrl": "https://img.a.transfermarkt.technology/portrait/header/231666-1700000000.jpg?lm=1",
+    "nationalityId": 181,
+    "clubId": 17
+  },
+  {
+    "name": "Jose Arnaiz",
+    "age": 27,
+    "position": "LW",
+    "rating": 70,
+    "marketValue": 0.6,
+    "imageUrl": "https://img.a.transfermarkt.technology/portrait/header/231667-1700000000.jpg?lm=1",
+    "nationalityId": 181,
+    "clubId": 17
+  },
+  {
+    "name": "Mohamed Bouldini",
+    "age": 29,
+    "position": "CF",
+    "rating": 70,
+    "marketValue": 0.6,
+    "imageUrl": "https://img.a.transfermarkt.technology/portrait/header/231668-1700000000.jpg?lm=1",
+    "nationalityId": 181,
+    "clubId": 17
+  },
+  {
+    "name": "Pablo Sáenz",
+    "age": 24,
+    "position": "CF",
+    "rating": 70,
+    "marketValue": 0.7,
+    "imageUrl": "https://img.a.transfermarkt.technology/portrait/header/231669-1700000000.jpg?lm=1",
+    "nationalityId": 181,
+    "clubId": 17
+  },
+  {
+    "name": "Seydou Faye",
+    "age": 22,
+    "position": "CF",
+    "rating": 70,
+    "marketValue": 0.3,
+    "imageUrl": "https://img.a.transfermarkt.technology/portrait/header/231670-1700000000.jpg?lm=1",
+    "nationalityId": 181,
+    "clubId": 17
+  },
+  {
+    "name": "André Ferreira",
+    "age": 29,
+    "position": "GK",
+    "rating": 70,
+    "marketValue": 0.7,
+    "imageUrl": "https://img.a.transfermarkt.technology/portrait/header/231650-1700000000.jpg?lm=1",
+    "nationalityId": 181,
+    "clubId": 18
+  },
+  {
+    "name": "Álvaro Aceves",
+    "age": 21,
+    "position": "GK",
+    "rating": 70,
+    "marketValue": 0.4,
+    "imageUrl": "https://img.a.transfermarkt.technology/portrait/header/231651-1700000000.jpg?lm=1",
+    "nationalityId": 181,
+    "clubId": 18
+  },
+  {
+    "name": "Karl Hein",
+    "age": 23,
+    "position": "GK",
+    "rating": 70,
+    "marketValue": 0.6,
+    "imageUrl": "https://img.a.transfermarkt.technology/portrait/header/231652-1700000000.jpg?lm=1",
+    "nationalityId": 181,
+    "clubId": 18
+  },
+  {
+    "name": "Arnau Rafús",
+    "age": 21,
+    "position": "GK",
+    "rating": 70,
+    "marketValue": 0.4,
+    "imageUrl": "https://img.a.transfermarkt.technology/portrait/header/231653-1700000000.jpg?lm=1",
+    "nationalityId": 181,
+    "clubId": 18
+  },
+  {
+    "name": "Joseph Aidoo",
+    "age": 28,
+    "position": "CB",
+    "rating": 70,
+    "marketValue": 2.0,
+    "imageUrl": "https://img.a.transfermarkt.technology/portrait/header/231654-1700000000.jpg?lm=1",
+    "nationalityId": 181,
+    "clubId": 18
+  },
+  {
+    "name": "Eray Cömert",
+    "age": 26,
+    "position": "CB",
+    "rating": 70,
+    "marketValue": 1.5,
+    "imageUrl": "https://img.a.transfermarkt.technology/portrait/header/231655-1700000000.jpg?lm=1",
+    "nationalityId": 181,
+    "clubId": 18
+  },
+  {
+    "name": "David Torres",
+    "age": 24,
+    "position": "CB",
+    "rating": 70,
+    "marketValue": 1.5,
+    "imageUrl": "https://img.a.transfermarkt.technology/portrait/header/231656-1700000000.jpg?lm=1",
+    "nationalityId": 181,
+    "clubId": 18
+  },
+  {
+    "name": "Pablo Tomeo",
+    "age": 25,
+    "position": "CB",
+    "rating": 70,
+    "marketValue": 1.2,
+    "imageUrl": "https://img.a.transfermarkt.technology/portrait/header/231657-1700000000.jpg?lm=1",
+    "nationalityId": 181,
+    "clubId": 18
+  },
+  {
+    "name": "Iván Garriel",
+    "age": 22,
+    "position": "LB",
+    "rating": 70,
+    "marketValue": 0.2,
+    "imageUrl": "https://img.a.transfermarkt.technology/portrait/header/231658-1700000000.jpg?lm=1",
+    "nationalityId": 181,
+    "clubId": 18
+  },
+  {
+    "name": "Guillermo Bueno",
+    "age": 22,
+    "position": "CB",
+    "rating": 70,
+    "marketValue": 0.8,
+    "imageUrl": "https://img.a.transfermarkt.technology/portrait/header/231659-1700000000.jpg?lm=1",
+    "nationalityId": 181,
+    "clubId": 18
+  },
+  {
+    "name": "Mohamed Jaouab",
+    "age": 22,
+    "position": "CB",
+    "rating": 70,
+    "marketValue": 0.8,
+    "imageUrl": "https://img.a.transfermarkt.technology/portrait/header/231660-1700000000.jpg?lm=1",
+    "nationalityId": 181,
+    "clubId": 18
+  },
+  {
+    "name": "Álvaro Pérez",
+    "age": 21,
+    "position": "CB",
+    "rating": 70,
+    "marketValue": 0.2,
+    "imageUrl": "https://img.a.transfermarkt.technology/portrait/header/231661-1700000000.jpg?lm=1",
+    "nationalityId": 181,
+    "clubId": 18
+  },
+  {
+    "name": "Javi Sánchez",
+    "age": 28,
+    "position": "CB",
+    "rating": 70,
+    "marketValue": 1.5,
+    "imageUrl": "https://img.a.transfermarkt.technology/portrait/header/231662-1700000000.jpg?lm=1",
+    "nationalityId": 181,
+    "clubId": 18
+  },
+  {
+    "name": "Víctor Meseguer",
+    "age": 24,
+    "position": "CM",
+    "rating": 70,
+    "marketValue": 1.5,
+    "imageUrl": "https://img.a.transfermarkt.technology/portrait/header/231663-1700000000.jpg?lm=1",
+    "nationalityId": 181,
+    "clubId": 18
+  },
+  {
+    "name": "Julien Ponceau",
+    "age": 24,
+    "position": "CM",
+    "rating": 70,
+    "marketValue": 4.0,
+    "imageUrl": "https://img.a.transfermarkt.technology/portrait/header/231664-1700000000.jpg?lm=1",
+    "nationalityId": 181,
+    "clubId": 18
+  },
+  {
+    "name": "Mathis Lachuer",
+    "age": 22,
+    "position": "CM",
+    "rating": 70,
+    "marketValue": 1.0,
+    "imageUrl": "https://img.a.transfermarkt.technology/portrait/header/231665-1700000000.jpg?lm=1",
+    "nationalityId": 181,
+    "clubId": 18
+  },
+  {
+    "name": "Stanko Jurić",
+    "age": 22,
+    "position": "CM",
+    "rating": 70,
+    "marketValue": 1.2,
+    "imageUrl": "https://img.a.transfermarkt.technology/portrait/header/231666-1700000000.jpg?lm=1",
+    "nationalityId": 181,
+    "clubId": 18
+  },
+  {
+    "name": "Iván San José Cantalejo",
+    "age": 22,
+    "position": "CM",
+    "rating": 70,
+    "marketValue": 1.5,
+    "imageUrl": "https://img.a.transfermarkt.technology/portrait/header/231667-1700000000.jpg?lm=1",
+    "nationalityId": 181,
+    "clubId": 18
+  },
+  {
+    "name": "Mario Maroto Argüello",
+    "age": 21,
+    "position": "CM",
+    "rating": 70,
+    "marketValue": 0.2,
+    "imageUrl": "https://img.a.transfermarkt.technology/portrait/header/231668-1700000000.jpg?lm=1",
+    "nationalityId": 181,
+    "clubId": 18
+  },
+  {
+    "name": "Ibrahim Akitunde Alani",
+    "age": 21,
+    "position": "CM",
+    "rating": 70,
+    "marketValue": 0.5,
+    "imageUrl": "https://img.a.transfermarkt.technology/portrait/header/231669-1700000000.jpg?lm=1",
+    "nationalityId": 181,
+    "clubId": 18
+  },
+  {
+    "name": "Iván Sánchez",
+    "age": 28,
+    "position": "RW",
+    "rating": 70,
+    "marketValue": 0.6,
+    "imageUrl": "https://img.a.transfermarkt.technology/portrait/header/231670-1700000000.jpg?lm=1",
+    "nationalityId": 181,
+    "clubId": 18
+  },
+  {
+    "name": "Raúl Moro",
+    "age": 22,
+    "position": "LW",
+    "rating": 70,
+    "marketValue": 0.7,
+    "imageUrl": "https://img.a.transfermarkt.technology/portrait/header/231671-1700000000.jpg?lm=1",
+    "nationalityId": 181,
+    "clubId": 18
+  },
+  {
+    "name": "Sergi Canós",
+    "age": 26,
+    "position": "RW",
+    "rating": 70,
+    "marketValue": 1.0,
+    "imageUrl": "https://img.a.transfermarkt.technology/portrait/header/231672-1700000000.jpg?lm=1",
+    "nationalityId": 181,
+    "clubId": 18
+  },
+  {
+    "name": "Peter Federico",
+    "age": 22,
+    "position": "RW",
+    "rating": 70,
+    "marketValue": 0.6,
+    "imageUrl": "https://img.a.transfermarkt.technology/portrait/header/231673-1700000000.jpg?lm=1",
+    "nationalityId": 181,
+    "clubId": 18
+  },
+  {
+    "name": "Gonzalo Martínez",
+    "age": 25,
+    "position": "RW",
+    "rating": 70,
+    "marketValue": 0.8,
+    "imageUrl": "https://img.a.transfermarkt.technology/portrait/header/231674-1700000000.jpg?lm=1",
+    "nationalityId": 181,
+    "clubId": 18
+  },
+  {
+    "name": "David Soria",
+    "age": 32,
+    "position": "GK",
+    "rating": 70,
+    "marketValue": 3.0,
+    "imageUrl": "https://img.a.transfermarkt.technology/portrait/header/231650-1700000000.jpg?lm=1",
+    "nationalityId": 181,
+    "clubId": 19
+  },
+  {
+    "name": "Jiri Letacek",
+    "age": 26,
+    "position": "GK",
+    "rating": 70,
+    "marketValue": 2.0,
+    "imageUrl": "https://img.a.transfermarkt.technology/portrait/header/231651-1700000000.jpg?lm=1",
+    "nationalityId": 203,
+    "clubId": 19
+  },
+  {
+    "name": "Jorge Benito",
+    "age": 19,
+    "position": "GK",
+    "rating": 60,
+    "marketValue": 0.025,
+    "imageUrl": "https://img.a.transfermarkt.technology/portrait/header/231652-1700000000.jpg?lm=1",
+    "nationalityId": 181,
+    "clubId": 19
+  },
+  {
+    "name": "Djordjije Medenica",
+    "age": 18,
+    "position": "GK",
+    "rating": 60,
+    "marketValue": 0.025,
+    "imageUrl": "https://img.a.transfermarkt.technology/portrait/header/231653-1700000000.jpg?lm=1",
+    "nationalityId": 181,
+    "clubId": 19
+  },
+  {
+    "name": "Omar Alderete",
+    "age": 28,
+    "position": "CB",
+    "rating": 70,
+    "marketValue": 8.0,
+    "imageUrl": "https://img.a.transfermarkt.technology/portrait/header/231654-1700000000.jpg?lm=1",
+    "nationalityId": 181,
+    "clubId": 19
+  },
+  {
+    "name": "Juan Berrocal",
+    "age": 26,
+    "position": "CB",
+    "rating": 70,
+    "marketValue": 1.5,
+    "imageUrl": "https://img.a.transfermarkt.technology/portrait/header/231655-1700000000.jpg?lm=1",
+    "nationalityId": 181,
+    "clubId": 19
+  },
+  {
+    "name": "Abdel Abqar",
+    "age": 26,
+    "position": "CB",
+    "rating": 70,
+    "marketValue": 7.5,
+    "imageUrl": "https://img.a.transfermarkt.technology/portrait/header/231656-1700000000.jpg?lm=1",
+    "nationalityId": 181,
+    "clubId": 19
+  },
+  {
+    "name": "Djené Dakonam",
+    "age": 33,
+    "position": "CB",
+    "rating": 70,
+    "marketValue": 3.0,
+    "imageUrl": "https://img.a.transfermarkt.technology/portrait/header/231657-1700000000.jpg?lm=1",
+    "nationalityId": 181,
+    "clubId": 19
+  },
+  {
+    "name": "Domingos Duarte",
+    "age": 29,
+    "position": "CB",
+    "rating": 70,
+    "marketValue": 2.5,
+    "imageUrl": "https://img.a.transfermarkt.technology/portrait/header/231658-1700000000.jpg?lm=1",
+    "nationalityId": 181,
+    "clubId": 19
+  },
+  {
+    "name": "Luis Milla",
+    "age": 30,
+    "position": "CM",
+    "rating": 70,
+    "marketValue": 4.0,
+    "imageUrl": "https://img.a.transfermarkt.technology/portrait/header/231659-1700000000.jpg?lm=1",
+    "nationalityId": 181,
+    "clubId": 19
+  },
+  {
+    "name": "Mauro Arambarri",
+    "age": 29,
+    "position": "CM",
+    "rating": 70,
+    "marketValue": 5.0,
+    "imageUrl": "https://img.a.transfermarkt.technology/portrait/header/231660-1700000000.jpg?lm=1",
+    "nationalityId": 181,
+    "clubId": 19
+  },
+  {
+    "name": "Javi Muñoz",
+    "age": 26,
+    "position": "CM",
+    "rating": 70,
+    "marketValue": 0.6,
+    "imageUrl": "https://img.a.transfermarkt.technology/portrait/header/231661-1700000000.jpg?lm=1",
+    "nationalityId": 181,
+    "clubId": 19
+  },
+  {
+    "name": "Mario Martín",
+    "age": 21,
+    "position": "CM",
+    "rating": 70,
+    "marketValue": 1.0,
+    "imageUrl": "https://img.a.transfermarkt.technology/portrait/header/231662-1700000000.jpg?lm=1",
+    "nationalityId": 181,
+    "clubId": 19
+  },
+  {
+    "name": "Yvan Neyou",
+    "age": 28,
+    "position": "CM",
+    "rating": 70,
+    "marketValue": 1.0,
+    "imageUrl": "https://img.a.transfermarkt.technology/portrait/header/231663-1700000000.jpg?lm=1",
+    "nationalityId": 181,
+    "clubId": 19
+  },
+  {
+    "name": "Carles Pérez",
+    "age": 26,
+    "position": "RW",
+    "rating": 70,
+    "marketValue": 2.5,
+    "imageUrl": "https://img.a.transfermarkt.technology/portrait/header/231664-1700000000.jpg?lm=1",
+    "nationalityId": 181,
+    "clubId": 19
+  },
+  {
+    "name": "Christantus Uche",
+    "age": 21,
+    "position": "CF",
+    "rating": 70,
+    "marketValue": 1.0,
+    "imageUrl": "https://img.a.transfermarkt.technology/portrait/header/231665-1700000000.jpg?lm=1",
+    "nationalityId": 181,
+    "clubId": 19
+  },
+  {
+    "name": "Juan Iglesias",
+    "age": 26,
+    "position": "LB",
+    "rating": 70,
+    "marketValue": 1.0,
+    "imageUrl": "https://img.a.transfermarkt.technology/portrait/header/231666-1700000000.jpg?lm=1",
+    "nationalityId": 181,
+    "clubId": 19
+  },
+  {
+    "name": "Diego Rico",
+    "age": 31,
+    "position": "LB",
+    "rating": 70,
+    "marketValue": 1.5,
+    "imageUrl": "https://img.a.transfermarkt.technology/portrait/header/231667-1700000000.jpg?lm=1",
+    "nationalityId": 181,
+    "clubId": 19
+  },
+  {
+    "name": "Álex Sola",
+    "age": 25,
+    "position": "RB",
+    "rating": 70,
+    "marketValue": 1.0,
+    "imageUrl": "https://img.a.transfermarkt.technology/portrait/header/231668-1700000000.jpg?lm=1",
+    "nationalityId": 181,
+    "clubId": 19
+  },
+  {
+    "name": "Bekhoucha",
+    "age": 19,
+    "position": "RB",
+    "rating": 60,
+    "marketValue": 0.025,
+    "imageUrl": "https://img.a.transfermarkt.technology/portrait/header/231669-1700000000.jpg?lm=1",
+    "nationalityId": 181,
+    "clubId": 19
+  },
+  {
+    "name": "Randy Nteka",
+    "age": 27,
+    "position": "CAM",
+    "rating": 70,
+    "marketValue": 1.5,
+    "imageUrl": "https://img.a.transfermarkt.technology/portrait/header/231670-1700000000.jpg?lm=1",
+    "nationalityId": 181,
+    "clubId": 19
+  },
+  {
+    "name": "Luís Maximiano",
+    "age": 26,
+    "position": "GK",
+    "rating": 70,
+    "marketValue": 3.0,
+    "imageUrl": "https://img.a.transfermarkt.technology/portrait/header/231650-1700000000.jpg?lm=1",
+    "nationalityId": 181,
+    "clubId": 20
+  },
+  {
+    "name": "Fernando Martínez",
+    "age": 35,
+    "position": "GK",
+    "rating": 70,
+    "marketValue": 0.35,
+    "imageUrl": "https://img.a.transfermarkt.technology/portrait/header/231651-1700000000.jpg?lm=1",
+    "nationalityId": 181,
+    "clubId": 20
+  },
+  {
+    "name": "Bruno Iribarne",
+    "age": 20,
+    "position": "GK",
+    "rating": 60,
+    "marketValue": 0.1,
+    "imageUrl": "https://img.a.transfermarkt.technology/portrait/header/231652-1700000000.jpg?lm=1",
+    "nationalityId": 181,
+    "clubId": 20
+  },
+  {
+    "name": "César Montes",
+    "age": 28,
+    "position": "CB",
+    "rating": 70,
+    "marketValue": 4.5,
+    "imageUrl": "https://img.a.transfermarkt.technology/portrait/header/231653-1700000000.jpg?lm=1",
+    "nationalityId": 181,
+    "clubId": 20
+  },
+  {
+    "name": "Edgar González",
+    "age": 28,
+    "position": "CB",
+    "rating": 70,
+    "marketValue": 2.0,
+    "imageUrl": "https://img.a.transfermarkt.technology/portrait/header/231654-1700000000.jpg?lm=1",
+    "nationalityId": 181,
+    "clubId": 20
+  },
+  {
+    "name": "Chumi",
+    "age": 26,
+    "position": "CB",
+    "rating": 70,
+    "marketValue": 1.8,
+    "imageUrl": "https://img.a.transfermarkt.technology/portrait/header/231655-1700000000.jpg?lm=1",
+    "nationalityId": 181,
+    "clubId": 20
+  },
+  {
+    "name": "Kaiky",
+    "age": 22,
+    "position": "CB",
+    "rating": 70,
+    "marketValue": 3.0,
+    "imageUrl": "https://img.a.transfermarkt.technology/portrait/header/231656-1700000000.jpg?lm=1",
+    "nationalityId": 181,
+    "clubId": 20
+  },
+  {
+    "name": "Marc Pubill",
+    "age": 26,
+    "position": "RB",
+    "rating": 70,
+    "marketValue": 1.0,
+    "imageUrl": "https://img.a.transfermarkt.technology/portrait/header/231657-1700000000.jpg?lm=1",
+    "nationalityId": 181,
+    "clubId": 20
+  },
+  {
+    "name": "Léo Baptistão",
+    "age": 32,
+    "position": "LW",
+    "rating": 70,
+    "marketValue": 2.5,
+    "imageUrl": "https://img.a.transfermarkt.technology/portrait/header/231658-1700000000.jpg?lm=1",
+    "nationalityId": 181,
+    "clubId": 20
+  },
+  {
+    "name": "Nico Melamed",
+    "age": 23,
+    "position": "CAM",
+    "rating": 70,
+    "marketValue": 4.0,
+    "imageUrl": "https://img.a.transfermarkt.technology/portrait/header/231659-1700000000.jpg?lm=1",
+    "nationalityId": 181,
+    "clubId": 20
+  },
+  {
+    "name": "Gonzalo Melero",
+    "age": 30,
+    "position": "CM",
+    "rating": 70,
+    "marketValue": 2.0,
+    "imageUrl": "https://img.a.transfermarkt.technology/portrait/header/231660-1700000000.jpg?lm=1",
+    "nationalityId": 181,
+    "clubId": 20
+  },
+  {
+    "name": "Dion Lopy",
+    "age": 22,
+    "position": "CM",
+    "rating": 70,
+    "marketValue": 6.0,
+    "imageUrl": "https://img.a.transfermarkt.technology/portrait/header/231661-1700000000.jpg?lm=1",
+    "nationalityId": 181,
+    "clubId": 20
+  },
+  {
+    "name": "Iddrisu Baba",
+    "age": 27,
+    "position": "CM",
+    "rating": 70,
+    "marketValue": 1.2,
+    "imageUrl": "https://img.a.transfermarkt.technology/portrait/header/231662-1700000000.jpg?lm=1",
+    "nationalityId": 181,
+    "clubId": 20
+  },
+  {
+    "name": "Arnau Puigmal",
+    "age": 24,
+    "position": "CM",
+    "rating": 70,
+    "marketValue": 1.5,
+    "imageUrl": "https://img.a.transfermarkt.technology/portrait/header/231663-1700000000.jpg?lm=1",
+    "nationalityId": 181,
+    "clubId": 20
+  },
+  {
+    "name": "Luis Suárez",
+    "age": 27,
+    "position": "CF",
+    "rating": 70,
+    "marketValue": 25.0,
+    "imageUrl": "https://img.a.transfermarkt.technology/portrait/header/231664-1700000000.jpg?lm=1",
+    "nationalityId": 181,
+    "clubId": 20
+  },
+  {
+    "name": "Lázaro",
+    "age": 23,
+    "position": "RW",
+    "rating": 70,
+    "marketValue": 2.0,
+    "imageUrl": "https://img.a.transfermarkt.technology/portrait/header/231665-1700000000.jpg?lm=1",
+    "nationalityId": 181,
+    "clubId": 20
+  },
+  {
+    "name": "Patrick Soko",
+    "age": 27,
+    "position": "RW",
+    "rating": 70,
+    "marketValue": 1.2,
+    "imageUrl": "https://img.a.transfermarkt.technology/portrait/header/231666-1700000000.jpg?lm=1",
+    "nationalityId": 181,
+    "clubId": 20
+  },
+  {
+    "name": "Adrián Embarba",
+    "age": 33,
+    "position": "RW",
+    "rating": 70,
+    "marketValue": 1.2,
+    "imageUrl": "https://img.a.transfermarkt.technology/portrait/header/231667-1700000000.jpg?lm=1",
+    "nationalityId": 181,
+    "clubId": 20
+  },
+  {
+    "name": "Federico Bonini",
+    "age": 24,
+    "position": "CB",
+    "rating": 70,
+    "marketValue": 4.0,
+    "imageUrl": "https://img.a.transfermarkt.technology/portrait/header/231668-1700000000.jpg?lm=1",
+    "nationalityId": 181,
+    "clubId": 20
+  },
+  {
+    "name": "Rubén Quintanilla Rodríguez",
+    "age": 25,
+    "position": "CM",
+    "rating": 60,
+    "marketValue": 0.025,
+    "imageUrl": "https://img.a.transfermarkt.technology/portrait/header/231669-1700000000.jpg?lm=1",
+    "nationalityId": 181,
+    "clubId": 20
+  },
+  {
+    "name": "Saif Eddine El Aamari",
+    "age": 20,
+    "position": "CM",
+    "rating": 60,
+    "marketValue": 0.025,
+    "imageUrl": "https://img.a.transfermarkt.technology/portrait/header/231670-1700000000.jpg?lm=1",
+    "nationalityId": 181,
+    "clubId": 20
+  },
+  {
+    "name": "David Gil",
+    "age": 31,
+    "position": "GK",
+    "rating": 70,
+    "marketValue": 0.7,
+    "imageUrl": "https://img.a.transfermarkt.technology/portrait/header/231650-1700000000.jpg?lm=1",
+    "nationalityId": 181,
+    "clubId": 21
+  },
+  {
+    "name": "José Antonio Caro",
+    "age": 31,
+    "position": "GK",
+    "rating": 70,
+    "marketValue": 0.6,
+    "imageUrl": "https://img.a.transfermarkt.technology/portrait/header/231651-1700000000.jpg?lm=1",
+    "nationalityId": 181,
+    "clubId": 21
+  },
+  {
+    "name": "Víctor Aznar",
+    "age": 22,
+    "position": "GK",
+    "rating": 60,
+    "marketValue": 0.1,
+    "imageUrl": "https://img.a.transfermarkt.technology/portrait/header/231652-1700000000.jpg?lm=1",
+    "nationalityId": 181,
+    "clubId": 21
+  },
+  {
+    "name": "Rubén Domínguez",
+    "age": 20,
+    "position": "GK",
+    "rating": 60,
+    "marketValue": 0.025,
+    "imageUrl": "https://img.a.transfermarkt.technology/portrait/header/231653-1700000000.jpg?lm=1",
+    "nationalityId": 181,
+    "clubId": 21
+  },
+  {
+    "name": "Ángel Pérez",
+    "age": 20,
+    "position": "GK",
+    "rating": 60,
+    "marketValue": 0.025,
+    "imageUrl": "https://img.a.transfermarkt.technology/portrait/header/231654-1700000000.jpg?lm=1",
+    "nationalityId": 181,
+    "clubId": 21
+  },
+  {
+    "name": "Víctor Chust",
+    "age": 25,
+    "position": "CB",
+    "rating": 70,
+    "marketValue": 2.0,
+    "imageUrl": "https://img.a.transfermarkt.technology/portrait/header/231655-1700000000.jpg?lm=1",
+    "nationalityId": 181,
+    "clubId": 21
+  },
+  {
+    "name": "Bojan Ko\u0107evi\u0107",
+    "age": 21,
+    "position": "CB",
+    "rating": 70,
+    "marketValue": 1.2,
+    "imageUrl": "https://img.a.transfermarkt.technology/portrait/header/231656-1700000000.jpg?lm=1",
+    "nationalityId": 181,
+    "clubId": 21
+  },
+  {
+    "name": "Fali",
+    "age": 31,
+    "position": "CB",
+    "rating": 70,
+    "marketValue": 0.8,
+    "imageUrl": "https://img.a.transfermarkt.technology/portrait/header/231657-1700000000.jpg?lm=1",
+    "nationalityId": 181,
+    "clubId": 21
+  },
+  {
+    "name": "José Mari",
+    "age": 37,
+    "position": "CM",
+    "rating": 70,
+    "marketValue": 0.5,
+    "imageUrl": "https://img.a.transfermarkt.technology/portrait/header/231658-1700000000.jpg?lm=1",
+    "nationalityId": 181,
+    "clubId": 21
+  },
+  {
+    "name": "Álex Fernández",
+    "age": 32,
+    "position": "CM",
+    "rating": 70,
+    "marketValue": 1.0,
+    "imageUrl": "https://img.a.transfermarkt.technology/portrait/header/231659-1700000000.jpg?lm=1",
+    "nationalityId": 181,
+    "clubId": 21
+  },
+  {
+    "name": "Jon Ander Garrido",
+    "age": 28,
+    "position": "CM",
+    "rating": 70,
+    "marketValue": 0.8,
+    "imageUrl": "https://img.a.transfermarkt.technology/portrait/header/231660-1700000000.jpg?lm=1",
+    "nationalityId": 181,
+    "clubId": 21
+  },
+  {
+    "name": "Iván Alejo",
+    "age": 29,
+    "position": "RW",
+    "rating": 70,
+    "marketValue": 1.5,
+    "imageUrl": "https://img.a.transfermarkt.technology/portrait/header/231661-1700000000.jpg?lm=1",
+    "nationalityId": 181,
+    "clubId": 21
+  },
+  {
+    "name": "Chris Ramos",
+    "age": 26,
+    "position": "CF",
+    "rating": 70,
+    "marketValue": 1.0,
+    "imageUrl": "https://img.a.transfermarkt.technology/portrait/header/231662-1700000000.jpg?lm=1",
+    "nationalityId": 181,
+    "clubId": 21
+  },
+  {
+    "name": "Rubén Sobrino",
+    "age": 32,
+    "position": "CF",
+    "rating": 70,
+    "marketValue": 1.0,
+    "imageUrl": "https://img.a.transfermarkt.technology/portrait/header/231663-1700000000.jpg?lm=1",
+    "nationalityId": 181,
+    "clubId": 21
+  },
+  {
+    "name": "Suso",
+    "age": 31,
+    "position": "RW",
+    "rating": 70,
+    "marketValue": 2.5,
+    "imageUrl": "https://img.a.transfermarkt.technology/portrait/header/231664-1700000000.jpg?lm=1",
+    "nationalityId": 181,
+    "clubId": 21
+  },
+  {
+    "name": "Javi Ontiveros",
+    "age": 28,
+    "position": "LW",
+    "rating": 70,
+    "marketValue": 1.0,
+    "imageUrl": "https://img.a.transfermarkt.technology/portrait/header/231665-1700000000.jpg?lm=1",
+    "nationalityId": 181,
+    "clubId": 21
+  },
+  {
+    "name": "Álex Fernández",
+    "age": 32,
+    "position": "CM",
+    "rating": 70,
+    "marketValue": 1.0,
+    "imageUrl": "https://img.a.transfermarkt.technology/portrait/header/231666-1700000000.jpg?lm=1",
+    "nationalityId": 181,
+    "clubId": 21
+  },
+  {
+    "name": "Álex Fernández",
+    "age": 32,
+    "position": "CM",
+    "rating": 70,
+    "marketValue": 1.0,
+    "imageUrl": "https://img.a.transfermarkt.technology/portrait/header/231667-1700000000.jpg?lm=1",
+    "nationalityId": 181,
+    "clubId": 21
+  },
+  {
+    "name": "Pablo Cuñat",
+    "age": 23,
+    "position": "GK",
+    "rating": 70,
+    "marketValue": 0.7,
+    "imageUrl": "https://img.a.transfermarkt.technology/portrait/header/231650-1700000000.jpg?lm=1",
+    "nationalityId": 181,
+    "clubId": 22
+  },
+  {
+    "name": "Mathew Ryan",
+    "age": 33,
+    "position": "GK",
+    "rating": 70,
+    "marketValue": 0.6,
+    "imageUrl": "https://img.a.transfermarkt.technology/portrait/header/231651-1700000000.jpg?lm=1",
+    "nationalityId": 13,
+    "clubId": 22
+  },
+  {
+    "name": "Carlos Espí",
+    "age": 18,
+    "position": "CF",
+    "rating": 60,
+    "marketValue": 0.1,
+    "imageUrl": "https://img.a.transfermarkt.technology/portrait/header/231652-1700000000.jpg?lm=1",
+    "nationalityId": 181,
+    "clubId": 22
+  },
+  {
+    "name": "Roger Brugué",
+    "age": 28,
+    "position": "LW",
+    "rating": 70,
+    "marketValue": 2.0,
+    "imageUrl": "https://img.a.transfermarkt.technology/portrait/header/231653-1700000000.jpg?lm=1",
+    "nationalityId": 181,
+    "clubId": 22
+  },
+  {
+    "name": "Carlos Álvarez",
+    "age": 22,
+    "position": "RW",
+    "rating": 70,
+    "marketValue": 6.0,
+    "imageUrl": "https://img.a.transfermarkt.technology/portrait/header/231654-1700000000.jpg?lm=1",
+    "nationalityId": 181,
+    "clubId": 22
+  },
+  {
+    "name": "José Luis Morales",
+    "age": 38,
+    "position": "RW",
+    "rating": 70,
+    "marketValue": 1.0,
+    "imageUrl": "https://img.a.transfermarkt.technology/portrait/header/231655-1700000000.jpg?lm=1",
+    "nationalityId": 181,
+    "clubId": 22
+  },
+  {
+    "name": "Vicente Iborra",
+    "age": 35,
+    "position": "CM",
+    "rating": 70,
+    "marketValue": 0.8,
+    "imageUrl": "https://img.a.transfermarkt.technology/portrait/header/231656-1700000000.jpg?lm=1",
+    "nationalityId": 181,
+    "clubId": 22
+  },
+  {
+    "name": "Pablo Martínez",
+    "age": 27,
+    "position": "CM",
+    "rating": 70,
+    "marketValue": 2.0,
+    "imageUrl": "https://img.a.transfermarkt.technology/portrait/header/231657-1700000000.jpg?lm=1",
+    "nationalityId": 181,
+    "clubId": 22
+  },
+  {
+    "name": "Álex Forés",
+    "age": 22,
+    "position": "CM",
+    "rating": 70,
+    "marketValue": 1.5,
+    "imageUrl": "https://img.a.transfermarkt.technology/portrait/header/231658-1700000000.jpg?lm=1",
+    "nationalityId": 181,
+    "clubId": 22
+  },
+  {
+    "name": "Diego Pampín",
+    "age": 25,
+    "position": "LB",
+    "rating": 70,
+    "marketValue": 1.2,
+    "imageUrl": "https://img.a.transfermarkt.technology/portrait/header/231659-1700000000.jpg?lm=1",
+    "nationalityId": 181,
+    "clubId": 22
+  },
+  {
+    "name": "Marcos Navarro",
+    "age": 21,
+    "position": "LB",
+    "rating": 60,
+    "marketValue": 0.3,
+    "imageUrl": "https://img.a.transfermarkt.technology/portrait/header/231660-1700000000.jpg?lm=1",
+    "nationalityId": 181,
+    "clubId": 22
+  },
+  {
+    "name": "Jorge Cabello",
+    "age": 21,
+    "position": "CB",
+    "rating": 70,
+    "marketValue": 0.7,
+    "imageUrl": "https://img.a.transfermarkt.technology/portrait/header/231661-1700000000.jpg?lm=1",
+    "nationalityId": 181,
+    "clubId": 22
+  },
+  {
+    "name": "Ignasi Miquel",
+    "age": 32,
+    "position": "CB",
+    "rating": 70,
+    "marketValue": 0.6,
+    "imageUrl": "https://img.a.transfermarkt.technology/portrait/header/231662-1700000000.jpg?lm=1",
+    "nationalityId": 181,
+    "clubId": 22
+  },
+  {
+    "name": "David Sellés",
+    "age": 22,
+    "position": "CB",
+    "rating": 60,
+    "marketValue": 0.2,
+    "imageUrl": "https://img.a.transfermarkt.technology/portrait/header/231663-1700000000.jpg?lm=1",
+    "nationalityId": 181,
+    "clubId": 22
+  },
+  {
+    "name": "Borja Cortina",
+    "age": 19,
+    "position": "CB",
+    "rating": 60,
+    "marketValue": 0.1,
+    "imageUrl": "https://img.a.transfermarkt.technology/portrait/header/231664-1700000000.jpg?lm=1",
+    "nationalityId": 181,
+    "clubId": 22
+  },
+  {
+    "name": "Unai Elgezabal",
+    "age": 32,
+    "position": "CB",
+    "rating": 70,
+    "marketValue": 0.4,
+    "imageUrl": "https://img.a.transfermarkt.technology/portrait/header/231665-1700000000.jpg?lm=1",
+    "nationalityId": 181,
+    "clubId": 22
+  },
+  {
+    "name": "Víctor García",
+    "age": 27,
+    "position": "RB",
+    "rating": 70,
+    "marketValue": 0.5,
+    "imageUrl": "https://img.a.transfermarkt.technology/portrait/header/231666-1700000000.jpg?lm=1",
+    "nationalityId": 181,
+    "clubId": 22
+  },
+  {
+    "name": "Xavi Grande",
+    "age": 20,
+    "position": "RB",
+    "rating": 60,
+    "marketValue": 0.1,
+    "imageUrl": "https://img.a.transfermarkt.technology/portrait/header/231667-1700000000.jpg?lm=1",
+    "nationalityId": 181,
+    "clubId": 22
+  },
+  {
+    "name": "Jeremy Toljan",
+    "age": 31,
+    "position": "RB",
+    "rating": 70,
+    "marketValue": 0.9,
+    "imageUrl": "https://img.a.transfermarkt.technology/portrait/header/231668-1700000000.jpg?lm=1",
+    "nationalityId": 181,
+    "clubId": 22
+  },
+  {
+    "name": "Adrián de la Fuente",
+    "age": 26,
+    "position": "CB",
+    "rating": 70,
+    "marketValue": 0.6,
+    "imageUrl": "https://img.a.transfermarkt.technology/portrait/header/231669-1700000000.jpg?lm=1",
+    "nationalityId": 181,
+    "clubId": 22
+  },
+  {
+    "name": "Carlos Espí",
+    "age": 18,
+    "position": "CF",
+    "rating": 60,
+    "marketValue": 0.1,
+    "imageUrl": "https://img.a.transfermarkt.technology/portrait/header/231670-1700000000.jpg?lm=1",
+    "nationalityId": 181,
+    "clubId": 22
+  },
+  {
+    "name": "Carlos Espí",
+    "age": 18,
+    "position": "CF",
+    "rating": 60,
+    "marketValue": 0.1,
+    "imageUrl": "https://img.a.transfermarkt.technology/portrait/header/231671-1700000000.jpg?lm=1",
+    "nationalityId": 181,
+    "clubId": 22
+  },
+  {
+    "name": "Daniel Cárdenas",
+    "age": 28,
+    "position": "GK",
+    "rating": 70,
+    "marketValue": 1.0,
+    "imageUrl": "https://img.a.transfermarkt.technology/portrait/header/231650-1700000000.jpg?lm=1",
+    "nationalityId": 181,
+    "clubId": 23
+  },
+  {
+    "name": "Augusto Batalla",
+    "age": 29,
+    "position": "GK",
+    "rating": 70,
+    "marketValue": 0.8,
+    "imageUrl": "https://img.a.transfermarkt.technology/portrait/header/231651-1700000000.jpg?lm=1",
+    "nationalityId": 181,
+    "clubId": 23
+  },
+  {
+    "name": "Miguel Benedi",
+    "age": 22,
+    "position": "GK",
+    "rating": 60,
+    "marketValue": 0.2,
+    "imageUrl": "https://img.a.transfermarkt.technology/portrait/header/231652-1700000000.jpg?lm=1",
+    "nationalityId": 181,
+    "clubId": 23
+  },
+  {
+    "name": "Adrián Molina",
+    "age": 19,
+    "position": "GK",
+    "rating": 60,
+    "marketValue": 0.1,
+    "imageUrl": "https://img.a.transfermarkt.technology/portrait/header/231653-1700000000.jpg?lm=1",
+    "nationalityId": 181,
+    "clubId": 23
+  },
+  {
+    "name": "Abdul Mumin",
+    "age": 27,
+    "position": "CB",
+    "rating": 70,
+    "marketValue": 5.0,
+    "imageUrl": "https://img.a.transfermarkt.technology/portrait/header/231654-1700000000.jpg?lm=1",
+    "nationalityId": 181,
+    "clubId": 23
+  },
+  {
+    "name": "Florian Lejeune",
+    "age": 34,
+    "position": "CB",
+    "rating": 70,
+    "marketValue": 2.5,
+    "imageUrl": "https://img.a.transfermarkt.technology/portrait/header/231655-1700000000.jpg?lm=1",
+    "nationalityId": 181,
+    "clubId": 23
+  },
+  {
+    "name": "Pelayo Fernández",
+    "age": 22,
+    "position": "CB",
+    "rating": 60,
+    "marketValue": 0.5,
+    "imageUrl": "https://img.a.transfermarkt.technology/portrait/header/231656-1700000000.jpg?lm=1",
+    "nationalityId": 181,
+    "clubId": 23
+  },
+  {
+    "name": "Aridane Hernández",
+    "age": 36,
+    "position": "CB",
+    "rating": 60,
+    "marketValue": 0.3,
+    "imageUrl": "https://img.a.transfermarkt.technology/portrait/header/231657-1700000000.jpg?lm=1",
+    "nationalityId": 181,
+    "clubId": 23
+  },
+  {
+    "name": "Marco de las Sías",
+    "age": 19,
+    "position": "CB",
+    "rating": 60,
+    "marketValue": 0.1,
+    "imageUrl": "https://img.a.transfermarkt.technology/portrait/header/231658-1700000000.jpg?lm=1",
+    "nationalityId": 181,
+    "clubId": 23
+  },
+  {
+    "name": "Sergio Lozano",
+    "age": 19,
+    "position": "CB",
+    "rating": 60,
+    "marketValue": 0.1,
+    "imageUrl": "https://img.a.transfermarkt.technology/portrait/header/231659-1700000000.jpg?lm=1",
+    "nationalityId": 181,
+    "clubId": 23
+  },
+  {
+    "name": "Pep Chavarría",
+    "age": 27,
+    "position": "LB",
+    "rating": 70,
+    "marketValue": 5.0,
+    "imageUrl": "https://img.a.transfermarkt.technology/portrait/header/231660-1700000000.jpg?lm=1",
+    "nationalityId": 181,
+    "clubId": 23
+  },
+  {
+    "name": "Alfonso Espino",
+    "age": 33,
+    "position": "LB",
+    "rating": 70,
+    "marketValue": 1.2,
+    "imageUrl": "https://img.a.transfermarkt.technology/portrait/header/231661-1700000000.jpg?lm=1",
+    "nationalityId": 181,
+    "clubId": 23
+  },
+  {
+    "name": "Andrei Rațiu",
+    "age": 27,
+    "position": "RB",
+    "rating": 70,
+    "marketValue": 12.0,
+    "imageUrl": "https://img.a.transfermarkt.technology/portrait/header/231662-1700000000.jpg?lm=1",
+    "nationalityId": 181,
+    "clubId": 23
+  },
+  {
+    "name": "Iván Balliu",
+    "age": 34,
+    "position": "RB",
+    "rating": 70,
+    "marketValue": 1.4,
+    "imageUrl": "https://img.a.transfermarkt.technology/portrait/header/231663-1700000000.jpg?lm=1",
+    "nationalityId": 181,
+    "clubId": 23
+  },
+  {
+    "name": "Óscar Trejo",
+    "age": 37,
+    "position": "CAM",
+    "rating": 70,
+    "marketValue": 0.5,
+    "imageUrl": "https://img.a.transfermarkt.technology/portrait/header/231664-1700000000.jpg?lm=1",
+    "nationalityId": 181,
+    "clubId": 23
+  },
+  {
+    "name": "Álvaro García",
+    "age": 32,
+    "position": "LW",
+    "rating": 70,
+    "marketValue": 4.0,
+    "imageUrl": "https://img.a.transfermarkt.technology/portrait/header/231665-1700000000.jpg?lm=1",
+    "nationalityId": 181,
+    "clubId": 23
+  },
+  {
+    "name": "Jorge de Frutos",
+    "age": 27,
+    "position": "RW",
+    "rating": 70,
+    "marketValue": 6.0,
+    "imageUrl": "https://img.a.transfermarkt.technology/portrait/header/231666-1700000000.jpg?lm=1",
+    "nationalityId": 181,
+    "clubId": 23
+  },
+  {
+    "name": "Isi Palazón",
+    "age": 30,
+    "position": "RW",
+    "rating": 70,
+    "marketValue": 3.0,
+    "imageUrl": "https://img.a.transfermarkt.technology/portrait/header/231667-1700000000.jpg?lm=1",
+    "nationalityId": 181,
+    "clubId": 23
+  },
+  {
+    "name": "Randy Nteka",
+    "age": 27,
+    "position": "CF",
+    "rating": 70,
+    "marketValue": 1.5,
+    "imageUrl": "https://img.a.transfermarkt.technology/portrait/header/231668-1700000000.jpg?lm=1",
+    "nationalityId": 181,
+    "clubId": 23
+  },
+  {
+    "name": "Sergi Guardiola",
+    "age": 33,
+    "position": "CF",
+    "rating": 60,
+    "marketValue": 0.2,
+    "imageUrl": "https://img.a.transfermarkt.technology/portrait/header/231669-1700000000.jpg?lm=1",
+    "nationalityId": 181,
+    "clubId": 23
+  },
+  {
+    "name": "Sergio Camello",
+    "age": 22,
+    "position": "CF",
+    "rating": 70,
+    "marketValue": 2.0,
+    "imageUrl": "https://img.a.transfermarkt.technology/portrait/header/231670-1700000000.jpg?lm=1",
+    "nationalityId": 181,
+    "clubId": 23
+  },
+  {
+    "name": "Raúl de Tomás",
+    "age": 29,
+    "position": "CF",
+    "rating": 70,
+    "marketValue": 4.0,
+    "imageUrl": "https://img.a.transfermarkt.technology/portrait/header/231671-1700000000.jpg?lm=1",
+    "nationalityId": 181,
+    "clubId": 23
+  },
+  {
+    "name": "Unai López",
+    "age": 29,
+    "position": "CM",
+    "rating": 70,
+    "marketValue": 2.5,
+    "imageUrl": "https://img.a.transfermarkt.technology/portrait/header/231672-1700000000.jpg?lm=1",
+    "nationalityId": 181,
+    "clubId": 23
+  },
+  {
+    "name": "Pathé Ciss",
+    "age": 30,
+    "position": "CM",
+    "rating": 70,
+    "marketValue": 2.0,
+    "imageUrl": "https://img.a.transfermarkt.technology/portrait/header/231673-1700000000.jpg?lm=1",
+    "nationalityId": 181,
+    "clubId": 23
+  },
+  {
+    "name": "Pedro Díaz",
+    "age": 25,
+    "position": "CM",
+    "rating": 70,
+    "marketValue": 2.0,
+    "imageUrl": "https://img.a.transfermarkt.technology/portrait/header/231674-1700000000.jpg?lm=1",
+    "nationalityId": 181,
+    "clubId": 23
+  },
+  {
+    "name": "Gonzalo Martínez",
+    "age": 27,
+    "position": "CM",
+    "rating": 70,
+    "marketValue": 2.0,
+    "imageUrl": "https://img.a.transfermarkt.technology/portrait/header/231675-1700000000.jpg?lm=1",
+    "nationalityId": 181,
+    "clubId": 23
+  },
+  {
+    "name": "Quentin Braat",
+    "age": 27,
+    "position": "GK",
+    "rating": 70,
+    "marketValue": 1.0,
+    "imageUrl": "https://img.a.transfermarkt.technology/portrait/header/231650-1700000000.jpg?lm=1",
+    "nationalityId": 181,
+    "clubId": 24
+  },
+  {
+    "name": "Miguel Narváez",
+    "age": 23,
+    "position": "GK",
+    "rating": 65,
+    "marketValue": 0.3,
+    "imageUrl": "https://img.a.transfermarkt.technology/portrait/header/231651-1700000000.jpg?lm=1",
+    "nationalityId": 181,
+    "clubId": 24
+  },
+  {
+    "name": "David Costas",
+    "age": 30,
+    "position": "CB",
+    "rating": 70,
+    "marketValue": 1.4,
+    "imageUrl": "https://img.a.transfermarkt.technology/portrait/header/231652-1700000000.jpg?lm=1",
+    "nationalityId": 181,
+    "clubId": 24
+  },
+  {
+    "name": "Dani Calvo",
+    "age": 32,
+    "position": "CB",
+    "rating": 70,
+    "marketValue": 0.5,
+    "imageUrl": "https://img.a.transfermarkt.technology/portrait/header/231653-1700000000.jpg?lm=1",
+    "nationalityId": 181,
+    "clubId": 24
+  },
+  {
+    "name": "Rahim Alhassane",
+    "age": 23,
+    "position": "LB",
+    "rating": 70,
+    "marketValue": 1.2,
+    "imageUrl": "https://img.a.transfermarkt.technology/portrait/header/231654-1700000000.jpg?lm=1",
+    "nationalityId": 181,
+    "clubId": 24
+  },
+  {
+    "name": "Carlos Pomares",
+    "age": 32,
+    "position": "LB",
+    "rating": 70,
+    "marketValue": 0.3,
+    "imageUrl": "https://img.a.transfermarkt.technology/portrait/header/231655-1700000000.jpg?lm=1",
+    "nationalityId": 181,
+    "clubId": 24
+  },
+  {
+    "name": "Marcos Lopes",
+    "age": 20,
+    "position": "CB",
+    "rating": 60,
+    "marketValue": 0.1,
+    "imageUrl": "https://img.a.transfermarkt.technology/portrait/header/231656-1700000000.jpg?lm=1",
+    "nationalityId": 181,
+    "clubId": 24
+  },
+  {
+    "name": "Omar Falah",
+    "age": 21,
+    "position": "CB",
+    "rating": 60,
+    "marketValue": 0.1,
+    "imageUrl": "https://img.a.transfermarkt.technology/portrait/header/231657-1700000000.jpg?lm=1",
+    "nationalityId": 181,
+    "clubId": 24
+  },
+  {
+    "name": "Aarón Escandell",
+    "age": 27,
+    "position": "GK",
+    "rating": 70,
+    "marketValue": 1.0,
+    "imageUrl": "https://img.a.transfermarkt.technology/portrait/header/231658-1700000000.jpg?lm=1",
+    "nationalityId": 181,
+    "clubId": 24
+  },
+  {
+    "name": "Santiago Colombatto",
+    "age": 25,
+    "position": "CM",
+    "rating": 70,
+    "marketValue": 1.5,
+    "imageUrl": "https://img.a.transfermarkt.technology/portrait/header/231659-1700000000.jpg?lm=1",
+    "nationalityId": 181,
+    "clubId": 24
+  },
+  {
+    "name": "Santi Cazorla",
+    "age": 40,
+    "position": "CM",
+    "rating": 70,
+    "marketValue": 0.5,
+    "imageUrl": "https://img.a.transfermarkt.technology/portrait/header/231660-1700000000.jpg?lm=1",
+    "nationalityId": 181,
+    "clubId": 24
+  },
+  {
+    "name": "César de la Hoz",
+    "age": 31,
+    "position": "CM",
+    "rating": 70,
+    "marketValue": 1.0,
+    "imageUrl": "https://img.a.transfermarkt.technology/portrait/header/231661-1700000000.jpg?lm=1",
+    "nationalityId": 181,
+    "clubId": 24
+  },
+  {
+    "name": "Jaime Seoane",
+    "age": 26,
+    "position": "CM",
+    "rating": 70,
+    "marketValue": 1.5,
+    "imageUrl": "https://img.a.transfermarkt.technology/portrait/header/231662-1700000000.jpg?lm=1",
+    "nationalityId": 181,
+    "clubId": 24
+  },
+  {
+    "name": "Ilyas Chaira",
+    "age": 22,
+    "position": "CM",
+    "rating": 70,
+    "marketValue": 1.0,
+    "imageUrl": "https://img.a.transfermarkt.technology/portrait/header/231663-1700000000.jpg?lm=1",
+    "nationalityId": 181,
+    "clubId": 24
+  },
+  {
+    "name": "Luka Ilić",
+    "age": 23,
+    "position": "CM",
+    "rating": 70,
+    "marketValue": 2.0,
+    "imageUrl": "https://img.a.transfermarkt.technology/portrait/header/231664-1700000000.jpg?lm=1",
+    "nationalityId": 181,
+    "clubId": 24
+  },
+  {
+    "name": "Hassan",
+    "age": 25,
+    "position": "RW",
+    "rating": 70,
+    "marketValue": 1.0,
+    "imageUrl": "https://img.a.transfermarkt.technology/portrait/header/231665-1700000000.jpg?lm=1",
+    "nationalityId": 181,
+    "clubId": 24
+  },
+  {
+    "name": "Brandon Domingues",
+    "age": 24,
+    "position": "RW",
+    "rating": 70,
+    "marketValue": 0.8,
+    "imageUrl": "https://img.a.transfermarkt.technology/portrait/header/231666-1700000000.jpg?lm=1",
+    "nationalityId": 181,
+    "clubId": 24
+  },
+  {
+    "name": "Alemão",
+    "age": 28,
+    "position": "CF",
+    "rating": 70,
+    "marketValue": 1.2,
+    "imageUrl": "https://img.a.transfermarkt.technology/portrait/header/231667-1700000000.jpg?lm=1",
+    "nationalityId": 181,
+    "clubId": 24
+  },
+  {
+    "name": "Salomón Rondón",
+    "age": 35,
+    "position": "CF",
+    "rating": 70,
+    "marketValue": 1.0,
+    "imageUrl": "https://img.a.transfermarkt.technology/portrait/header/231668-1700000000.jpg?lm=1",
+    "nationalityId": 181,
+    "clubId": 24
+  },
+  {
+    "name": "Josip Brekalo",
+    "age": 26,
+    "position": "LW",
+    "rating": 70,
+    "marketValue": 2.5,
+    "imageUrl": "https://img.a.transfermarkt.technology/portrait/header/231669-1700000000.jpg?lm=1",
+    "nationalityId": 181,
+    "clubId": 24
+  },
+  {
+    "name": "Lucas",
+    "age": 22,
+    "position": "LB",
+    "rating": 60,
+    "marketValue": 0.2,
+    "imageUrl": "https://img.a.transfermarkt.technology/portrait/header/231670-1700000000.jpg?lm=1",
+    "nationalityId": 181,
+    "clubId": 24
+  }
+]

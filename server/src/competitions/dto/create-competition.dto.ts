@@ -1,3 +1,4 @@
+import { Type } from 'class-transformer';
 import {
   IsArray,
   IsDate,
@@ -25,6 +26,7 @@ export class CreateCompetitionDto {
   @IsOptional({ message: 'Established date is optional' })
   @IsDate({ message: 'Established date must be a valid date' })
   @MaxDate(new Date(), { message: 'Established date cannot be in the future' })
+  @Type(() => Date)
   establishedAt?: Date;
 
   @IsNotEmpty({ message: 'Competition type is required' })
@@ -36,5 +38,5 @@ export class CreateCompetitionDto {
 
   @IsOptional({ message: 'Club IDs are optional' })
   @IsArray({ message: 'Club IDs must be an array' })
-  clubIds?: number[];
+  clubsIds?: number[];
 }

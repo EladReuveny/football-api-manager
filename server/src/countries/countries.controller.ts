@@ -60,11 +60,11 @@ export class CountriesController {
     return await this.countriesService.remove(id);
   }
 
-  @Post('create-many')
+  @Post('create-bulk')
   @ApiOperation({ summary: 'Create multiple countries' })
   @ApiBearerAuth('jwtAccessToken')
   @Roles(Role.ADMIN)
-  async createMany(@Body() createCountriesDtos: CreateCountryDto[]) {
-    return await this.countriesService.createMany(createCountriesDtos);
+  async createBulk(@Body() createCountriesDtos: CreateCountryDto[]) {
+    return await this.countriesService.createBulk(createCountriesDtos);
   }
 }

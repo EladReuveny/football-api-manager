@@ -34,10 +34,9 @@ export class Player {
 
   @ManyToOne(() => Club, (club) => club.players, {
     nullable: true,
-    eager: true,
   })
   @JoinColumn({ name: 'club_id' })
-  club?: Club;
+  club?: Club | null;
 
   @ManyToOne(() => Country, (country) => country.players, { eager: true })
   @JoinColumn({ name: 'nationality_id' })
