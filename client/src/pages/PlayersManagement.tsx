@@ -213,7 +213,7 @@ const PlayersManagement = ({}: PlayersManagementProps) => {
     }
 
     try {
-      const data = await deletePlayer(playerToDelete.id);
+      await deletePlayer(playerToDelete.id);
       setPlayers((prev) =>
         prev.filter((player) => player.id !== playerToDelete.id)
       );

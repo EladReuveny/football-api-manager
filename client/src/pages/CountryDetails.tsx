@@ -113,7 +113,7 @@ const CountryDetails = ({}: CountryDetailsProps) => {
     }
 
     try {
-      const data = await deleteCountry(country.id);
+      await deleteCountry(country.id);
       setCountry(null);
       closeDeleteCountryDialog();
       toast.success(`${country.name} deleted successfully.`);

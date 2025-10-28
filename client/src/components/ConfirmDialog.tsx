@@ -32,10 +32,10 @@ const ConfirmDialog = ({
         {message}
         <span className="font-bold text-(--color-primary)">{item}</span>?
       </h2>
-      <div className="flex items-center justify-between">
+      <div className="flex items-center justify-end gap-2">
         <button
           onClick={onClose}
-          className="border border-(--color-primary) text-(--color-primary) py-2 px-4 hover:backdrop-brightness-120"
+          className="py-2 px-4 rounded border border-gray-600 text-gray-300 hover:backdrop-brightness-125"
         >
           <i className="fas fa-times mr-0.5"></i>Cancel
         </button>

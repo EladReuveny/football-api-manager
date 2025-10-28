@@ -1,4 +1,5 @@
 import {
+  BadRequestException,
   ConflictException,
   Injectable,
   NotFoundException,
@@ -22,6 +23,18 @@ export class UsersService {
   constructor(
     @InjectRepository(User) private readonly usersRepository: Repository<User>,
   ) {}
+
+  /**
+   * Gets a user's profile by ID.
+   * @param id User ID
+   * @returns Found user's profile
+   */
+  async getProfile(id: number) {
+    const user = await this.findOne(id);
+    const { password, ...result } = user;
+
+    return result as Partial<User>;
+  }
 
   /**
    * Finds all users
@@ -72,8 +85,25 @@ export class UsersService {
       user.email = updateUserDto.email;
     }
 
-    if (updateUserDto.password) {
-      user.password = await this.generateHashedPassword(updateUserDto.password);
+    const isPasswordUpdateIncomplete =
+      (updateUserDto.newPassword && !updateUserDto.confirmPassword) ||
+      (!updateUserDto.newPassword && updateUserDto.confirmPassword);
+    if (isPasswordUpdateIncomplete) {
+      throw new BadRequestException(
+        'New password and confirm password must be provided together',
+      );
+    }
+    if (updateUserDto.newPassword && updateUserDto.confirmPassword) {
+      const isPasswordEqual =
+        updateUserDto.newPassword === updateUserDto.confirmPassword;
+      if (!isPasswordEqual) {
+        throw new BadRequestException(
+          'New password and confirm password must be the same',
+        );
+      }
+      user.password = await this.generateHashedPassword(
+        updateUserDto.newPassword,
+      );
     }
 
     return await this.usersRepository.save(user);

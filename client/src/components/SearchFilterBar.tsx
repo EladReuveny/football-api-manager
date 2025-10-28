@@ -8,16 +8,14 @@ type SearchFilterBarProps = {
 const SearchFilterBar = ({
   searchQuery,
   setSearchQuery,
-  filterDialog,
-  children,
 }: SearchFilterBarProps) => {
-  const showFilterDialog = () => {
-    filterDialog?.current?.showModal();
-  };
+  // const showFilterDialog = () => {
+  //   filterDialog?.current?.showModal();
+  // };
 
-  const closeFilterDialog = () => {
-    filterDialog?.current?.close();
-  };
+  // const closeFilterDialog = () => {
+  //   filterDialog?.current?.close();
+  // };
 
   return (
     <div className="flex items-center gap-1">

@@ -247,7 +247,7 @@ const CompetitionsManagement = ({}: CompetitionsManagementProps) => {
     }
 
     try {
-      const data = await deleteCompetition(competitionToDelete.id);
+      await deleteCompetition(competitionToDelete.id);
       setCompetitions((prev) =>
         prev.filter((competition) => competition.id !== competitionToDelete.id)
       );

@@ -128,7 +128,7 @@ const CompetitionDetails = ({}: CompetitionDetailsProps) => {
     }
 
     try {
-      const data = await deleteCompetition(competition.id);
+      await deleteCompetition(competition.id);
       closeDeleteCompetitionDialog();
       toast.success(`${competition.name} deleted successfully.`);
       navigate("/admin/competitions");

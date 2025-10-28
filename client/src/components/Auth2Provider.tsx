@@ -2,19 +2,11 @@ type Auth2ProviderProps = {};
 
 const Auth2Provider = ({}: Auth2ProviderProps) => {
   const handleGitHubLogin = () => {
-    console.log("GitHub login initiated");
+    alert("Stay tuned, coming soon!");
   };
 
   const handleGoogleLogin = () => {
-    console.log("Google login initiated");
-  };
-
-  const handleGitHubRegister = () => {
-    console.log("GitHub register initiated");
-  };
-
-  const handleGoogleRegister = () => {
-    console.log("Google register initiated");
+    alert("Stay tuned, coming soon!");
   };
 
   return (
@@ -27,6 +19,7 @@ const Auth2Provider = ({}: Auth2ProviderProps) => {
 
       <div className="flex flex-col gap-3">
         <button
+          type="button"
           onClick={handleGitHubLogin}
           className="flex justify-center items-center gap-2 py-2 rounded border border-gray-600 hover:backdrop-brightness-400"
         >
@@ -34,6 +27,7 @@ const Auth2Provider = ({}: Auth2ProviderProps) => {
           <span>Continue with GitHub</span>
         </button>
         <button
+          type="button"
           onClick={handleGoogleLogin}
           className="flex justify-center items-center gap-2 py-2 rounded border border-gray-600 hover:backdrop-brightness-400"
         >

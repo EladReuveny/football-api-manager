@@ -1,0 +1,29 @@
+services:
+  server:
+    container_name: server
+    build:
+      context: .
+    env_file:
+      - .env.development
+    ports:
+      - 3000:3000
+    depends_on:
+      db:
+        condition: service_healthy
+  db:
+    container_name: db
+    image: postgres:15
+    restart: always
+    volumes:
+      - db-data:/var/lib/postgresql/data
+    env_file:
+      - .env.development
+    ports:
+      - 5432:5432
+    healthcheck:
+      test: ['CMD', 'pg_isready']
+      interval: 10s
+      timeout: 5s
+      retries: 5
+volumes:
+  db-data:

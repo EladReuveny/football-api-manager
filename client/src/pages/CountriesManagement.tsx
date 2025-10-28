@@ -134,7 +134,7 @@ const CountriesManagement = ({}: CountriesManagementProps) => {
     }
 
     try {
-      const data = await deleteCountry(countryToDelete.id);
+      await deleteCountry(countryToDelete.id);
       setCountries((prev) =>
         prev.filter((country) => country.id !== countryToDelete.id)
       );

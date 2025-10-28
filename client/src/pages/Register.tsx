@@ -29,7 +29,7 @@ const Register = ({}: RegisterProps) => {
     try {
       const data = await registerUser(user);
       login(data);
-      toast.success("Registered Successfully");
+      toast.success("Registered successfully");
       navigate("/");
     } catch (err: unknown) {
       handleError(err);
@@ -49,7 +49,7 @@ const Register = ({}: RegisterProps) => {
         to Football API Manager
       </h1>
       <p className="text-gray-300 text-lg mt-1">
-        Build and Manage your ultimate team
+        View and Manage your data efficiently
       </p>
 
       <div className="flex gap-2.5 mt-4">
@@ -100,7 +100,13 @@ const Register = ({}: RegisterProps) => {
         </div>
 
         <div className="floating-label-effect mb-2">
-          <ShowPassword autoComplete="new-password" />
+          <ShowPassword
+            id="password"
+            name="password"
+            label="Password"
+            required={true}
+            autoComplete="new-password"
+          />
         </div>
 
         <button

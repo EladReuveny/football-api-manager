@@ -37,7 +37,7 @@ const FormDialog = ({
           <button
             type="button"
             onClick={onClose}
-            className="py-2 px-4 rounded border border-gray-600 hover:backdrop-brightness-400"
+            className="py-2 px-4 rounded border border-gray-600 text-gray-300 hover:backdrop-brightness-400"
           >
             <i className="fas fa-times mr-0.5"></i>Cancel
           </button>

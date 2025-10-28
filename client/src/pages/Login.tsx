@@ -29,7 +29,7 @@ const Login = ({}: LoginProps) => {
     try {
       const data = await loginUser(user);
       login(data);
-      toast.success("Logged In Successfully");
+      toast.success("Logged in successfully");
       navigate("/");
     } catch (err: unknown) {
       handleError(err);
@@ -97,7 +97,13 @@ const Login = ({}: LoginProps) => {
         </div>
 
         <div className="floating-label-effect mb-0.5">
-          <ShowPassword autoComplete="current-password" />
+          <ShowPassword
+            id="password"
+            name="password"
+            label="Password"
+            required
+            autoComplete="current-password"
+          />
         </div>
 
         <Link

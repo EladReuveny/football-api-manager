@@ -1,4 +1,4 @@
-import logo from "../assets/logo.png";
+// import logo from "../../public/logo.png";
 
 type LogoProps = {
   width?: string | number;
@@ -8,7 +8,7 @@ type LogoProps = {
 const Logo = ({ width = 75, height = 75 }: LogoProps) => {
   return (
     <img
-      src={logo}
+      src={"./logo.png"}
       alt="Football API Manager Logo"
       width={width}
       height={height}

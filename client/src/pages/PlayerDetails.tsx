@@ -141,7 +141,7 @@ const PlayerDetails = ({}: PlayerDetailsProps) => {
     }
 
     try {
-      const data = await deletePlayer(player.id);
+      await deletePlayer(player.id);
       setPlayer(null);
       closeDeletePlayerDialog();
       toast.success(`${player.name} deleted successfully.`);

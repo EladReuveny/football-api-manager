@@ -153,7 +153,7 @@ const ClubsManagement = ({}: ClubsManagementProps) => {
     }
 
     try {
-      const data = await deleteClub(clubToDelete.id);
+      await deleteClub(clubToDelete.id);
       setClubs((prev) => prev.filter((club) => club.id !== clubToDelete.id));
       closeDeleteClubDialog();
       toast.success(`${clubToDelete.name} deleted successfully.`);

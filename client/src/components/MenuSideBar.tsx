@@ -34,14 +34,14 @@ const MenuSideBar = ({
       >
         <i className="fa-solid fa-xmark"></i>
       </button>
-      <ul className="flex flex-col gap-3 mb-3">
+      <ul className="flex flex-col gap-3 mb-3 px-2">
         <li>
           <NavLink
             to="/clubs"
             className={({ isActive }) =>
-              `block py-1 px-4 hover:bg-(--color-primary)/20 ${
+              `block py-1 border-b border-gray-600 hover:bg-(--color-primary)/20 ${
                 isActive
-                  ? "text-(--color-primary) border-l-2 border-(--color-primary)"
+                  ? "text-(--color-primary)"
                   : ""
               }`
             }
@@ -53,9 +53,9 @@ const MenuSideBar = ({
           <NavLink
             to="/competitions"
             className={({ isActive }) =>
-              `block py-1 px-4 hover:bg-(--color-primary)/20 ${
+              `block py-1 border-b border-gray-600 hover:bg-(--color-primary)/20 ${
                 isActive
-                  ? "text-(--color-primary) border-l-2 border-(--color-primary)"
+                  ? "text-(--color-primary)"
                   : ""
               }`
             }
@@ -67,9 +67,9 @@ const MenuSideBar = ({
           <NavLink
             to="/countries"
             className={({ isActive }) =>
-              `block py-1 px-4 hover:bg-(--color-primary)/20 ${
+              `block py-1 border-b border-gray-600 hover:bg-(--color-primary)/20 ${
                 isActive
-                  ? "text-(--color-primary) border-l-2 border-(--color-primary)"
+                  ? "text-(--color-primary)"
                   : ""
               }`
             }
@@ -81,9 +81,9 @@ const MenuSideBar = ({
           <NavLink
             to="/players"
             className={({ isActive }) =>
-              `block py-1 px-4 hover:bg-(--color-primary)/20 transition-all ${
+              `block py-1 border-b border-gray-600 hover:bg-(--color-primary)/20 ${
                 isActive
-                  ? "text-(--color-primary) border-l-2 border-(--color-primary)"
+                  ? "text-(--color-primary)"
                   : ""
               }`
             }
@@ -91,10 +91,34 @@ const MenuSideBar = ({
             <i className="fas fa-users mr-3"></i>Players
           </NavLink>
         </li>
+        <li>
+          <NavLink
+            to="/docs"
+            className={({ isActive }) =>
+              `block py-1 border-b border-gray-600 hover:bg-(--color-primary)/20 ${
+                isActive ? "text-(--color-primary)" : ""
+              }`
+            }
+          >
+            <i className="fas fa-book mr-3"></i>Docs
+          </NavLink>
+        </li>
+        <li>
+          <NavLink
+            to="/profile"
+            className={({ isActive }) =>
+              `block py-1 border-b border-gray-600 hover:bg-(--color-primary)/20 ${
+                isActive ? "text-(--color-primary)" : ""
+              }`
+            }
+          >
+            <i className="fas fa-user mr-3"></i>Profile
+          </NavLink>
+        </li>
         {user?.role === "ADMIN" && (
           <li>
             <details className="group">
-              <summary className="cursor-pointer px-4 py-1 hover:bg-(--color-primary)/20 flex justify-between items-center">
+              <summary className="cursor-pointer py-1 hover:bg-(--color-primary)/20 flex justify-between items-center">
                 <div>
                   <i className="fas fa-cogs mr-3"></i>
                   Admin
@@ -107,9 +131,9 @@ const MenuSideBar = ({
                     <NavLink
                       to={item.to}
                       className={({ isActive }) =>
-                        `block py-1 border-b border-gray-400 ${
+                        `block py-1 ${
                           isActive ? "text-(--color-primary)" : ""
-                        } hover:bg-(--color-primary)/20 transition-colors`
+                        } hover:bg-(--color-primary)/20`
                       }
                     >
                       {item.icon}
@@ -121,20 +145,6 @@ const MenuSideBar = ({
             </details>
           </li>
         )}
-        <li>
-          <NavLink
-            to="/profile"
-            className={({ isActive }) =>
-              `block py-1 px-4 hover:bg-(--color-primary)/20 ${
-                isActive
-                  ? "text-(--color-primary) border-l-2 border-(--color-primary)"
-                  : ""
-              }`
-            }
-          >
-            <i className="fas fa-user mr-3"></i>Profile
-          </NavLink>
-        </li>
       </ul>
     </dialog>
   );

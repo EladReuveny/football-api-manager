@@ -2,7 +2,7 @@ import { useEffect, useRef, useState } from "react";
 import { toast } from "react-toastify";
 import ConfirmDialog from "../components/ConfirmDialog";
 import PageTitle from "../components/PageTitle";
-import { getAllUsers } from "../services/userService";
+import { deleteUser, getAllUsers } from "../services/userService";
 import type { Role } from "../types/user/role";
 import type { User } from "../types/user/user";
 import { handleError } from "../utils/utils";
@@ -52,6 +52,8 @@ const UsersManagement = ({}: UsersManagementProps) => {
     }
 
     try {
+      await deleteUser(userToDelete.id);
+      setUsers((prev) => prev.filter((user) => user.id !== userToDelete.id));
       setUserToDelete(null);
       closeDeleteUserDialog();
       toast.success(`${userToDelete.email} deleted successfully.`);

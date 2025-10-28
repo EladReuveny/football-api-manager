@@ -1,6 +1,7 @@
 import { Body, Controller, Delete, Get, Param, Patch } from '@nestjs/common';
 import { ApiBearerAuth, ApiOperation } from '@nestjs/swagger';
 import { Roles } from 'src/common/decorators/roles.decorator';
+import { User } from 'src/common/decorators/user.decorator';
 import { UpdateUserDto } from './dto/update-user.dto';
 import { Role } from './enums/role.enum';
 import { UsersService } from './users.service';
@@ -9,6 +10,13 @@ import { UsersService } from './users.service';
 @ApiBearerAuth('jwtAccessToken')
 export class UsersController {
   constructor(private readonly usersService: UsersService) {}
+
+  @Get('profile')
+  @ApiOperation({ summary: 'Get current user profile' })
+  @ApiBearerAuth('jwtAccessToken')
+  async getProfile(@User('sub') userId: number) {
+    return await this.usersService.getProfile(userId);
+  }
 
   @Get()
   @ApiOperation({ summary: 'Get all users' })

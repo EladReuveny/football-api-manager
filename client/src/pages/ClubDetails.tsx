@@ -170,7 +170,7 @@ const ClubDetails = ({}: ClubDetailsProps) => {
     }
 
     try {
-      const data = await deleteClub(club.id);
+      await deleteClub(club.id);
       setClub(null);
       closeDeleteClubDialog();
       toast.success(`${club.name} deleted successfully.`);
