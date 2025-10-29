@@ -1,4 +1,5 @@
 import {
+  BadRequestException,
   Injectable,
   NotFoundException,
   UnauthorizedException,
@@ -12,6 +13,8 @@ import { UsersService } from 'src/users/users.service';
 import { AuthResponseDto } from './dto/auth-response.dto';
 import { CreateUserDto } from './dto/create-user.dto';
 import { LoginUserDto } from './dto/login-user.dto';
+import { RequestResetPasswordDto } from './dto/request-reset-password.dto';
+import { ResetPasswordDto } from './dto/reset-password.dto';
 import { JwtPayload } from './types/jwt-payload.type';
 
 /**
@@ -138,6 +141,54 @@ export class AuthService {
         accessToken,
         user: result,
       },
+    } as AuthResponseDto;
+  }
+
+  /**
+   * Requests a password reset for the given email.
+   * @param requestResetPasswordDto The request to reset password DTO.
+   * @returns A success message confirming that a reset request was processed.
+   */
+  async requestPasswordReset(requestResetPasswordDto: RequestResetPasswordDto) {
+    await this.usersService.findByEmail(requestResetPasswordDto.email);
+  }
+
+  /**
+   * Resets a user's password.
+   *
+   * @param resetPasswordDto The request to reset password DTO.
+   * @returns An authentication response indicating success.
+   * @throws BadRequestException if the provided passwords are invalid or do not match.
+   */
+  async resetPassword(resetPasswordDto: ResetPasswordDto) {
+    const user = await this.usersService.findByEmail(resetPasswordDto.email);
+
+    const isPasswordUpdateIncomplete =
+      (resetPasswordDto.newPassword && !resetPasswordDto.confirmPassword) ||
+      (!resetPasswordDto.newPassword && resetPasswordDto.confirmPassword);
+    if (isPasswordUpdateIncomplete) {
+      throw new BadRequestException(
+        'New password and confirm password must be provided together',
+      );
+    }
+    if (resetPasswordDto.newPassword && resetPasswordDto.confirmPassword) {
+      const isPasswordEqual =
+        resetPasswordDto.newPassword === resetPasswordDto.confirmPassword;
+      if (!isPasswordEqual) {
+        throw new BadRequestException(
+          'New password and confirm password must be the same',
+        );
+      }
+      user.password = await this.usersService.generateHashedPassword(
+        resetPasswordDto.newPassword,
+      );
+    }
+
+    await this.usersService.save(user);
+
+    return {
+      status: 'SUCCESS',
+      message: 'Password reset successfully',
     } as AuthResponseDto;
   }
 }

@@ -159,4 +159,13 @@ export class UsersService {
     const salt = await bcrypt.genSalt();
     return await bcrypt.hash(password, salt);
   }
+
+  /**
+   * Saves a user.
+   * @param user The user to save
+   * @returns The saved user
+   */
+  async save(user: User) {
+    return await this.usersRepository.save(user);
+  }
 }

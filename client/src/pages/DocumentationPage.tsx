@@ -104,7 +104,13 @@ const DocumentationPage = ({}: DocumentationPageProps) => {
 
         <div className="space-y-12">
           <article id="overview">
-            <h2 className="text-3xl font-bold mb-2">Overview</h2>
+            <a
+              href="#overview"
+              className="text-3xl font-bold cursor-pointer block mb-2 group"
+            >
+              Overview
+              <i className="fas fa-link ml-1 text-base text-gray-400 opacity-0 group-hover:opacity-100"></i>
+            </a>
             <p className="text-gray-400">
               Football API Manager is a centralized platform for football data.
               <b> Admins</b> can manage their data, while standard <b>users</b>{" "}
@@ -115,7 +121,13 @@ const DocumentationPage = ({}: DocumentationPageProps) => {
           </article>
 
           <article id="features">
-            <h2 className="text-3xl font-bold mb-2">Features</h2>
+            <a
+              href="#features"
+              className="text-3xl font-bold cursor-pointer block mb-2 group"
+            >
+              Features
+              <i className="fas fa-link ml-1 text-base text-gray-400 opacity-0 group-hover:opacity-100"></i>
+            </a>
             <ul className="list-disc list-inside space-y-2">
               <li>
                 <b>Football Data Hub:</b>{" "}
@@ -162,7 +174,13 @@ const DocumentationPage = ({}: DocumentationPageProps) => {
           </article>
 
           <article id="getting-started">
-            <h2 className="text-3xl font-bold mb-2">Getting Started</h2>
+            <a
+              href="#getting-started"
+              className="text-3xl font-bold cursor-pointer block mb-2 group"
+            >
+              Getting Started
+              <i className="fas fa-link ml-1 text-base text-gray-400 opacity-0 group-hover:opacity-100"></i>
+            </a>
             <h3 className="text-xl font-semibold mb-1">Installation</h3>
             <ul className="list-disc list-inside space-y-2">
               <li>
@@ -212,7 +230,13 @@ const DocumentationPage = ({}: DocumentationPageProps) => {
           </article>
 
           <article id="user-roles">
-            <h2 className="text-3xl font-bold mb-2">User Roles</h2>
+            <a
+              href="#user-roles"
+              className="text-3xl font-bold cursor-pointer block mb-2 group"
+            >
+              User Roles
+              <i className="fas fa-link ml-1 text-base text-gray-400 opacity-0 group-hover:opacity-100"></i>
+            </a>
             <ul className="list-disc list-inside space-y-2 text-gray-400">
               <li>
                 <b className="text-(--color-text)">Admin:</b> Manage clubs,
@@ -226,7 +250,13 @@ const DocumentationPage = ({}: DocumentationPageProps) => {
           </article>
 
           <article id="api-guide">
-            <h2 className="text-3xl font-bold mb-1">API Guide</h2>
+            <a
+              href="#api-guide"
+              className="text-3xl font-bold cursor-pointer block mb-2 group"
+            >
+              API Guide
+              <i className="fas fa-link ml-1 text-base text-gray-400 opacity-0 group-hover:opacity-100"></i>
+            </a>
             <p className="text-gray-400 mb-4">
               Access comprehensive football data through the RESTful API. All
               endpoints are secured, except public ones, using{" "}
@@ -395,7 +425,13 @@ const DocumentationPage = ({}: DocumentationPageProps) => {
           </article>
 
           <article id="about">
-            <h2 className="text-3xl font-bold mb-2">About</h2>
+            <a
+              href="#about"
+              className="text-3xl font-bold cursor-pointer block mb-2 group"
+            >
+              About
+              <i className="fas fa-link ml-1 text-base text-gray-400 opacity-0 group-hover:opacity-100"></i>
+            </a>
             <p className="text-gray-400 mb-4">
               The <b>Football API Manager</b> is a full-stack application
               designed to provide structured, secure, and easily accessible

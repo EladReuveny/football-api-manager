@@ -19,6 +19,7 @@ import CountriesManagement from "./pages/CountriesManagement";
 import CountriesPage from "./pages/CountriesPage";
 import CountryDetails from "./pages/CountryDetails";
 import DocumentationPage from "./pages/DocumentationPage";
+import ForgotPassword from "./pages/ForgotPassword";
 import LandingPage from "./pages/LandingPage";
 import Login from "./pages/Login";
 import PlayerDetails from "./pages/PlayerDetails";
@@ -41,6 +42,7 @@ const Layout = () => {
           <Route path="/" element={<LandingPage />} />
           <Route path="/auth/login" element={<Login />} />
           <Route path="/auth/register" element={<Register />} />
+          <Route path="/auth/forgot-password" element={<ForgotPassword />} />
           <Route path="/docs" element={<DocumentationPage />} />
           <Route path="/clubs" element={<ClubsPage />} />
           <Route path="/clubs/:clubId" element={<ClubDetails />} />
