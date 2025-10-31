@@ -6,6 +6,7 @@ import {
   Param,
   Patch,
   Post,
+  Query,
 } from '@nestjs/common';
 import { ApiBearerAuth, ApiOperation } from '@nestjs/swagger';
 import { Public } from 'src/common/decorators/public.decorator';
@@ -14,6 +15,7 @@ import { Role } from 'src/users/enums/role.enum';
 import { CountriesService } from './countries.service';
 import { CreateCountryDto } from './dto/create-country.dto';
 import { UpdateCountryDto } from './dto/update-country.dto';
+import { PaginationQueryDto } from 'src/common/dto/pagination-query.dto';
 
 @Controller('countries')
 export class CountriesController {
@@ -27,11 +29,11 @@ export class CountriesController {
     return await this.countriesService.create(createCountryDto);
   }
 
-  @Get()
-  @ApiOperation({ summary: 'Get all countries' })
+ @Get()
+  @ApiOperation({ summary: 'Get all countries with pagination' })
   @Public()
-  async findAll() {
-    return await this.countriesService.findAll();
+  async findAll(@Query() query: PaginationQueryDto) {
+    return await this.countriesService.findAll(query);
   }
 
   @Get(':id')

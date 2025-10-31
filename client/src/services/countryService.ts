@@ -1,4 +1,6 @@
 import { api } from "../config";
+import type { PaginationQuery } from "../types/common/paginationQuery";
+import type { PaginationResponse } from "../types/common/paginationResponse";
 import type { Country } from "../types/countries/country";
 import type { CreateCountry } from "../types/countries/createCountry";
 import type { UpdateCountry } from "../types/countries/updateCountry";
@@ -6,14 +8,16 @@ import type { UpdateCountry } from "../types/countries/updateCountry";
 const BASE_URL = "countries";
 
 /**
- * Fetches all countries.
+ * Fetches all countries from the API.
  *
  * @async
- * @function getAllCountries
- * @returns {Promise<Country[]>} A promise that resolves to a list of all countries.
+ * @param {PaginationQuery} query - The pagination query parameters.
+ * @returns {Promise<PaginationResponse<Country>>} The paginated data of countries.
  */
-export const getAllCountries = async (): Promise<Country[]> => {
-  const res = await api.get(`/${BASE_URL}`);
+export const getAllCountries = async (
+  query?: PaginationQuery
+): Promise<PaginationResponse<Country>> => {
+  const res = await api.get(`/${BASE_URL}`, { params: query });
   return res.data;
 };
 

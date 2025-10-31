@@ -1,7 +1,16 @@
-import { Body, Controller, Delete, Get, Param, Patch } from '@nestjs/common';
+import {
+  Body,
+  Controller,
+  Delete,
+  Get,
+  Param,
+  Patch,
+  Query,
+} from '@nestjs/common';
 import { ApiBearerAuth, ApiOperation } from '@nestjs/swagger';
 import { Roles } from 'src/common/decorators/roles.decorator';
 import { User } from 'src/common/decorators/user.decorator';
+import { PaginationQueryDto } from 'src/common/dto/pagination-query.dto';
 import { UpdateUserDto } from './dto/update-user.dto';
 import { Role } from './enums/role.enum';
 import { UsersService } from './users.service';
@@ -19,10 +28,10 @@ export class UsersController {
   }
 
   @Get()
-  @ApiOperation({ summary: 'Get all users' })
+  @ApiOperation({ summary: 'Get all users with pagination' })
   @Roles(Role.ADMIN)
-  async findAll() {
-    return await this.usersService.findAll();
+  async findAll(@Query() query: PaginationQueryDto) {
+    return await this.usersService.findAll(query);
   }
 
   @Get(':id')

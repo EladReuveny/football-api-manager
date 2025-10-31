@@ -1,4 +1,6 @@
 import { api } from "../config";
+import type { PaginationQuery } from "../types/common/paginationQuery";
+import type { PaginationResponse } from "../types/common/paginationResponse";
 import type { UpdateUser } from "../types/user/updateUser";
 import type { User } from "../types/user/user";
 
@@ -17,14 +19,16 @@ export const getProfile = async (): Promise<Partial<User>> => {
 };
 
 /**
- * Fetches all users.
+ * Fetches all users from the API.
  *
  * @async
- * @function getAllUsers
- * @returns {Promise<User[]>} A promise that resolves to a list of all users.
+ * @param {PaginationQuery} query - The pagination query parameters.
+ * @returns {Promise<PaginationResponse<User>>} The paginated data of users.
  */
-export const getAllUsers = async (): Promise<User[]> => {
-  const res = await api.get(`/${BASE_URL}`);
+export const getAllUsers = async (
+  query?: PaginationQuery
+): Promise<PaginationResponse<User>> => {
+  const res = await api.get(`/${BASE_URL}`, { params: query });
   return res.data;
 };
 

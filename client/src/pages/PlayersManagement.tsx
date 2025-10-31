@@ -1,9 +1,10 @@
 import { useEffect, useRef, useState } from "react";
-import { Link } from "react-router-dom";
+import { Link, useSearchParams } from "react-router-dom";
 import { toast } from "react-toastify";
 import ConfirmDialog from "../components/ConfirmDialog";
 import FormDialog from "../components/FormDialog";
 import PageTitle from "../components/PageTitle";
+import Pagination from "../components/Pagination";
 import SearchFilterBar from "../components/SearchFilterBar";
 import { getAllClubs } from "../services/clubService";
 import { getAllCountries } from "../services/countryService";
@@ -14,6 +15,8 @@ import {
   updatePlayer,
 } from "../services/playerService";
 import type { Club } from "../types/club/club";
+import type { PaginationQuery } from "../types/common/paginationQuery";
+import type { PaginationResponse } from "../types/common/paginationResponse";
 import type { Country } from "../types/countries/country";
 import type { CreatePlayer } from "../types/player/createPlayer";
 import type { Player } from "../types/player/player";
@@ -31,11 +34,23 @@ type PlayersManagementProps = {};
 const PlayersManagement = ({}: PlayersManagementProps) => {
   const [players, setPlayers] = useState<Player[]>([]);
   const [filteredPlayers, setFilteredPlayers] = useState<Player[]>([]);
+  const [pagination, setPagination] = useState<Omit<
+    PaginationResponse<Player>,
+    "items"
+  > | null>(null);
   const [playerToDelete, setPlayerToDelete] = useState<Player | null>(null);
   const [playerToEdit, setPlayerToEdit] = useState<Player | null>(null);
   const [clubs, setClubs] = useState<Club[]>([]);
   const [nationalities, setNationalities] = useState<Country[]>([]);
   const [searchQuery, setSearchQuery] = useState("");
+
+  const [searchParams, setSearchParams] = useSearchParams();
+  const page = searchParams.get("page")
+    ? Number(searchParams.get("page"))
+    : undefined;
+  const limit = searchParams.get("limit")
+    ? Number(searchParams.get("limit"))
+    : undefined;
 
   const addPlayerDialog = useRef<HTMLDialogElement | null>(null);
   const editPlayerDialog = useRef<HTMLDialogElement | null>(null);
@@ -44,9 +59,13 @@ const PlayersManagement = ({}: PlayersManagementProps) => {
 
   useEffect(() => {
     const fetchPlayers = async () => {
+      const query: PaginationQuery = { page: page, limit };
+
       try {
-        const data = await getAllPlayers();
-        setPlayers(data);
+        const data = await getAllPlayers(query);
+        setPlayers(data.items);
+        const { items, ...result } = data;
+        setPagination(result);
       } catch (err: unknown) {
         handleError(err);
       }
@@ -55,7 +74,7 @@ const PlayersManagement = ({}: PlayersManagementProps) => {
     const fetchClubs = async () => {
       try {
         const data = await getAllClubs();
-        setClubs(data);
+        setClubs(data.items);
       } catch (err: unknown) {
         handleError(err);
       }
@@ -64,7 +83,7 @@ const PlayersManagement = ({}: PlayersManagementProps) => {
     const fetchCountries = async () => {
       try {
         const data = await getAllCountries();
-        setNationalities(data);
+        setNationalities(data.items);
       } catch (err: unknown) {
         handleError(err);
       }
@@ -73,7 +92,7 @@ const PlayersManagement = ({}: PlayersManagementProps) => {
     fetchPlayers();
     fetchClubs();
     fetchCountries();
-  }, []);
+  }, [page, limit]);
 
   useEffect(() => {
     const searchTerm = searchQuery.trim().toLowerCase();
@@ -88,6 +107,10 @@ const PlayersManagement = ({}: PlayersManagementProps) => {
 
     setFilteredPlayers(filtered);
   }, [searchQuery, players]);
+
+  const handlePageChange = (page: number) => {
+    setSearchParams({ page: String(page), limit: String(pagination?.limit) });
+  };
 
   const showAddPlayerDialog = () => {
     addPlayerDialog?.current?.showModal();
@@ -480,6 +503,24 @@ const PlayersManagement = ({}: PlayersManagementProps) => {
           ))}
         </tbody>
       </table>
+
+      <div className="mt-8 flex flex-col items-center gap-3">
+        <Pagination
+          pagination={pagination}
+          onPageChange={(page) => handlePageChange(page)}
+        />
+
+        <div className="text-center text-gray-400 text-sm">
+          <p>
+            Found <b>{filteredPlayers.length}</b>{" "}
+            {filteredPlayers.length === 1 ? "result" : "results"} out of{" "}
+            <b>{pagination?.totalItems}</b>
+          </p>
+          <p>
+            Page <b>{page || 1}</b> out of <b>{pagination?.totalPages}</b>
+          </p>
+        </div>
+      </div>
 
       <FormDialog
         dialogRef={addPlayerDialog}

@@ -6,10 +6,12 @@ import {
   Param,
   Patch,
   Post,
+  Query,
 } from '@nestjs/common';
 import { ApiBearerAuth, ApiOperation } from '@nestjs/swagger';
 import { Public } from 'src/common/decorators/public.decorator';
 import { Roles } from 'src/common/decorators/roles.decorator';
+import { PaginationQueryDto } from 'src/common/dto/pagination-query.dto';
 import { Role } from 'src/users/enums/role.enum';
 import { CreatePlayerDto } from './dto/create-player.dto';
 import { UpdatePlayerDto } from './dto/update-player.dto';
@@ -28,10 +30,10 @@ export class PlayersController {
   }
 
   @Get()
-  @ApiOperation({ summary: 'Get all players' })
+  @ApiOperation({ summary: 'Get all players with pagination' })
   @Public()
-  async findAll() {
-    return await this.playersService.findAll();
+  async findAll(@Query() query: PaginationQueryDto) {
+    return await this.playersService.findAll(query);
   }
 
   @Get(':id')

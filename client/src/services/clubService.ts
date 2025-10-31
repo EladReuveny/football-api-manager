@@ -2,6 +2,8 @@ import { api } from "../config";
 import type { Club } from "../types/club/club";
 import type { CreateClub } from "../types/club/createClub";
 import type { UpdateClub } from "../types/club/updateClub";
+import type { PaginationQuery } from "../types/common/paginationQuery";
+import type { PaginationResponse } from "../types/common/paginationResponse";
 
 const BASE_URL = "clubs";
 
@@ -9,11 +11,13 @@ const BASE_URL = "clubs";
  * Fetches all clubs from the API.
  *
  * @async
- * @function getAllClubs
- * @returns {Promise<Club[]>} A promise that resolves to a list of clubs.
+ * @param {PaginationQuery} query - The pagination query parameters.
+ * @returns {Promise<PaginationResponse<Club>>} The paginated data of clubs.
  */
-export const getAllClubs = async (): Promise<Club[]> => {
-  const res = await api.get(`/${BASE_URL}`);
+export const getAllClubs = async (
+  query?: PaginationQuery
+): Promise<PaginationResponse<Club>> => {
+  const res = await api.get(`/${BASE_URL}`, { params: query });
   return res.data;
 };
 

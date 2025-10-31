@@ -6,6 +6,8 @@ import {
 } from '@nestjs/common';
 import { InjectRepository } from '@nestjs/typeorm';
 import * as bcrypt from 'bcrypt';
+import { PaginationQueryDto } from 'src/common/dto/pagination-query.dto';
+import { PaginationResponseDto } from 'src/common/dto/pagination-response.dto';
 import { Repository } from 'typeorm';
 import { UpdateUserDto } from './dto/update-user.dto';
 import { User } from './entities/user.entity';
@@ -37,11 +39,30 @@ export class UsersService {
   }
 
   /**
-   * Finds all users
-   * @returns All users
+   * Get all users with pagination.
+   *
+   * @param {PaginationQueryDto} query - The pagination query parameters.
+   * @returns The paginated list of users.
    */
-  async findAll() {
-    return await this.usersRepository.find();
+  async findAll(query: PaginationQueryDto) {
+    const { page, limit } = query;
+
+    const offset = (page - 1) * limit;
+
+    const [items, total] = await this.usersRepository.findAndCount({
+      take: limit,
+      skip: offset,
+    });
+
+    const totalPages = Math.ceil(total / limit);
+
+    return {
+      items,
+      currentPage: page,
+      limit,
+      totalItems: total,
+      totalPages,
+    } as PaginationResponseDto<User>;
   }
 
   /**

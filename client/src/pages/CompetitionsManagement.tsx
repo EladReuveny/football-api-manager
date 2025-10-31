@@ -1,5 +1,5 @@
 import { useEffect, useRef, useState } from "react";
-import { Link } from "react-router-dom";
+import { Link, useSearchParams } from "react-router-dom";
 import { toast } from "react-toastify";
 import ConfirmDialog from "../components/ConfirmDialog";
 import DropDownList from "../components/DropDownList";
@@ -14,8 +14,11 @@ import {
 } from "../services/competitionService";
 import { getAllCountries } from "../services/countryService";
 
+import Pagination from "../components/Pagination";
 import SearchFilterBar from "../components/SearchFilterBar";
 import type { Club } from "../types/club/club";
+import type { PaginationQuery } from "../types/common/paginationQuery";
+import type { PaginationResponse } from "../types/common/paginationResponse";
 import type { Competition } from "../types/competition/competition";
 import {
   competitionTypeColors,
@@ -35,6 +38,10 @@ const CompetitionsManagement = ({}: CompetitionsManagementProps) => {
   const [filteredCompetitions, setFilteredCompetitions] = useState<
     Competition[]
   >([]);
+  const [pagination, setPagination] = useState<Omit<
+    PaginationResponse<Competition>,
+    "items"
+  > | null>(null);
   const [competitionToEdit, setCompetitionToEdit] =
     useState<Competition | null>(null);
   const [competitionToDelete, setCompetitionToDelete] =
@@ -44,15 +51,27 @@ const CompetitionsManagement = ({}: CompetitionsManagementProps) => {
   const [selectedClubsIds, setSelectedClubsIds] = useState<number[]>([]);
   const [searchQuery, setSearchQuery] = useState("");
 
+  const [searchParams, setSearchParams] = useSearchParams();
+  const page = searchParams.get("page")
+    ? Number(searchParams.get("page"))
+    : undefined;
+  const limit = searchParams.get("limit")
+    ? Number(searchParams.get("limit"))
+    : undefined;
+
   const addCompetitionDialog = useRef<HTMLDialogElement | null>(null);
   const editCompetitionDialog = useRef<HTMLDialogElement | null>(null);
   const deleteCompetitionDialog = useRef<HTMLDialogElement | null>(null);
 
   useEffect(() => {
     const fetchCompetitions = async () => {
+      const query: PaginationQuery = { page: page, limit };
+
       try {
-        const data = await getAllCompetitions();
-        setCompetitions(data);
+        const data = await getAllCompetitions(query);
+        setCompetitions(data.items);
+        const { items, ...result } = data;
+        setPagination(result);
       } catch (err: unknown) {
         handleError(err);
       }
@@ -61,7 +80,7 @@ const CompetitionsManagement = ({}: CompetitionsManagementProps) => {
     const fetchCountries = async () => {
       try {
         const data = await getAllCountries();
-        setCountries(data);
+        setCountries(data.items);
       } catch (err: unknown) {
         handleError(err);
       }
@@ -70,7 +89,7 @@ const CompetitionsManagement = ({}: CompetitionsManagementProps) => {
     const fetchClubs = async () => {
       try {
         const data = await getAllClubs();
-        setClubs(data);
+        setClubs(data.items);
       } catch (err: unknown) {
         handleError(err);
       }
@@ -79,7 +98,7 @@ const CompetitionsManagement = ({}: CompetitionsManagementProps) => {
     fetchCompetitions();
     fetchCountries();
     fetchClubs();
-  }, []);
+  }, [page, limit]);
 
   useEffect(() => {
     const searchTerm = searchQuery.trim().toLowerCase();
@@ -94,6 +113,10 @@ const CompetitionsManagement = ({}: CompetitionsManagementProps) => {
 
     setFilteredCompetitions(filtered);
   }, [competitions, searchQuery]);
+
+  const handlePageChange = (page: number) => {
+    setSearchParams({ page: String(page), limit: String(pagination?.limit) });
+  };
 
   const handleAddCompetition = async (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
@@ -404,6 +427,24 @@ const CompetitionsManagement = ({}: CompetitionsManagementProps) => {
           ))}
         </tbody>
       </table>
+
+      <div className="mt-8 flex flex-col items-center gap-3">
+        <Pagination
+          pagination={pagination}
+          onPageChange={(page) => handlePageChange(page)}
+        />
+
+        <div className="text-center text-gray-400 text-sm">
+          <p>
+            Found <b>{filteredCompetitions.length}</b>{" "}
+            {filteredCompetitions.length === 1 ? "result" : "results"} out of{" "}
+            <b>{pagination?.totalItems}</b>
+          </p>
+          <p>
+            Page <b>{page || 1}</b> out of <b>{pagination?.totalPages}</b>
+          </p>
+        </div>
+      </div>
 
       <ConfirmDialog
         dialogRef={deleteCompetitionDialog}

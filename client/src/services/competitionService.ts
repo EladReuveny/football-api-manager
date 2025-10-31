@@ -1,4 +1,6 @@
 import { api } from "../config";
+import type { PaginationQuery } from "../types/common/paginationQuery";
+import type { PaginationResponse } from "../types/common/paginationResponse";
 import type { Competition } from "../types/competition/competition";
 import type { CreateCompetition } from "../types/competition/createCompetition";
 import type { UpdateCompetition } from "../types/competition/updateCompetition";
@@ -6,14 +8,16 @@ import type { UpdateCompetition } from "../types/competition/updateCompetition";
 const BASE_URL = "competitions";
 
 /**
- * Fetches all competitions.
+ * Fetches all competitions from the API.
  *
  * @async
- * @function getAllCompetitions
- * @returns {Promise<Competition[]>} A promise that resolves to a list of all competitions.
+ * @param {PaginationQuery} query - The pagination query parameters.
+ * @returns {Promise<PaginationResponse<Competition>>} The paginated data of competitions.
  */
-export const getAllCompetitions = async (): Promise<Competition[]> => {
-  const res = await api.get(`/${BASE_URL}`);
+export const getAllCompetitions = async (
+  query?: PaginationQuery
+): Promise<PaginationResponse<Competition>> => {
+  const res = await api.get(`/${BASE_URL}`, { params: query });
   return res.data;
 };
 

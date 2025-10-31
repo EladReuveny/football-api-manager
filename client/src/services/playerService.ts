@@ -1,4 +1,6 @@
 import { api } from "../config";
+import type { PaginationQuery } from "../types/common/paginationQuery";
+import type { PaginationResponse } from "../types/common/paginationResponse";
 import type { CreatePlayer } from "../types/player/createPlayer";
 import type { Player } from "../types/player/player";
 import type { UpdatePlayer } from "../types/player/updatePlayer";
@@ -6,14 +8,16 @@ import type { UpdatePlayer } from "../types/player/updatePlayer";
 const BASE_URL = "players";
 
 /**
- * Fetches all players.
+ * Fetches all players from the API.
  *
  * @async
- * @function getAllPlayers
- * @returns {Promise<Player[]>} A promise that resolves to a list of all players.
+ * @param {PaginationQuery} query - The pagination query parameters.
+ * @returns {Promise<PaginationResponse<Player>>} The paginated data of players.
  */
-export const getAllPlayers = async (): Promise<Player[]> => {
-  const res = await api.get(`/${BASE_URL}`);
+export const getAllPlayers = async (
+  query?: PaginationQuery
+): Promise<PaginationResponse<Player>> => {
+  const res = await api.get(`/${BASE_URL}`, { params: query });
   return res.data;
 };
 

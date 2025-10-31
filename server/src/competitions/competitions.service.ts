@@ -6,6 +6,8 @@ import {
 import { InjectRepository } from '@nestjs/typeorm';
 import { ClubsService } from 'src/clubs/clubs.service';
 import { Club } from 'src/clubs/entities/club.entity';
+import { PaginationQueryDto } from 'src/common/dto/pagination-query.dto';
+import { PaginationResponseDto } from 'src/common/dto/pagination-response.dto';
 import { CountriesService } from 'src/countries/countries.service';
 import { Country } from 'src/countries/entities/country.entity';
 import { Repository } from 'typeorm';
@@ -63,13 +65,31 @@ export class CompetitionsService {
   }
 
   /**
-   * Get all competitions
-   * @returns All competitions
+   * Get all competitions with pagination.
+   *
+   * @param {PaginationQueryDto} query - The pagination query parameters.
+   * @returns The paginated list of competitions.
    */
-  async findAll() {
-    return this.competitionsRepository.find({
+  async findAll(query: PaginationQueryDto) {
+    const { page, limit } = query;
+
+    const offset = (page - 1) * limit;
+
+    const [items, total] = await this.competitionsRepository.findAndCount({
       relations: ['country', 'clubs'],
+      take: limit,
+      skip: offset,
     });
+
+    const totalPages = Math.ceil(total / limit);
+
+    return {
+      items,
+      currentPage: page,
+      limit,
+      totalItems: total,
+      totalPages,
+    } as PaginationResponseDto<Competition>;
   }
 
   /**

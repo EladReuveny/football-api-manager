@@ -7,6 +7,8 @@ import {
 import { InjectRepository } from '@nestjs/typeorm';
 import { ClubsService } from 'src/clubs/clubs.service';
 import { Club } from 'src/clubs/entities/club.entity';
+import { PaginationQueryDto } from 'src/common/dto/pagination-query.dto';
+import { PaginationResponseDto } from 'src/common/dto/pagination-response.dto';
 import { CountriesService } from 'src/countries/countries.service';
 import { Repository } from 'typeorm';
 import { CreatePlayerDto } from './dto/create-player.dto';
@@ -55,13 +57,31 @@ export class PlayersService {
   }
 
   /**
-   * Get all players
-   * @returns All players
+   * Get all players with pagination.
+   *
+   * @param {PaginationQueryDto} query - The pagination query parameters.
+   * @returns The paginated list of players.
    */
-  async findAll() {
-    return await this.playersRepository.find({
+  async findAll(query: PaginationQueryDto) {
+    const { page, limit } = query;
+
+    const offset = (page - 1) * limit;
+
+    const [items, total] = await this.playersRepository.findAndCount({
       relations: ['club', 'nationality'],
+      take: limit,
+      skip: offset,
     });
+
+    const totalPages = Math.ceil(total / limit);
+
+    return {
+      items,
+      currentPage: page,
+      limit,
+      totalItems: total,
+      totalPages,
+    } as PaginationResponseDto<Player>;
   }
 
   /**
@@ -79,7 +99,7 @@ export class PlayersService {
     if (!player) {
       throw new NotFoundException(`Player with ID ${id} not found`);
     }
-    
+
     return player;
   }
 

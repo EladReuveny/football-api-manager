@@ -63,7 +63,7 @@ const CompetitionDetails = ({}: CompetitionDetailsProps) => {
     const fetchCountries = async () => {
       try {
         const data = await getAllCountries();
-        setCountries(data);
+        setCountries(data.items);
       } catch (err: unknown) {
         handleError(err);
       }
@@ -72,7 +72,7 @@ const CompetitionDetails = ({}: CompetitionDetailsProps) => {
     const fetchClubs = async () => {
       try {
         const data = await getAllClubs();
-        setClubs(data);
+        setClubs(data.items);
       } catch (err: unknown) {
         handleError(err);
       }

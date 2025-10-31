@@ -1,8 +1,12 @@
 import { useEffect, useRef, useState } from "react";
+import { useSearchParams } from "react-router-dom";
 import { toast } from "react-toastify";
 import ConfirmDialog from "../components/ConfirmDialog";
 import PageTitle from "../components/PageTitle";
+import Pagination from "../components/Pagination";
 import { deleteUser, getAllUsers } from "../services/userService";
+import type { PaginationQuery } from "../types/common/paginationQuery";
+import type { PaginationResponse } from "../types/common/paginationResponse";
 import type { Role } from "../types/user/role";
 import type { User } from "../types/user/user";
 import { handleError } from "../utils/utils";
@@ -11,7 +15,19 @@ type UsersManagementProps = {};
 
 const UsersManagement = ({}: UsersManagementProps) => {
   const [users, setUsers] = useState<User[]>([]);
+  const [pagination, setPagination] = useState<Omit<
+    PaginationResponse<User>,
+    "items"
+  > | null>(null);
   const [userToDelete, setUserToDelete] = useState<User | null>(null);
+
+  const [searchParams, setSearchParams] = useSearchParams();
+  const page = searchParams.get("page")
+    ? Number(searchParams.get("page"))
+    : undefined;
+  const limit = searchParams.get("limit")
+    ? Number(searchParams.get("limit"))
+    : undefined;
 
   const roles: {
     value: Role;
@@ -25,16 +41,24 @@ const UsersManagement = ({}: UsersManagementProps) => {
 
   useEffect(() => {
     const fetchUsers = async () => {
+      const query: PaginationQuery = { page: page, limit };
+
       try {
-        const data = await getAllUsers();
-        setUsers(data);
+        const data = await getAllUsers(query);
+        setUsers(data.items);
+        const { items, ...result } = data;
+        setPagination(result);
       } catch (err) {
         handleError(err);
       }
     };
 
     fetchUsers();
-  }, []);
+  }, [page, limit]);
+
+  const handlePageChange = (page: number) => {
+    setSearchParams({ page: String(page), limit: String(pagination?.limit) });
+  };
 
   const showDeleteUserDialog = (user: User) => {
     setUserToDelete(user);
@@ -121,6 +145,24 @@ const UsersManagement = ({}: UsersManagementProps) => {
           ))}
         </tbody>
       </table>
+
+      <div className="mt-8 flex flex-col items-center gap-3">
+        <Pagination
+          pagination={pagination}
+          onPageChange={(page) => handlePageChange(page)}
+        />
+
+        <div className="text-center text-gray-400 text-sm">
+          <p>
+            Found <b>{users.length}</b>{" "}
+            {users.length === 1 ? "result" : "results"} out of{" "}
+            <b>{pagination?.totalItems}</b>
+          </p>
+          <p>
+            Page <b>{page || 1}</b> out of <b>{pagination?.totalPages}</b>
+          </p>
+        </div>
+      </div>
 
       <ConfirmDialog
         dialogRef={deleteUserDialog}

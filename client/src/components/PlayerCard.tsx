@@ -16,7 +16,7 @@ const PlayerCard = ({ player, index, onRemoveFromClub }: PlayerCardProps) => {
     <Link
       to={`/players/${player.id}`}
       title={player.name}
-      className="relative bg-(--color-text)/10 rounded-lg overflow-hidden hover:backdrop-brightness-150 hover:shadow-[0_0_4px_var(--color-text)]"
+      className="relative bg-(--color-text)/10 pb-2 rounded-lg overflow-hidden hover:backdrop-brightness-150 hover:shadow-[0_0_4px_var(--color-text)]"
     >
       <div className="flex flex-col absolute top-1 left-2 font-extrabold">
         <p title={player.rating.toString()}>{player.rating}</p>

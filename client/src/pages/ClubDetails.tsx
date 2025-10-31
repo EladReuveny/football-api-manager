@@ -50,7 +50,7 @@ const ClubDetails = ({}: ClubDetailsProps) => {
     const fetchCountries = async () => {
       try {
         const data = await getAllCountries();
-        setCountries(data);
+        setCountries(data.items);
       } catch (err: unknown) {
         handleError(err);
       }

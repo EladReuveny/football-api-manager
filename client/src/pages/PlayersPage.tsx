@@ -1,8 +1,12 @@
 import { useEffect, useState } from "react";
+import { useSearchParams } from "react-router-dom";
 import PageTitle from "../components/PageTitle";
+import Pagination from "../components/Pagination";
 import PlayerCard from "../components/PlayerCard";
 import SearchFilterBar from "../components/SearchFilterBar";
 import { getAllPlayers } from "../services/playerService";
+import type { PaginationQuery } from "../types/common/paginationQuery";
+import type { PaginationResponse } from "../types/common/paginationResponse";
 import type { Player } from "../types/player/player";
 import { handleError } from "../utils/utils";
 
@@ -12,19 +16,35 @@ const PlayersPage = ({}: PlayersPageProps) => {
   const [players, setPlayers] = useState<Player[]>([]);
   const [filteredPlayers, setFilteredPlayers] = useState<Player[]>([]);
   const [searchQuery, setSearchQuery] = useState("");
+  const [pagination, setPagination] = useState<Omit<
+    PaginationResponse<Player>,
+    "items"
+  > | null>(null);
+
+  const [searchParams, setSearchParams] = useSearchParams();
+  const page = searchParams.get("page")
+    ? Number(searchParams.get("page"))
+    : undefined;
+  const limit = searchParams.get("limit")
+    ? Number(searchParams.get("limit"))
+    : undefined;
 
   useEffect(() => {
-    const fetchAllPlayers = async () => {
+    const fetchPlayers = async () => {
+      const query: PaginationQuery = { page, limit };
+
       try {
-        const data = await getAllPlayers();
-        setPlayers(data);
+        const data = await getAllPlayers(query);
+        setPlayers(data.items);
+        const { items, ...result } = data;
+        setPagination(result);
       } catch (err: unknown) {
         handleError(err);
       }
     };
 
-    fetchAllPlayers();
-  }, []);
+    fetchPlayers();
+  }, [page, limit]);
 
   useEffect(() => {
     const searchTerm = searchQuery.trim().toLowerCase();
@@ -39,6 +59,10 @@ const PlayersPage = ({}: PlayersPageProps) => {
 
     setFilteredPlayers(filtered);
   }, [searchQuery, players]);
+
+  const handlePageChange = (page: number) => {
+    setSearchParams({ page: String(page), limit: String(pagination?.limit) });
+  };
 
   return (
     <section className="px-1">
@@ -55,6 +79,24 @@ const PlayersPage = ({}: PlayersPageProps) => {
         {filteredPlayers.map((player, index) => (
           <PlayerCard key={player.id} player={player} index={index} />
         ))}
+      </div>
+
+      <div className="mt-8 flex flex-col items-center gap-3">
+        <Pagination
+          pagination={pagination}
+          onPageChange={(page) => handlePageChange(page)}
+        />
+
+        <div className="text-center text-gray-400 text-sm">
+          <p>
+            Found <b>{filteredPlayers.length}</b>{" "}
+            {filteredPlayers.length === 1 ? "result" : "results"} out of{" "}
+            <b>{pagination?.totalItems}</b>
+          </p>
+          <p>
+            Page <b>{page || 1}</b> out of <b>{pagination?.totalPages}</b>
+          </p>
+        </div>
       </div>
     </section>
   );

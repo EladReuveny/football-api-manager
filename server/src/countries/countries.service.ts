@@ -4,6 +4,8 @@ import {
   NotFoundException,
 } from '@nestjs/common';
 import { InjectRepository } from '@nestjs/typeorm';
+import { PaginationQueryDto } from 'src/common/dto/pagination-query.dto';
+import { PaginationResponseDto } from 'src/common/dto/pagination-response.dto';
 import { Repository } from 'typeorm';
 import { CreateCountryDto } from './dto/create-country.dto';
 import { UpdateCountryDto } from './dto/update-country.dto';
@@ -38,11 +40,30 @@ export class CountriesService {
   }
 
   /**
-   * Finds all countries
-   * @returns All countries
+   * Get all countries with pagination.
+   *
+   * @param {PaginationQueryDto} query - The pagination query parameters.
+   * @returns The paginated list of countries.
    */
-  async findAll() {
-    return await this.countriesRepository.find();
+  async findAll(query: PaginationQueryDto) {
+    const { page, limit } = query;
+
+    const offset = (page - 1) * limit;
+
+    const [items, total] = await this.countriesRepository.findAndCount({
+      take: limit,
+      skip: offset,
+    });
+
+    const totalPages = Math.ceil(total / limit);
+
+    return {
+      items,
+      currentPage: page,
+      limit,
+      totalItems: total,
+      totalPages,
+    } as PaginationResponseDto<Country>;
   }
 
   /**

@@ -55,7 +55,7 @@ const PlayerDetails = ({}: PlayerDetailsProps) => {
     const fetchClubs = async () => {
       try {
         const data = await getAllClubs();
-        setClubs(data);
+        setClubs(data.items);
       } catch (err: unknown) {
         handleError(err);
       }
@@ -64,7 +64,7 @@ const PlayerDetails = ({}: PlayerDetailsProps) => {
     const fetchCountries = async () => {
       try {
         const data = await getAllCountries();
-        setNationalities(data);
+        setNationalities(data.items);
       } catch (err: unknown) {
         handleError(err);
       }
