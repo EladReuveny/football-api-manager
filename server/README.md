@@ -1,98 +1,268 @@
-<p align="center">
-  <a href="http://nestjs.com/" target="blank"><img src="https://nestjs.com/img/logo-small.svg" width="120" alt="Nest Logo" /></a>
-</p>
+# Football API Manager
 
-[circleci-image]: https://img.shields.io/circleci/build/github/nestjs/nest/master?token=abc123def456
-[circleci-url]: https://circleci.com/gh/nestjs/nest
+A complete platform for managing football data. Ideal for developers, analysts, or admins who want full control over structured football statistics and API data.
 
-  <p align="center">A progressive <a href="http://nodejs.org" target="_blank">Node.js</a> framework for building efficient and scalable server-side applications.</p>
-    <p align="center">
-<a href="https://www.npmjs.com/~nestjscore" target="_blank"><img src="https://img.shields.io/npm/v/@nestjs/core.svg" alt="NPM Version" /></a>
-<a href="https://www.npmjs.com/~nestjscore" target="_blank"><img src="https://img.shields.io/npm/l/@nestjs/core.svg" alt="Package License" /></a>
-<a href="https://www.npmjs.com/~nestjscore" target="_blank"><img src="https://img.shields.io/npm/dm/@nestjs/common.svg" alt="NPM Downloads" /></a>
-<a href="https://circleci.com/gh/nestjs/nest" target="_blank"><img src="https://img.shields.io/circleci/build/github/nestjs/nest/master" alt="CircleCI" /></a>
-<a href="https://discord.gg/G7Qnnhy" target="_blank"><img src="https://img.shields.io/badge/discord-online-brightgreen.svg" alt="Discord"/></a>
-<a href="https://opencollective.com/nest#backer" target="_blank"><img src="https://opencollective.com/nest/backers/badge.svg" alt="Backers on Open Collective" /></a>
-<a href="https://opencollective.com/nest#sponsor" target="_blank"><img src="https://opencollective.com/nest/sponsors/badge.svg" alt="Sponsors on Open Collective" /></a>
-  <a href="https://paypal.me/kamilmysliwiec" target="_blank"><img src="https://img.shields.io/badge/Donate-PayPal-ff3f59.svg" alt="Donate us"/></a>
-    <a href="https://opencollective.com/nest#sponsor"  target="_blank"><img src="https://img.shields.io/badge/Support%20us-Open%20Collective-41B883.svg" alt="Support us"></a>
-  <a href="https://twitter.com/nestframework" target="_blank"><img src="https://img.shields.io/twitter/follow/nestframework.svg?style=social&label=Follow" alt="Follow us on Twitter"></a>
-</p>
-  <!--[![Backers on Open Collective](https://opencollective.com/nest/backers/badge.svg)](https://opencollective.com/nest#backer)
-  [![Sponsors on Open Collective](https://opencollective.com/nest/sponsors/badge.svg)](https://opencollective.com/nest#sponsor)-->
+---
 
-## Description
+## 🧭 Table of Contents
 
-[Nest](https://github.com/nestjs/nest) framework TypeScript starter repository.
+- <a href="#overview">📖 Overview</a>
+- <a href="#features">⚙️ Features</a>
+- <a href="#getting-started">🚀 Getting Started</a>
+  - <a href="#installation">🧩 Installation</a>
+- <a href="#environment-variables">🔐 Environment Variables</a>
+- <a href="#user-roles">👥 User Roles</a>
+- <a href="#api-guide">📡 API Guide</a>
+  - <a href="#authentication-endpoints">🔑 Authentication</a>
+  - <a href="#clubs-endpoints">⚽ Clubs Endpoints</a>
+  - <a href="#players-endpoints">🧍 Players Endpoints</a>
+  - <a href="#competitions-endpoints">🏆 Competitions Endpoints</a>
+  - <a href="#countries-endpoints">🌍 Countries Endpoints</a>
+- <a href="#technologies-used">🛠️ Technologies Used</a>
+- <a href="#about">💡 About</a>
 
-## Project setup
+---
 
-```bash
-$ npm install
+<a id="overview"></a>
+
+## 📖 Overview
+
+Football API Manager is a centralized platform for football data.  
+Admins can manage data, while standard users can view statistics and analytics.  
+The system provides secure and structured data access via a REST API with token-based authentication.
+
+---
+
+<a id="features"></a>
+
+## ⚙️ Features
+
+- **Football Data Hub** – Centralized data management for clubs, players, competitions, countries, and stats.
+- **User & Role Management** – Admins can manage users and permissions; standard users have secure access.
+- **RESTful API Access** – Secure and scalable endpoints, with public endpoints accessible for general use.
+- **API Documentation** – Comprehensive API reference via Swagger (OpenAPI) for easy integration.
+- **Frontend UI** – Interactive and user-friendly interface for data exploration and management.
+- **Secure Authentication** – JWT-based authentication with role-based access control.
+
+---
+
+<a id="getting-started"></a>
+
+## 🚀 Getting Started
+
+<a id="installation"></a>
+
+### 🧩 Installation
+
+1. **Clone the repository**
+
+   ```bash
+   git clone <repo-url>
+   ```
+
+2. **Install backend dependencies**
+
+   ```bash
+   cd server
+   npm install
+   ```
+
+3. **Install frontend dependencies**
+
+   ```bash
+   cd client
+   npm install
+   ```
+
+4. **Run backend**
+
+   ```bash
+   cd server
+   npm run start:dev
+   ```
+
+5. **Run frontend**
+
+   ```bash
+   cd client
+   npm run dev
+   ```
+
+---
+
+<a id="environment-variables"></a>
+
+## 🔐 Environment Variables
+
+### Backend (`.env`)
+
+```env
+DB_HOST=<localhost>
+DB_PORT=<your_port>
+DB_USER=<your_user>
+DB_PASSWORD=<your_password>
+DB_NAME=<your_db_name>
+ADMIN_SECRET_KEY=<your_admin_secret_key>
+JWT_SECRET=<your_jwt_secret>
+CLIENT_URL=<your_client_url>
 ```
 
-## Compile and run the project
+### Frontend (`.env`)
 
-```bash
-# development
-$ npm run start
-
-# watch mode
-$ npm run start:dev
-
-# production mode
-$ npm run start:prod
+```env
+VITE_API_BASE_URL=<your_backend_api_url>
 ```
 
-## Run tests
+---
 
-```bash
-# unit tests
-$ npm run test
+<a id="user-roles"></a>
 
-# e2e tests
-$ npm run test:e2e
+## 👥 User Roles
 
-# test coverage
-$ npm run test:cov
+- **Admin** – Manage clubs, players, competitions, countries, and users.
+- **User** – View clubs, players, competitions, countries, and analytics.
+
+Excellent — here’s a **clean, structured, and fully refactored** `API Guide` section for your `README.md`.
+It keeps your style consistent, adds anchor tags (`<a id="">`) for working navigation, and presents endpoints in a clear, modern format with markdown tables and examples.
+
+---
+
+<a id="api-guide"></a>
+
+## 📡 API Guide
+
+Access comprehensive football data through the RESTful API.  
+All endpoints are secured — except public ones — using **JWT authentication** and **role-based authorization** to ensure safe and controlled access.
+
+**Base Path:**
+
 ```
 
-## Deployment
+/api/<API_VERSION>
 
-When you're ready to deploy your NestJS application to production, there are some key steps you can take to ensure it runs as efficiently as possible. Check out the [deployment documentation](https://docs.nestjs.com/deployment) for more information.
+Example: `/api/v1`
 
-If you are looking for a cloud-based platform to deploy your NestJS application, check out [Mau](https://mau.nestjs.com), our official platform for deploying NestJS applications on AWS. Mau makes deployment straightforward and fast, requiring just a few simple steps:
-
-```bash
-$ npm install -g @nestjs/mau
-$ mau deploy
 ```
 
-With Mau, you can deploy your application in just a few clicks, allowing you to focus on building features rather than managing infrastructure.
+<a id="authentication-endpoints"></a>
 
-## Resources
+### 🔑 Authentication Endpoints
 
-Check out a few resources that may come in handy when working with NestJS:
+| Method | Endpoint         | Description                          | Access |
+| ------ | ---------------- | ------------------------------------ | ------ |
+| POST   | `/auth/register` | Register a new user and get a token  | Public |
+| POST   | `/auth/login`    | Login with credentials and get token | Public |
 
-- Visit the [NestJS Documentation](https://docs.nestjs.com) to learn more about the framework.
-- For questions and support, please visit our [Discord channel](https://discord.gg/G7Qnnhy).
-- To dive deeper and get more hands-on experience, check out our official video [courses](https://courses.nestjs.com/).
-- Deploy your application to AWS with the help of [NestJS Mau](https://mau.nestjs.com) in just a few clicks.
-- Visualize your application graph and interact with the NestJS application in real-time using [NestJS Devtools](https://devtools.nestjs.com).
-- Need help with your project (part-time to full-time)? Check out our official [enterprise support](https://enterprise.nestjs.com).
-- To stay in the loop and get updates, follow us on [X](https://x.com/nestframework) and [LinkedIn](https://linkedin.com/company/nestjs).
-- Looking for a job, or have a job to offer? Check out our official [Jobs board](https://jobs.nestjs.com).
+**Example – Register a new user**
 
-## Support
+```http
+POST /api/v1/auth/register
+Content-Type: application/json
 
-Nest is an MIT-licensed open source project. It can grow thanks to the sponsors and support by the amazing backers. If you'd like to join them, please [read more here](https://docs.nestjs.com/support).
+{
+  "username": "user@example.com",
+  "password": "password123"
+}
+```
 
-## Stay in touch
+**Example – Authorization Header**
 
-- Author - [Kamil Myśliwiec](https://twitter.com/kammysliwiec)
-- Website - [https://nestjs.com](https://nestjs.com/)
-- Twitter - [@nestframework](https://twitter.com/nestframework)
+```
+Authorization: Bearer <token>
+```
 
-## License
+---
 
-Nest is [MIT licensed](https://github.com/nestjs/nest/blob/master/LICENSE).
+<a id="clubs-endpoints"></a>
+
+### ⚽ Clubs Endpoints
+
+| Method | Endpoint                           | Description                          | Access |
+| ------ | ---------------------------------- | ------------------------------------ | ------ |
+| GET    | `/clubs`                           | Fetch all clubs                      | Public |
+| GET    | `/clubs/:id`                       | Fetch a specific club by ID          | Public |
+| POST   | `/clubs`                           | Create a new club                    | Admin  |
+| PATCH  | `/clubs/:id`                       | Update a club                        | Admin  |
+| DELETE | `/clubs/:id`                       | Delete a club                        | Admin  |
+| POST   | `/clubs/create-bulk`               | Create multiple clubs in bulk        | Admin  |
+| POST   | `/clubs/:clubId/players/:playerId` | Add a player to a specific club      | Admin  |
+| DELETE | `/clubs/:clubId/players/:playerId` | Remove a player from a specific club | Admin  |
+
+---
+
+<a id="players-endpoints"></a>
+
+### 🧍 Players Endpoints
+
+| Method | Endpoint               | Description                     | Access |
+| ------ | ---------------------- | ------------------------------- | ------ |
+| GET    | `/players`             | Fetch all players               | Public |
+| GET    | `/players/:id`         | Fetch a specific player by ID   | Public |
+| POST   | `/players`             | Create a new player             | Admin  |
+| PATCH  | `/players/:id`         | Update player information       | Admin  |
+| DELETE | `/players/:id`         | Delete a player                 | Admin  |
+| POST   | `/players/create-bulk` | Create multiple players in bulk | Admin  |
+
+---
+
+<a id="competitions-endpoints"></a>
+
+### 🏆 Competitions Endpoints
+
+| Method | Endpoint                                     | Description                          | Access |
+| ------ | -------------------------------------------- | ------------------------------------ | ------ |
+| GET    | `/competitions`                              | Fetch all competitions               | Public |
+| GET    | `/competitions/:id`                          | Fetch a specific competition by ID   | Public |
+| POST   | `/competitions`                              | Create a new competition             | Admin  |
+| PATCH  | `/competitions/:id`                          | Update a competition                 | Admin  |
+| DELETE | `/competitions/:id`                          | Delete a competition                 | Admin  |
+| POST   | `/competitions/create-bulk`                  | Create multiple competitions in bulk | Admin  |
+| POST   | `/competitions/:competitionId/clubs/:clubId` | Add a club to a competition          | Admin  |
+| DELETE | `/competitions/:competitionId/clubs/:clubId` | Remove a club from a competition     | Admin  |
+
+---
+
+<a id="countries-endpoints"></a>
+
+### 🌍 Countries Endpoints
+
+| Method | Endpoint                 | Description                       | Access |
+| ------ | ------------------------ | --------------------------------- | ------ |
+| GET    | `/countries`             | Fetch all countries               | Public |
+| GET    | `/countries/:id`         | Fetch a specific country by ID    | Public |
+| POST   | `/countries`             | Create a new country              | Admin  |
+| PATCH  | `/countries/:id`         | Update a country                  | Admin  |
+| DELETE | `/countries/:id`         | Delete a country                  | Admin  |
+| POST   | `/countries/create-bulk` | Create multiple countries in bulk | Admin  |
+
+---
+
+<a id="technologies-used"></a>
+
+## 🛠️ Technologies Used
+
+| Layer                | Technology                                                |
+| -------------------- | --------------------------------------------------------- |
+| **Frontend**         | React, TypeScript, Tailwind CSS, Vite                     |
+| **Backend**          | NestJS                                                    |
+| **Database**         | PostgreSQL (TypeORM)                                      |
+| **Authentication**   | JWT with Role-Based Access Control (RBAC)                 |
+| **Documentation**    | Swagger (OpenAPI)                                         |
+| **Containerization** | Docker                                                    |
+| **Deployment**       | Configurable for Render, Netlify, or Docker-based servers |
+
+---
+
+<a id="about"></a>
+
+## 💡 About
+
+**Football API Manager** is a full-stack application designed to provide structured, secure, and easily accessible football data.
+
+It offers:
+
+- A **modern frontend** for management and visualization.
+- A **scalable backend** exposing a RESTful API.
+- A **unified environment** for developers, analysts, and admins to manage football data with precision and flexibility.
+
+> ⚽ Built for developers and admins who want a powerful, unified platform for managing football data — securely and efficiently.
