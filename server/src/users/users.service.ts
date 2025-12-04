@@ -8,6 +8,7 @@ import { InjectRepository } from '@nestjs/typeorm';
 import * as bcrypt from 'bcrypt';
 import { PaginationQueryDto } from 'src/common/dto/pagination-query.dto';
 import { PaginationResponseDto } from 'src/common/dto/pagination-response.dto';
+import { RedisService } from 'src/redis/redis.service';
 import { Repository } from 'typeorm';
 import { UpdateUserDto } from './dto/update-user.dto';
 import { User } from './entities/user.entity';
@@ -18,12 +19,16 @@ import { User } from './entities/user.entity';
  */
 @Injectable()
 export class UsersService {
+  private readonly baseCacheKey = 'users';
+
   /**
    * Constructor
    * @param usersRepository User repository
+   * @param redisService Redis service
    */
   constructor(
     @InjectRepository(User) private readonly usersRepository: Repository<User>,
+    private readonly redisService: RedisService,
   ) {}
 
   /**
@@ -47,6 +52,13 @@ export class UsersService {
   async findAll(query: PaginationQueryDto) {
     const { page, limit } = query;
 
+    const cached = await this.redisService.get<PaginationResponseDto<User>>(
+      `${this.baseCacheKey}:page=${page}:limit=${limit}`,
+    );
+    if (cached) {
+      return cached;
+    }
+
     const offset = (page - 1) * limit;
 
     const [items, total] = await this.usersRepository.findAndCount({
@@ -56,13 +68,20 @@ export class UsersService {
 
     const totalPages = Math.ceil(total / limit);
 
-    return {
+    const response = {
       items,
       currentPage: page,
       limit,
       totalItems: total,
       totalPages,
     } as PaginationResponseDto<User>;
+
+    await this.redisService.set(
+      `${this.baseCacheKey}:page=${page}:limit=${limit}`,
+      response,
+    );
+
+    return response;
   }
 
   /**
@@ -72,11 +91,20 @@ export class UsersService {
    * @throws NotFoundException - if user not found
    */
   async findOne(id: number) {
+    const cached = await this.redisService.get<User>(
+      `${this.baseCacheKey}:${id}`,
+    );
+    if (cached) {
+      return cached;
+    }
+
     const user = await this.usersRepository.findOneBy({ id });
 
     if (!user) {
       throw new NotFoundException(`User with id ${id} not found`);
     }
+
+    await this.redisService.set(`${this.baseCacheKey}:${id}`, user);
 
     return user;
   }
@@ -88,6 +116,7 @@ export class UsersService {
    */
   async create(user: Partial<User>) {
     const newUser = this.usersRepository.create(user);
+    await this.redisService.invalidateByPattern(`${this.baseCacheKey}*`);
     return await this.usersRepository.save(newUser);
   }
 
@@ -127,6 +156,8 @@ export class UsersService {
       );
     }
 
+    await this.redisService.invalidateByPattern(`${this.baseCacheKey}*`);
+
     return await this.usersRepository.save(user);
   }
 
@@ -137,6 +168,7 @@ export class UsersService {
   async remove(id: number) {
     const user = await this.findOne(id);
     await this.usersRepository.remove(user);
+    await this.redisService.invalidateByPattern(`${this.baseCacheKey}*`);
   }
 
   /**

@@ -10,6 +10,7 @@ import { PaginationQueryDto } from 'src/common/dto/pagination-query.dto';
 import { PaginationResponseDto } from 'src/common/dto/pagination-response.dto';
 import { CountriesService } from 'src/countries/countries.service';
 import { Country } from 'src/countries/entities/country.entity';
+import { RedisService } from 'src/redis/redis.service';
 import { Repository } from 'typeorm';
 import { CreateCompetitionDto } from './dto/create-competition.dto';
 import { UpdateCompetitionDto } from './dto/update-competition.dto';
@@ -20,15 +21,19 @@ import { Competition } from './entities/competition.entity';
  */
 @Injectable()
 export class CompetitionsService {
+  private readonly baseCacheKey = 'competitions';
+
   /**
    * Constructor
    * @param competitionsRepository Competition repository
+   * @param redisService Redis service
    * @param clubsService Clubs service
    * @param countriesService Countries service
    */
   constructor(
     @InjectRepository(Competition)
     private readonly competitionsRepository: Repository<Competition>,
+    private readonly redisService: RedisService,
     private readonly clubsService: ClubsService,
     private readonly countriesService: CountriesService,
   ) {}
@@ -61,6 +66,9 @@ export class CompetitionsService {
       country,
       clubs,
     });
+
+    await this.redisService.invalidateByPattern(`${this.baseCacheKey}*`);
+
     return await this.competitionsRepository.save(competition);
   }
 
@@ -73,6 +81,13 @@ export class CompetitionsService {
   async findAll(query: PaginationQueryDto) {
     const { page, limit } = query;
 
+    const cached = await this.redisService.get<
+      PaginationResponseDto<Competition>
+    >(`${this.baseCacheKey}:page=${page}:limit=${limit}`);
+    if (cached) {
+      return cached;
+    }
+
     const offset = (page - 1) * limit;
 
     const [items, total] = await this.competitionsRepository.findAndCount({
@@ -83,13 +98,20 @@ export class CompetitionsService {
 
     const totalPages = Math.ceil(total / limit);
 
-    return {
+    const response = {
       items,
       currentPage: page,
       limit,
       totalItems: total,
       totalPages,
     } as PaginationResponseDto<Competition>;
+
+    await this.redisService.set(
+      `${this.baseCacheKey}:page=${page}:limit=${limit}`,
+      response,
+    );
+
+    return response;
   }
 
   /**
@@ -99,6 +121,13 @@ export class CompetitionsService {
    * @throws NotFoundException - if competition not found
    */
   async findOne(id: number) {
+    const cached = await this.redisService.get<Competition>(
+      `${this.baseCacheKey}:${id}`,
+    );
+    if (cached) {
+      return cached;
+    }
+
     const competition = await this.competitionsRepository.findOne({
       where: { id },
       relations: ['country', 'clubs'],
@@ -107,6 +136,8 @@ export class CompetitionsService {
     if (!competition) {
       throw new NotFoundException(`Competition with id ${id} does not exist`);
     }
+
+    await this.redisService.set(`${this.baseCacheKey}:${id}`, competition);
 
     return competition;
   }
@@ -152,6 +183,8 @@ export class CompetitionsService {
       competition.clubs = null;
     }
 
+    await this.redisService.invalidateByPattern(`${this.baseCacheKey}*`);
+
     return await this.competitionsRepository.save(competition);
   }
 
@@ -162,6 +195,7 @@ export class CompetitionsService {
   async remove(id: number) {
     const competition = await this.findOne(id);
     await this.competitionsRepository.remove(competition);
+    await this.redisService.invalidateByPattern(`${this.baseCacheKey}*`);
   }
 
   /**
@@ -219,6 +253,8 @@ export class CompetitionsService {
 
     competition.clubs?.push(club);
 
+    await this.redisService.invalidateByPattern(`${this.baseCacheKey}*`);
+
     return await this.competitionsRepository.save(competition);
   }
 
@@ -232,6 +268,8 @@ export class CompetitionsService {
     const club = await this.clubsService.findOne(clubId);
 
     competition.clubs = competition.clubs?.filter((c) => c.id !== club.id);
+
+    await this.redisService.invalidateByPattern(`${this.baseCacheKey}*`);
 
     return await this.competitionsRepository.save(competition);
   }

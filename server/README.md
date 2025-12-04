@@ -1,6 +1,14 @@
 # Football API Manager
 
-A complete platform for managing football data. Ideal for developers, analysts, or admins who want full control over structured football statistics and API data.
+A full-stack football data management platform with a secure REST API, role-based access control, and an interactive dashboard for analytics and administration.
+
+---
+
+🌐 **Live Demo:** https://football-api-manager.netlify.app/
+
+🚀 **API Base URL:** https://football-api-manager.onrender.com/api/v1
+
+📚 **API Documentation (Swagger):** https://football-api-manager.onrender.com/api/v1/docs
 
 ---
 
