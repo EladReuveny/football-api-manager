@@ -6,6 +6,7 @@ import {
 import { InjectRepository } from '@nestjs/typeorm';
 import { PaginationQueryDto } from 'src/common/dto/pagination-query.dto';
 import { PaginationResponseDto } from 'src/common/dto/pagination-response.dto';
+import { RedisService } from 'src/redis/redis.service';
 import { Repository } from 'typeorm';
 import { CreateCountryDto } from './dto/create-country.dto';
 import { UpdateCountryDto } from './dto/update-country.dto';
@@ -17,13 +18,17 @@ import { Country } from './entities/country.entity';
  */
 @Injectable()
 export class CountriesService {
+  private baseCacheKey = 'countries';
+
   /**
    * Constructor
    * @param countriesRepository Country repository
+   * @param redisService Redis service
    */
   constructor(
     @InjectRepository(Country)
     private readonly countriesRepository: Repository<Country>,
+    private readonly redisService: RedisService,
   ) {}
 
   /**
@@ -36,6 +41,9 @@ export class CountriesService {
     await this.validateIsoCode(createCountryDto.isoCode);
 
     const country = this.countriesRepository.create(createCountryDto);
+
+    await this.redisService.invalidateByPattern(`${this.baseCacheKey}*`);
+
     return await this.countriesRepository.save(country);
   }
 
@@ -48,6 +56,13 @@ export class CountriesService {
   async findAll(query: PaginationQueryDto) {
     const { page, limit } = query;
 
+    const cached = await this.redisService.get<PaginationResponseDto<Country>>(
+      `${this.baseCacheKey}:page=${page}:limit=${limit}`,
+    );
+    if (cached) {
+      return cached;
+    }
+
     const offset = (page - 1) * limit;
 
     const [items, total] = await this.countriesRepository.findAndCount({
@@ -57,13 +72,20 @@ export class CountriesService {
 
     const totalPages = Math.ceil(total / limit);
 
-    return {
+    const response = {
       items,
       currentPage: page,
       limit,
       totalItems: total,
       totalPages,
     } as PaginationResponseDto<Country>;
+
+    await this.redisService.set(
+      `${this.baseCacheKey}:page=${page}:limit=${limit}`,
+      response,
+    );
+
+    return response;
   }
 
   /**
@@ -73,6 +95,13 @@ export class CountriesService {
    * @throws NotFoundException - if country with id does not exist
    */
   async findOne(id: number) {
+    const cached = await this.redisService.get<Country>(
+      `${this.baseCacheKey}:${id}`,
+    );
+    if (cached) {
+      return cached;
+    }
+
     const country = await this.countriesRepository.findOne({
       where: { id },
       relations: ['players', 'clubs', 'competitions'],
@@ -80,6 +109,8 @@ export class CountriesService {
     if (!country) {
       throw new NotFoundException(`Country with id ${id} does not exist`);
     }
+
+    await this.redisService.set(`${this.baseCacheKey}:${id}`, country);
 
     return country;
   }
@@ -109,6 +140,8 @@ export class CountriesService {
       country.flagUrl = updateCountryDto.flagUrl;
     }
 
+    await this.redisService.invalidateByPattern(`${this.baseCacheKey}*`);
+
     return await this.countriesRepository.save(country);
   }
 
@@ -119,6 +152,7 @@ export class CountriesService {
   async remove(id: number) {
     const country = await this.findOne(id);
     await this.countriesRepository.remove(country);
+    await this.redisService.invalidateByPattern(`${this.baseCacheKey}*`);
   }
 
   /**
