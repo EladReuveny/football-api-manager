@@ -10,6 +10,7 @@ import { Club } from 'src/clubs/entities/club.entity';
 import { PaginationQueryDto } from 'src/common/dto/pagination-query.dto';
 import { PaginationResponseDto } from 'src/common/dto/pagination-response.dto';
 import { CountriesService } from 'src/countries/countries.service';
+import { RedisService } from 'src/redis/redis.service';
 import { Repository } from 'typeorm';
 import { CreatePlayerDto } from './dto/create-player.dto';
 import { UpdatePlayerDto } from './dto/update-player.dto';
@@ -20,14 +21,18 @@ import { Player } from './entities/player.entity';
  */
 @Injectable()
 export class PlayersService {
+  private readonly baseCacheKey = 'players';
+
   /**
    * Constructor
    * @param playersRepository Player repository
+   * @param redisService Redis service
    * @param clubsService Club service
    * @param countriesService Country service
    */
   constructor(
     @InjectRepository(Player) private playersRepository: Repository<Player>,
+    private readonly redisService: RedisService,
     @Inject(forwardRef(() => ClubsService))
     private readonly clubsService: ClubsService,
     private readonly countriesService: CountriesService,
@@ -53,6 +58,9 @@ export class PlayersService {
       club,
       nationality,
     });
+
+    await this.redisService.invalidateByPattern(`${this.baseCacheKey}*`);
+
     return await this.playersRepository.save(player);
   }
 
@@ -65,6 +73,13 @@ export class PlayersService {
   async findAll(query: PaginationQueryDto) {
     const { page, limit } = query;
 
+    const cached = await this.redisService.get<PaginationResponseDto<Player>>(
+      `${this.baseCacheKey}:page=${page}:limit=${limit}`,
+    );
+    if (cached) {
+      return cached;
+    }
+
     const offset = (page - 1) * limit;
 
     const [items, total] = await this.playersRepository.findAndCount({
@@ -75,13 +90,20 @@ export class PlayersService {
 
     const totalPages = Math.ceil(total / limit);
 
-    return {
+    const response = {
       items,
       currentPage: page,
       limit,
       totalItems: total,
       totalPages,
     } as PaginationResponseDto<Player>;
+
+    await this.redisService.set(
+      `${this.baseCacheKey}:page=${page}:limit=${limit}`,
+      response,
+    );
+
+    return response;
   }
 
   /**
@@ -91,6 +113,13 @@ export class PlayersService {
    * @throws NotFoundException - if player not found
    */
   async findOne(id: number) {
+    const cached = await this.redisService.get<Player>(
+      `${this.baseCacheKey}:${id}`,
+    );
+    if (cached) {
+      return cached;
+    }
+
     const player = await this.playersRepository.findOne({
       where: { id },
       relations: ['club', 'nationality'],
@@ -99,6 +128,8 @@ export class PlayersService {
     if (!player) {
       throw new NotFoundException(`Player with ID ${id} not found`);
     }
+
+    await this.redisService.set(`${this.baseCacheKey}:${id}`, player);
 
     return player;
   }
@@ -150,6 +181,8 @@ export class PlayersService {
       player.nationality = nationality;
     }
 
+    await this.redisService.invalidateByPattern(`${this.baseCacheKey}*`);
+
     return await this.playersRepository.save(player);
   }
 
@@ -160,6 +193,7 @@ export class PlayersService {
   async remove(id: number) {
     const player = await this.findOne(id);
     await this.playersRepository.remove(player);
+    await this.redisService.invalidateByPattern(`${this.baseCacheKey}*`);
   }
 
   /**

@@ -11,6 +11,7 @@ import { PaginationQueryDto } from 'src/common/dto/pagination-query.dto';
 import { PaginationResponseDto } from 'src/common/dto/pagination-response.dto';
 import { CountriesService } from 'src/countries/countries.service';
 import { PlayersService } from 'src/players/players.service';
+import { RedisService } from 'src/redis/redis.service';
 import { Repository } from 'typeorm';
 import { CreateClubDto } from './dto/create-club.dto';
 import { UpdateClubDto } from './dto/update-club.dto';
@@ -21,14 +22,18 @@ import { Club } from './entities/club.entity';
  */
 @Injectable()
 export class ClubsService {
+  private readonly baseCacheKey = 'clubs';
+
   /**
    * Constructor
    * @param clubsRepository Club repository
+   * @param redisService Redis service
    * @param playersService Players service
    * @param countryService Country service
    */
   constructor(
     @InjectRepository(Club) private readonly clubsRepository: Repository<Club>,
+    private readonly redisService: RedisService,
     @Inject(forwardRef(() => PlayersService))
     private readonly playersService: PlayersService,
     private readonly countryService: CountriesService,
@@ -50,6 +55,9 @@ export class ClubsService {
       country,
       establishedAt,
     });
+
+    await this.redisService.invalidateByPattern(`${this.baseCacheKey}*`);
+
     return await this.clubsRepository.save(club);
   }
 
@@ -62,6 +70,13 @@ export class ClubsService {
   async findAll(query: PaginationQueryDto) {
     const { page, limit } = query;
 
+    const cached = await this.redisService.get<PaginationResponseDto<Club>>(
+      `${this.baseCacheKey}:page=${page}:limit=${limit}`,
+    );
+    if (cached) {
+      return cached;
+    }
+
     const offset = (page - 1) * limit;
 
     const [items, total] = await this.clubsRepository.findAndCount({
@@ -72,13 +87,20 @@ export class ClubsService {
 
     const totalPages = Math.ceil(total / limit);
 
-    return {
+    const response = {
       items,
       currentPage: page,
       limit,
       totalItems: total,
       totalPages,
     } as PaginationResponseDto<Club>;
+
+    await this.redisService.set(
+      `${this.baseCacheKey}:page=${page}:limit=${limit}`,
+      response,
+    );
+
+    return response;
   }
 
   /**
@@ -88,6 +110,13 @@ export class ClubsService {
    * @throws NotFoundException if club not found
    */
   async findOne(id: number) {
+    const cached = await this.redisService.get<Club>(
+      `${this.baseCacheKey}:${id}`,
+    );
+    if (cached) {
+      return cached;
+    }
+
     const club = await this.clubsRepository.findOne({
       where: { id },
       relations: ['country', 'players', 'players.nationality', 'competitions'],
@@ -95,6 +124,9 @@ export class ClubsService {
     if (!club) {
       throw new NotFoundException(`Club with id ${id} does not exist`);
     }
+
+    await this.redisService.set(`${this.baseCacheKey}:${id}`, club);
+
     return club;
   }
 
@@ -124,6 +156,8 @@ export class ClubsService {
       club.country = country;
     }
 
+    await this.redisService.invalidateByPattern(`${this.baseCacheKey}*`);
+
     return await this.clubsRepository.save(club);
   }
 
@@ -134,6 +168,7 @@ export class ClubsService {
   async remove(id: number) {
     const club = await this.findOne(id);
     await this.clubsRepository.remove(club);
+    await this.redisService.invalidateByPattern(`${this.baseCacheKey}*`);
   }
 
   /**
@@ -145,6 +180,8 @@ export class ClubsService {
     const clubs = await Promise.all(
       createClubDtos.map((createClubDto) => this.create(createClubDto)),
     );
+
+    await this.redisService.invalidateByPattern(`${this.baseCacheKey}*`);
 
     return clubs;
   }
@@ -177,6 +214,8 @@ export class ClubsService {
 
     club.players = [...(club.players || []), player];
 
+    await this.redisService.invalidateByPattern(`${this.baseCacheKey}*`);
+
     return await this.clubsRepository.save(club);
   }
 
@@ -196,6 +235,8 @@ export class ClubsService {
     }
 
     club.players = club.players?.filter((p) => p.id !== playerId);
+
+    await this.redisService.invalidateByPattern(`${this.baseCacheKey}*`);
 
     return await this.clubsRepository.save(club);
   }

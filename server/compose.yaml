@@ -25,5 +25,16 @@ services:
       interval: 10s
       timeout: 5s
       retries: 5
+    depends_on:
+      - redis
+
+  redis:
+    container_name: redis
+    image: redis:alpine
+    restart: always
+    ports:
+      - 6379:6379
+    env_file: 
+      - .env.development
 volumes:
   db-data:

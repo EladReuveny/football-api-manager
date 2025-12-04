@@ -11,6 +11,7 @@ import { CompetitionsModule } from './competitions/competitions.module';
 import { CountriesModule } from './countries/countries.module';
 import { PlayersModule } from './players/players.module';
 import { UsersModule } from './users/users.module';
+import { RedisModule } from './redis/redis.module';
 
 @Module({
   imports: [
@@ -33,6 +34,7 @@ import { UsersModule } from './users/users.module';
     CompetitionsModule,
     CountriesModule,
     PlayersModule,
+    RedisModule,
   ],
   controllers: [AppController],
   providers: [
